@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Test Case">
+      <UniqueIdentifier>{c4f7c887-6777-43d9-a0e0-85a05fc6a369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test Case">
+      <UniqueIdentifier>{6e8be9d1-4b33-43a9-9cef-13240a6a5e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ExtremeCopy App">
+      <UniqueIdentifier>{5670856b-37a3-46b5-9622-883c4514df16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExtremeCopy App">
+      <UniqueIdentifier>{b22f2ebd-c61b-4f7f-8538-4ea1d54b5a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ExtremeCopy Core">
+      <UniqueIdentifier>{ebbb5104-7a14-4e9b-8038-d703b61db4e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExtremeCopy Core">
+      <UniqueIdentifier>{057e752d-def2-4938-b86d-2f1ad828380a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{4a92d704-a682-4af0-a217-f4f8e98552d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{f09af8bb-b559-4622-b268-c12670d72447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ExtremeCopy UI">
+      <UniqueIdentifier>{a4ba5870-82fb-4b34-adc9-6cfed838e735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExtremeCopy UI">
+      <UniqueIdentifier>{56cd9a9b-6667-4d4d-b4fc-7f1186e70cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TiXML">
+      <UniqueIdentifier>{995d3f7c-f517-4039-987a-24df956eb93f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TiXML">
+      <UniqueIdentifier>{7ec8c373-b5da-45cd-841e-061288820dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Test Case\App">
+      <UniqueIdentifier>{996c9259-d30a-4fc4-92e1-3995a73da090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Test Case\Core">
+      <UniqueIdentifier>{5fd6bdbf-2582-4ed9-905c-9e7a75704252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test Case\App">
+      <UniqueIdentifier>{194e1c95-71df-45dc-a489-f3ae7227e4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test Case\Core">
+      <UniqueIdentifier>{4ced88d6-8ec8-42d5-bf94-a07c1d383109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test Case\Common">
+      <UniqueIdentifier>{a4bea381-a120-4d08-9a9a-251672f8f849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Test Case\Common">
+      <UniqueIdentifier>{0680273d-34bd-4faf-a6c6-5c0e9d8750c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\XCTesting.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\XCTesting.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XCTesting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XCTestingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\AppRegister.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\CompileMacro.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\ExtremeCopy.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\ptMultipleLanguage.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCCommandLine.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCConfiguration.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCCopyTask.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCFailedFile.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCGlobal.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCLog.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCNormalWndUIState.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCStatistics.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCTaryUIState.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCTransApp.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCAsyncFileDataTransFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCCopyCondition.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCCopyingEvent.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCCore.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCCoreDefine.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCDestinationFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCDuplicateOutputTransFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCFileDataBuffer.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCFileDataCacheTransFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCFilterProtocol.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCLocalFileSyncDestnationFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCLocalFileSyncSourceFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCNetworkSourceFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCPin.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCSourceFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCSyncFileDataTransFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCTransformFilter.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCWinStorageRelative.h">
+      <Filter>Header Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WndShadow.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\stl_threads.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\stl_config.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\sgi_stl_alloc.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptWinPath.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptWinMessage.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptWinGraphic.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptTypeDef.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptTime.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptThreadLock.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptThread.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptString.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptShellTray.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptRegistry.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptNamePipe.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptGlobal.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptFolderSize.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptCmdLineParser.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CptCharCode.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\AboutDlg.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ConfigurationDialog.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptComboBox.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptEditBox.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptFileDialog.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptImageList.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptListBox.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptProgressBar.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptPropertySheet.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptSkinHeaderCtrl.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptSkinHorizontalScrollbar.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptSkinTabBar.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptSkinTabCtrl.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\CptTabCtrl.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\Hyperlink.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\MainDialog.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ptCommCtrl.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ptDialog.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ptListView.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ptMessageBox.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ptSkinButton.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ptSkinProgress.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ptSkinTrackBar.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\ptWinToolTip.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\RegisterCountdownDlg.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\RegisterDlg.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\SameFileDialog.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\SkinDialog.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\SpeedDialog.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\XCFailFileListView.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\XCTaskEditDlg.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\UI\XCWildcardEditDlg.h">
+      <Filter>Header Files\ExtremeCopy UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TinyXML\tinystr.h">
+      <Filter>Header Files\TiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TinyXML\tinyxml.h">
+      <Filter>Header Files\TiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCRunMode.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCase_XCStatistics.h">
+      <Filter>Header Files\Test Case\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\App\XCVerifyResult.h">
+      <Filter>Header Files\ExtremeCopy App</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCase_CptString.h">
+      <Filter>Header Files\Test Case\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCase_XCCoreRunning.h">
+      <Filter>Header Files\Test Case\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCase_XCGlobal.h">
+      <Filter>Header Files\Test Case\App</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCase_XCSourceFilter.h">
+      <Filter>Header Files\Test Case\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCSameDriveMoveFile.h">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCLocalFileAsynSourceFilter.h">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCLocalFileAsynDestnationFilter2.h">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\XCFileChangingBuffer.h">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCase_CptCmdLineParser.h">
+      <Filter>Header Files\Test Case\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ptMsgQue.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XCTesting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XCTestingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WndShadow.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptWinPath.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptTime.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptThread.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptString.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptShellTray.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptRegistry.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptNamePipe.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptFolderSize.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptCmdLineParser.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TinyXML\tinystr.cpp">
+      <Filter>Source Files\TiXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TinyXML\tinyxml.cpp">
+      <Filter>Source Files\TiXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TinyXML\tinyxmlerror.cpp">
+      <Filter>Source Files\TiXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TinyXML\tinyxmlparser.cpp">
+      <Filter>Source Files\TiXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCase_XCStatistics.cpp">
+      <Filter>Source Files\Test Case\App</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCase_XCSourceFilter.cpp">
+      <Filter>Source Files\Test Case\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCase_XCGlobal.cpp">
+      <Filter>Source Files\Test Case\App</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCase_XCCoreRunning.cpp">
+      <Filter>Source Files\Test Case\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCase_CptString.cpp">
+      <Filter>Source Files\Test Case\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCWinStorageRelative.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCTransformFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCSyncFileDataTransFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCSourceFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCSameDriveMoveFile.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCPin.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCNetworkSourceFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCLocalFileSyncSourceFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCLocalFileSyncDestnationFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCLocalFileAsynSourceFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCLocalFileAsynDestnationFilter2.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCFileDataCacheTransFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCFileDataBuffer.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCFileChangingBuffer.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCDuplicateOutputTransFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCDestinationFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCCoreDefine.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCCore.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCCopyingEvent.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCCopyCondition.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\XCAsyncFileDataTransFilter.cpp">
+      <Filter>Source Files\ExtremeCopy Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCase_CptCmdLineParser.cpp">
+      <Filter>Source Files\Test Case\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ptMsgQue.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\XCGlobal.cpp">
+      <Filter>Header Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\ptMultipleLanguage.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\XCVerifyResult.cpp">
+      <Filter>Header Files\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XCTesting.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

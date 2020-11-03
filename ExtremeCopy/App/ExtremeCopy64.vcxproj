@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug64|Win32">
+      <Configuration>Debug64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug64|x64">
+      <Configuration>Debug64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Dev)|Win32">
+      <Configuration>Release(Dev)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Dev)|x64">
+      <Configuration>Release(Dev)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release64|Win32">
+      <Configuration>Release64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release64|x64">
+      <Configuration>Release64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6BFD59AA-F92F-42F2-AA9B-CB65D8CB9A84}</ProjectGuid>
+    <RootNamespace>ExtremeCopy</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>ExtremeCopy</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug64|Win32'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug64|x64'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release64|x64'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release64|Win32'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.21006.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Build\x64\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)\Build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\x64\obj\ExtremeCopy\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\Build\obj\ExtremeCopy\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Build\x64\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">$(SolutionDir)\Build\x64\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)\Build\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|x64'">$(SolutionDir)\Build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\x64\obj\ExtremeCopy\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">..\..\Build\x64\obj\ExtremeCopy\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\Build\obj\ExtremeCopy\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|x64'">..\..\Build\obj\ExtremeCopy\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|x64'">false</LinkIncremental>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)\bin\x86_amd64;$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)\bin\x86_amd64;$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">$(VCInstallDir)\bin\x86_amd64;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">$(VCInstallDir)lib\amd64;$(WindowsSdkDir)\lib\x64;$(LibraryPath)</LibraryPath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release64|Win32'">$(VCInstallDir)\bin\x86_amd64;$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release64|Win32'">$(IncludePath)</IncludePath>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Release64|Win32'">$(ReferencePath)</ReferencePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release64|Win32'">$(VCInstallDir)lib\amd64;$(WindowsSdkDir)\lib\x64;$(LibraryPath)</LibraryPath>
+    <SourcePath Condition="'$(Configuration)|$(Platform)'=='Release64|Win32'">$(SourcePath)</SourcePath>
+    <ExcludePath Condition="'$(Configuration)|$(Platform)'=='Release64|Win32'">$(ExcludePath)</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WIN64;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WIN64;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WIN64;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(OutDir)CopyExeToVM.bat"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(OutDir)CopyExeToVM.bat"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\ptCmdLineParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Common\ptDiskManager.cpp" />
+    <ClCompile Include="..\Common\ptFolderSize.cpp" />
+    <ClCompile Include="..\Common\ptMsgQue.cpp" />
+    <ClCompile Include="..\Common\ptNamePipe.cpp" />
+    <ClCompile Include="..\Common\ptRegistry.cpp" />
+    <ClCompile Include="..\Common\ptShellTray.cpp" />
+    <ClCompile Include="..\Common\ptString.cpp" />
+    <ClCompile Include="..\Common\ptThread.cpp" />
+    <ClCompile Include="..\Common\ptTime.cpp" />
+    <ClCompile Include="..\Common\ptWinPath.cpp" />
+    <ClCompile Include="..\Common\TinyXML\tinystr.cpp" />
+    <ClCompile Include="..\Common\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="..\Common\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="..\Common\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="..\Common\WndShadow.cpp" />
+    <ClCompile Include="..\Core\XCAsyncFileDataTransFilter.cpp" />
+    <ClCompile Include="..\Core\XCCopyCondition.cpp" />
+    <ClCompile Include="..\Core\XCCopyingEvent.cpp" />
+    <ClCompile Include="..\Core\XCCore.cpp" />
+    <ClCompile Include="..\Core\XCCoreDefine.cpp" />
+    <ClCompile Include="..\Core\XCDestinationFilter.cpp" />
+    <ClCompile Include="..\Core\XCDuplicateOutputTransFilter.cpp" />
+    <ClCompile Include="..\Core\XCFileChangingBuffer.cpp" />
+    <ClCompile Include="..\Core\XCFileDataBuffer.cpp" />
+    <ClCompile Include="..\Core\XCFileDataCacheTransFilter.cpp" />
+    <ClCompile Include="..\Core\XCLocalFileAsynDestnationFilter2.cpp" />
+    <ClCompile Include="..\Core\XCLocalFileAsynSourceFilter.cpp" />
+    <ClCompile Include="..\Core\XCLocalFileSyncDestnationFilter.cpp" />
+    <ClCompile Include="..\Core\XCLocalFileSyncSourceFilter.cpp" />
+    <ClCompile Include="..\Core\XCNetworkSourceFilter.cpp" />
+    <ClCompile Include="..\Core\XCPin.cpp" />
+    <ClCompile Include="..\Core\XCSameDriveMoveFile.cpp" />
+    <ClCompile Include="..\Core\XCSourceFilter.cpp" />
+    <ClCompile Include="..\Core\XCSyncFileDataTransFilter.cpp" />
+    <ClCompile Include="..\Core\XCTransformFilter.cpp" />
+    <ClCompile Include="..\Core\XCWinStorageRelative.cpp" />
+    <ClCompile Include="AppRegister.cpp" />
+    <ClCompile Include="RegisterCode.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UI\AboutDlg.cpp" />
+    <ClCompile Include="UI\ConfigurationDialog.cpp" />
+    <ClCompile Include="UI\CptComboBox.cpp" />
+    <ClCompile Include="UI\CptEditBox.cpp" />
+    <ClCompile Include="UI\CptFileDialog.cpp" />
+    <ClCompile Include="UI\CptImageList.cpp" />
+    <ClCompile Include="UI\CptListBox.cpp" />
+    <ClCompile Include="UI\CptProgressBar.cpp" />
+    <ClCompile Include="UI\CptPropertySheet.cpp" />
+    <ClCompile Include="UI\CptSkinHeaderCtrl.cpp" />
+    <ClCompile Include="UI\CptSkinHorizontalScrollbar.cpp" />
+    <ClCompile Include="UI\CptSkinTabBar.cpp" />
+    <ClCompile Include="UI\CptSkinTabCtrl.cpp" />
+    <ClCompile Include="UI\CptTabCtrl.cpp" />
+    <ClCompile Include="UI\Hyperlink.cpp" />
+    <ClCompile Include="UI\MainDialog.cpp" />
+    <ClCompile Include="UI\ptCommCtrl.cpp" />
+    <ClCompile Include="UI\ptDialog.cpp" />
+    <ClCompile Include="UI\ptListView.cpp" />
+    <ClCompile Include="UI\ptMessageBox.cpp" />
+    <ClCompile Include="UI\ptSkinButton.cpp" />
+    <ClCompile Include="UI\ptSkinProgress.cpp" />
+    <ClCompile Include="UI\ptSkinTrackBar.cpp" />
+    <ClCompile Include="UI\ptWinToolTip.cpp" />
+    <ClCompile Include="UI\RegisterCountdownDlg.cpp" />
+    <ClCompile Include="UI\RegisterDlg.cpp" />
+    <ClCompile Include="UI\SameFileDialog.cpp" />
+    <ClCompile Include="UI\SkinDialog.cpp" />
+    <ClCompile Include="UI\SpeedDialog.cpp" />
+    <ClCompile Include="UI\Win7TaskbarProgress.cpp" />
+    <ClCompile Include="UI\XCDownloadDlg.cpp" />
+    <ClCompile Include="UI\XCFailFileListView.cpp" />
+    <ClCompile Include="UI\XCStartupPosDlg.cpp" />
+    <ClCompile Include="UI\XCStdLaunchDlg.cpp" />
+    <ClCompile Include="UI\XCTaskEditDlg.cpp" />
+    <ClCompile Include="UI\XCTaskQueueDlg.cpp" />
+    <ClCompile Include="UI\XCWildcardEditDlg.cpp" />
+    <ClCompile Include="ExtremeCopy.cpp" />
+    <ClCompile Include="XCConfiguration.cpp" />
+    <ClCompile Include="XCCopyTask.cpp" />
+    <ClCompile Include="XCFailedFile.cpp" />
+    <ClCompile Include="XCGlobal.cpp" />
+    <ClCompile Include="XCLog.cpp" />
+    <ClCompile Include="XCNewsChecker.cpp" />
+    <ClCompile Include="XCNormalWndUIState.cpp" />
+    <ClCompile Include="XCQueueLegacyOption.cpp" />
+    <ClCompile Include="XCRunMode.cpp" />
+    <ClCompile Include="XCStatistics.cpp" />
+    <ClCompile Include="XCTaryUIState.cpp" />
+    <ClCompile Include="XCTaskQueue.cpp" />
+    <ClCompile Include="XCTransApp.cpp" />
+    <ClCompile Include="ptMultipleLanguage.cpp" />
+    <ClCompile Include="XCCommandLine.cpp" />
+    <ClCompile Include="XCVerifyResult.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\ptCmdLineParser.h" />
+    <ClInclude Include="..\Common\ptDebugView.h" />
+    <ClInclude Include="..\Common\ptFolderSize.h" />
+    <ClInclude Include="..\Common\ptGlobal.h" />
+    <ClInclude Include="..\Common\ptMsgQue.h" />
+    <ClInclude Include="..\Common\ptNamePipe.h" />
+    <ClInclude Include="..\Common\ptRegistry.h" />
+    <ClInclude Include="..\Common\ptShellTray.h" />
+    <ClInclude Include="..\Common\ptString.h" />
+    <ClInclude Include="..\Common\ptThread.h" />
+    <ClInclude Include="..\Common\ptThreadLock.h" />
+    <ClInclude Include="..\Common\ptTime.h" />
+    <ClInclude Include="..\Common\ptTypeDef.h" />
+    <ClInclude Include="..\Common\ptWinGraphic.h" />
+    <ClInclude Include="..\Common\ptWinMessage.h" />
+    <ClInclude Include="..\Common\ptWinPath.h" />
+    <ClInclude Include="..\Common\sgi_stl_alloc.h" />
+    <ClInclude Include="..\Common\stl_config.h" />
+    <ClInclude Include="..\Common\stl_threads.h" />
+    <ClInclude Include="..\Common\WndShadow.h" />
+    <ClInclude Include="..\Core\XCAsyncFileDataTransFilter.h" />
+    <ClInclude Include="..\Core\XCCopyCondition.h" />
+    <ClInclude Include="..\Core\XCCopyingEvent.h" />
+    <ClInclude Include="..\Core\XCCore.h" />
+    <ClInclude Include="..\Core\XCCoreDefine.h" />
+    <ClInclude Include="..\Core\XCDestinationFilter.h" />
+    <ClInclude Include="..\Core\XCDuplicateOutputTransFilter.h" />
+    <ClInclude Include="..\Core\XCFileChangingBuffer.h" />
+    <ClInclude Include="..\Core\XCFileDataBuffer.h" />
+    <ClInclude Include="..\Core\XCFileDataCacheTransFilter.h" />
+    <ClInclude Include="..\Core\XCFilterProtocol.h" />
+    <ClInclude Include="..\Core\XCLocalFileAsynDestnationFilter2.h" />
+    <ClInclude Include="..\Core\XCLocalFileAsynSourceFilter.h" />
+    <ClInclude Include="..\Core\XCLocalFileSyncDestnationFilter.h" />
+    <ClInclude Include="..\Core\XCLocalFileSyncSourceFilter.h" />
+    <ClInclude Include="..\Core\XCNetworkSourceFilter.h" />
+    <ClInclude Include="..\Core\XCPin.h" />
+    <ClInclude Include="..\Core\XCSameDriveMoveFile.h" />
+    <ClInclude Include="..\Core\XCSourceFilter.h" />
+    <ClInclude Include="..\Core\XCSyncFileDataTransFilter.h" />
+    <ClInclude Include="..\Core\XCTransformFilter.h" />
+    <ClInclude Include="..\Core\XCWinStorageRelative.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UI\AboutDlg.h" />
+    <ClInclude Include="UI\ConfigurationDialog.h" />
+    <ClInclude Include="UI\CptComboBox.h" />
+    <ClInclude Include="UI\CptEditBox.h" />
+    <ClInclude Include="UI\CptFileDialog.h" />
+    <ClInclude Include="UI\CptImageList.h" />
+    <ClInclude Include="UI\CptListBox.h" />
+    <ClInclude Include="UI\CptProgressBar.h" />
+    <ClInclude Include="UI\CptPropertySheet.h" />
+    <ClInclude Include="UI\CptSkinHeaderCtrl.h" />
+    <ClInclude Include="UI\CptSkinHorizontalScrollbar.h" />
+    <ClInclude Include="UI\CptSkinTabBar.h" />
+    <ClInclude Include="UI\CptSkinTabCtrl.h" />
+    <ClInclude Include="UI\CptTabCtrl.h" />
+    <ClInclude Include="UI\Hyperlink.h" />
+    <ClInclude Include="UI\MainDialog.h" />
+    <ClInclude Include="UI\ptCommCtrl.h" />
+    <ClInclude Include="UI\ptDialog.h" />
+    <ClInclude Include="UI\ptListView.h" />
+    <ClInclude Include="UI\ptMessageBox.h" />
+    <ClInclude Include="UI\ptSkinButton.h" />
+    <ClInclude Include="UI\ptSkinProgress.h" />
+    <ClInclude Include="UI\ptSkinTrackBar.h" />
+    <ClInclude Include="UI\RegisterCountdownDlg.h" />
+    <ClInclude Include="UI\RegisterDlg.h" />
+    <ClInclude Include="UI\SameFileDialog.h" />
+    <ClInclude Include="UI\SkinDialog.h" />
+    <ClInclude Include="UI\SpeedDialog.h" />
+    <ClInclude Include="UI\Win7TaskbarProgress.h" />
+    <ClInclude Include="UI\XCDownloadDlg.h" />
+    <ClInclude Include="UI\XCFailFileListView.h" />
+    <ClInclude Include="UI\XCStartupPosDlg.h" />
+    <ClInclude Include="UI\XCStdLaunchDlg.h" />
+    <ClInclude Include="UI\XCTaskEditDlg.h" />
+    <ClInclude Include="UI\XCTaskQueueDlg.h" />
+    <ClInclude Include="UI\XCWildcardEditDlg.h" />
+    <ClInclude Include="XCFailedFile.h" />
+    <ClInclude Include="AppRegister.h" />
+    <ClInclude Include="CompileMacro.h" />
+    <ClInclude Include="ExtremeCopy.h" />
+    <ClInclude Include="XCCommandLine.h" />
+    <ClInclude Include="XCConfiguration.h" />
+    <ClInclude Include="XCCopyTask.h" />
+    <ClInclude Include="XCGlobal.h" />
+    <ClInclude Include="XCLog.h" />
+    <ClInclude Include="XCNewsChecker.h" />
+    <ClInclude Include="XCNormalWndUIState.h" />
+    <ClInclude Include="XCQueueLegacyOption.h" />
+    <ClInclude Include="XCRunMode.h" />
+    <ClInclude Include="XCStatistics.h" />
+    <ClInclude Include="XCTaryUIState.h" />
+    <ClInclude Include="XCTaskQueue.h" />
+    <ClInclude Include="XCTransApp.h" />
+    <ClInclude Include="ptMultipleLanguage.h" />
+    <ClInclude Include="XCVerifyResult.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\ExtremeCopy.ico" />
+    <None Include="Res\hand.cur" />
+    <None Include="Res\small.ico" />
+    <None Include="Res\TaskFile.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ExtremeCopy.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

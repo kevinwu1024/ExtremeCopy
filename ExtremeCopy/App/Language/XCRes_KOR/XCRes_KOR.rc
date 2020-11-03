@@ -1,0 +1,893 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 245, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "원본:",IDC_STATIC_FROM,26,25,22,8
+    LTEXT           "--",IDC_STATIC_SOURCEFILE,49,24,180,8,SS_PATHELLIPSIS
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,49,38,181,8,SS_PATHELLIPSIS
+    LTEXT           "현재:",IDC_STATIC,25,46,20,8
+    LTEXT           "전체:",IDC_STATIC,25,54,20,8
+    LTEXT           "속도:",IDC_STATIC,22,65,20,8
+    LTEXT           "경과 시간:",IDC_STATIC,6,73,38,8
+    LTEXT           "남은 시간:",IDC_STATIC,2,83,38,8
+    LTEXT           "완료 크기:",IDC_STATIC,90,73,38,8
+    LTEXT           "남은 크기:",IDC_STATIC,84,83,38,8
+    LTEXT           "파일:",IDC_STATIC,26,12,20,8
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,50,12,180,11,SS_ENDELLIPSIS
+    CTEXT           "-",IDC_STATIC_SPEED,47,65,37,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,47,73,35,8
+    LTEXT           "계산중",IDC_STATIC_REMAINTIME,47,83,35,8
+    LTEXT           "-",IDC_STATIC_TRANSFORMSIZE,125,73,27,8
+    LTEXT           "-",IDC_STATIC_REMAINSIZE,125,83,27,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,48,56,189,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,48,48,189,6
+    LTEXT           "전체 크기:",IDC_STATIC,91,65,38,8
+    LTEXT           "-",IDC_STATIC_TOTALSIZE,125,65,33,8
+    LTEXT           "완료 파일:",IDC_STATIC,159,73,38,8
+    LTEXT           "남은 파일:",IDC_STATIC,153,83,38,8
+    LTEXT           "전체 파일:",IDC_STATIC,160,65,38,8
+    LTEXT           "-",IDC_STATIC_DONEFILES,197,73,45,8
+    LTEXT           "-",IDC_STATIC_REMAINFILES,197,83,45,8
+    LTEXT           "-",IDC_STATIC_TOTALFILES,197,65,45,8
+    LTEXT           "대상: ",IDC_STATIC_TO,25,37,22,8
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,1,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,134,234,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,5,104,8,14
+    LTEXT           "실패 파일 목록 :",IDC_STATIC,5,124,58,8
+    PUSHBUTTON      "모든 실패 재시도",IDC_BUTTON_RETRYALLFAILED,5,249,80,14
+    LTEXT           "상태: ",IDC_STATIC,5,92,22,8
+    LTEXT           "-",IDC_STATIC_STATUS,37,92,50,8
+    LTEXT           "검증:",IDC_STATIC,88,92,20,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,133,92,51,8
+    PUSHBUTTON      "실행",IDC_BUTTON_RUNANDPAUSE,22,104,49,14
+    PUSHBUTTON      "끝내기",IDC_BUTTON_EXIT,189,104,49,14
+    PUSHBUTTON      "건너뛰기",IDC_BUTTON_SKIP,77,104,49,14
+    PUSHBUTTON      "Verify Data",IDC_BUTTON_VERIFYDATA,114,249,58,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "PRO 버전 알아보기",IDC_STATIC_GETPRO,96,2,67,8
+    PUSHBUTTON      "도움말",IDC_BUTTON_HELP,189,249,50,14
+END
+
+IDD_DIALOG_MESSAGEBOX DIALOGEX 0, 0, 248, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "예",IDC_BUTTON_MSGBOX_YES,54,43,50,14
+    PUSHBUTTON      "아니",IDC_BUTTON_MSGBOX_NO,153,43,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,29,7,187,30
+    PUSHBUTTON      "확인",IDC_BUTTON_MSGBOX_OK,104,43,50,14
+END
+
+IDD_DIALOG_MAIN_SIMPLY DIALOGEX 0, 0, 242, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "현재:",IDC_STATIC,16,35,20,8
+    LTEXT           "전체:",IDC_STATIC,16,43,20,8
+    LTEXT           "속도:",IDC_STATIC,3,56,20,8
+    LTEXT           "경과 시간:",IDC_STATIC,71,56,38,8
+    LTEXT           "남은 시간:",IDC_STATIC,150,56,38,8
+    LTEXT           "File:",IDC_STATIC,21,12,210,8,SS_ENDELLIPSIS
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,20,13,189,11
+    CTEXT           "-",IDC_STATIC_SPEED,28,56,42,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,112,56,34,8
+    LTEXT           "계산중",IDC_STATIC_REMAINTIME,194,56,35,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,39,44,196,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,39,36,196,6
+    LTEXT           "대상:",IDC_STATIC_TO,16,24,20,8
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,47,24,184,8,SS_PATHELLIPSIS
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,2,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,111,234,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,4,80,8,14
+    LTEXT           "실패 파일 목록 :",IDC_STATIC,5,100,58,8
+    PUSHBUTTON      "모든 실패 재시도",IDC_BUTTON_RETRYALLFAILED,4,225,80,14
+    LTEXT           "상태: ",IDC_STATIC,3,68,22,8
+    LTEXT           "-",IDC_STATIC_STATUS,36,68,34,8
+    LTEXT           "검증:",IDC_STATIC,88,68,20,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,112,68,51,8
+    PUSHBUTTON      "Verify Data",IDC_BUTTON_VERIFYDATA,107,225,58,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "실행",IDC_BUTTON_RUNANDPAUSE,24,80,49,14
+    PUSHBUTTON      "끝내기",IDC_BUTTON_EXIT,187,80,49,14
+    PUSHBUTTON      "건너뛰기",IDC_BUTTON_SKIP,81,80,49,14
+    LTEXT           "PRO 버전 알아보기",IDC_STATIC_GETPRO,92,2,67,8
+    PUSHBUTTON      "도움말",IDC_BUTTON_HELP,188,225,50,14
+END
+
+IDD_DIALOG_SAMENAME2 DIALOGEX 0, 0, 275, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "새 파일:",IDC_STATIC,20,81,30,8
+    LTEXT           "Static",IDC_STATIC_SOURCENAME,52,82,184,8,SS_PATHELLIPSIS
+    LTEXT           "Static",IDC_STATIC_SAMEFILENAME,56,18,114,9,SS_ENDELLIPSIS
+    LTEXT           "같은 파일:",IDC_STATIC,14,17,38,8
+    LTEXT           "만든 시간:",IDC_STATIC,9,92,38,8
+    LTEXT           "크기:",IDC_STATIC,34,103,20,8
+    LTEXT           "Static",IDC_STATIC_SOURCESIZE,55,103,32,8
+    LTEXT           "Static",IDC_STATIC_SOURCECREATETIME,55,92,71,8
+    LTEXT           "수정 시간:",IDC_STATIC,130,92,38,8
+    LTEXT           "Static",IDC_STATIC_SOURCEMODIFYTIME,176,92,74,8
+    LTEXT           "이전 파일:",IDC_STATIC,13,33,38,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONNAME,51,33,183,8,SS_PATHELLIPSIS
+    LTEXT           "만든 시간:",IDC_STATIC,9,44,38,8
+    LTEXT           "크기:",IDC_STATIC,33,55,20,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONSIZE,55,55,31,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONCREATETIME,55,44,73,8
+    LTEXT           "수정 시간:",IDC_STATIC,132,44,38,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONMODIFYTIME,177,44,80,8
+    LTEXT           "대체  :",IDC_STATIC_REPLACE,17,67,54,10
+    LTEXT           "Static",IDC_STATIC_ICON,181,6,35,25
+    PUSHBUTTON      "대체",IDC_BUTTON_REPLACE,96,119,56,14
+    PUSHBUTTON      "건너뛰기",IDC_BUTTON_SKIP,216,119,56,14
+    PUSHBUTTON      "모두 대체",IDC_BUTTON_REPLACEALL,156,119,56,14
+    PUSHBUTTON      "추가",IDC_BUTTON_MORELESS,7,120,25,14
+    PUSHBUTTON      "이름 변경",IDC_BUTTON_RENAME,96,140,56,14
+    PUSHBUTTON      "모두 이름 변경",IDC_BUTTON_RNAMEALL,156,140,56,14
+    PUSHBUTTON      "모두 건너뛰기",IDC_BUTTON_SKIPALL,216,140,56,14
+    CONTROL         "크기 동일",IDC_CHECK_SKIPSAMESIZE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,108,166,50,10
+    CONTROL         "수정 시간 동일",IDC_CHECK_SKIPSAMEMODIFYTIME,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,172,166,68,10
+    GROUPBOX        "조건에 의해 모두 건너뛰기, 아니면 대체하기",IDC_STATIC,90,156,166,23
+    PUSHBUTTON      "도움말",IDC_BUTTON_HELP,7,140,25,14
+    PUSHBUTTON      "끝내기",IDC_BUTTON_EXIT,36,140,56,14
+    LTEXT           "최신",IDC_STATIC_NEWER,95,69,17,8
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 254, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "입력 귀하의 일련 번호를 주십시오:",IDC_STATIC,13,13,124,8
+    EDITTEXT        IDC_EDIT_NUMBER1,19,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,65,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER2,79,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,125,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER3,137,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,183,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER4,198,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "취소",IDC_BUTTON_CANCEL,103,56,50,14
+    PUSHBUTTON      "확인",IDC_BUTTON_REGISTER,28,56,50,14
+    LTEXT           "Static",IDC_STATIC_LICENCE,143,13,107,8
+    PUSHBUTTON      "구매",IDC_BUTTON_BUY,181,56,50,14
+END
+
+IDD_DIALOG_CONFIGURATION DIALOGEX 0, 0, 384, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",ID_BUTTON_OK,230,214,50,14
+    PUSHBUTTON      "취소",IDC_BUTTON_CANCEL,310,214,50,14
+    LTEXT           "사용자 인터페이스 스타일 :",IDC_STATIC,16,20,98,8
+    COMBOBOX        IDC_COMBO_UITYPE,120,19,89,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "탐색기의 기본 복사기로",IDC_CHECK_ASDEFAULTCOPYING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,50,100,10
+    CONTROL         "복사후 소리로 알림:",IDC_CHECK_PLAYFINISHEDSOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,146,87,10
+    EDITTEXT        IDC_EDIT_SOUNDFILE,29,158,160,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SELECTSOUNDFILE,191,158,16,13
+    CONTROL         "최상위에 놓기",IDC_CHECK_TOPMOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,62,66,10
+    CTEXT           "Static",IDC_STATIC_VERSIONNAME,105,3,150,8
+    CONTROL         "트레이로 최소화",IDC_CHECK_MINIMUMTOTRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,74,74,10
+    CONTROL         "로그 파일 작성",IDC_CHECK_WRITELOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,86,68,10
+    LTEXT           "실패 파일 최대 목록 수:",IDC_STATIC,14,199,84,8
+    EDITTEXT        IDC_EDIT_MAXFAILEDFILE,100,196,57,14,ES_NUMBER
+    LTEXT           "언어:",IDC_STATIC,15,35,20,8
+    COMBOBOX        IDC_COMBO_LANGUAGE,119,35,90,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "복사 완료후 데이터 검증",IDC_CHECK_VERIFYDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,98,102,10
+    CONTROL         "작업 완료 후 창을 닫습니다",IDC_CHECK_CLOSEAFTERVERIFY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,110,125,10
+    LTEXT           "데이터 복사 버퍼 크기:",IDC_STATIC,17,180,82,8
+    COMBOBOX        IDC_COMBO_FILEDATABUF,103,179,39,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MB",IDC_STATIC,149,180,10,8
+    CONTROL         "확인",IDC_RADIO_SAMEFILE_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,225,26,32,10
+    CONTROL         "모두 이름 변경",IDC_RADIO_SAMEFILE_RENAMEALL,"Button",BS_AUTORADIOBUTTON,283,26,68,10
+    CONTROL         "모두 대체",IDC_RADIO_SAMEFILE_REPLACEALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,39,50,10
+    CONTROL         "모두 건너뛰기",IDC_RADIO_SAMEFILE_SKIPALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,283,40,50,10
+    CONTROL         "",IDC_RADIO_SAMEFILE_REPLACENEWER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,53,11,10
+    CONTROL         "확인",IDC_RADIO_ERROR_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,224,123,32,10
+    CONTROL         "재시도",IDC_RADIO_ERROR_RETRY,"Button",BS_AUTORADIOBUTTON,282,122,40,10
+    CONTROL         "무시",IDC_RADIO_ERROR_IGNORE,"Button",BS_AUTORADIOBUTTON,224,136,32,10
+    CONTROL         "끝내기",IDC_RADIO1_ERROR_EXIT,"Button",BS_AUTORADIOBUTTON,282,136,40,10
+    GROUPBOX        "동일 파일명’일 경우",IDC_STATIC,216,16,164,88
+    GROUPBOX        "오류’가 발생할 경우",IDC_STATIC,216,112,164,36
+    CONTROL         "최신 버전 자동 확인",IDC_CHECK_CHECKNEWVERSION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,122,86,10
+    PUSHBUTTON      "시작 위치",IDC_BUTTON_POSITIONDLG,13,214,70,14
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,287,166,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "확인",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,228,195,32,10
+    CONTROL         "무시",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,272,195,32,10
+    CONTROL         "끝내기",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,316,195,40,10
+    GROUPBOX        "오류시 재시도",IDC_STATIC,216,158,164,51
+    LTEXT           "최대 시간:",IDC_STATIC,228,168,38,8
+    LTEXT           "최대 시간 초과시:",IDC_STATIC,229,183,64,8
+    COMBOBOX        IDC_COMBO_IFCONDITION,285,52,86,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "원본 파일이",IDC_STATIC,237,53,47,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,285,67,59,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "아니면",IDC_STATIC,237,85,44,8
+    LTEXT           ",",IDC_STATIC,353,70,8,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,285,83,49,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "그러면",IDC_STATIC,237,69,33,8
+    PUSHBUTTON      "도움말",IDC_BUTTON_HELP,103,214,50,14
+    CONTROL         "오토 큐 다중 작업을하는 경우 사용 관련 스토리지",IDC_CHECK_QUEUETASK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,133,190,10
+END
+
+IDD_DIALOG_SPECIFYSRCDST DIALOGEX 0, 0, 292, 347
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+MENU IDR_MENU_TASKDLG
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "PRO 버전 알아보기",IDC_STATIC_GETPRO,107,2,67,8
+    PUSHBUTTON      "필터",IDC_BUTTON_WILDCARD2,162,16,42,14,WS_DISABLED
+    PUSHBUTTON      "제거",IDC_BUTTON_DELETE,210,16,32,14
+    PUSHBUTTON      "지우기",IDC_BUTTON_CLEAR,247,16,32,14
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSESRCFILE,73,18,14,11
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSEDSTFOLDER,52,102,14,11
+    PUSHBUTTON      "펼침",IDC_BUTTON_MORELESS,9,151,28,14
+    PUSHBUTTON      "복사",IDC_BUTTON_RUNCOPY,53,151,50,14
+    PUSHBUTTON      "이동",IDC_BUTTON_RUNMOVE,112,151,50,14
+    PUSHBUTTON      "끝내기",IDC_BUTTON_EXIT,227,151,52,14
+    LISTBOX         IDC_LIST_SOURCEFILE,10,32,269,66,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "파일로 내보내기",IDC_BUTTON_EXPORTTOFILE,97,324,85,15
+    PUSHBUTTON      "파일에서 가져오기",IDC_BUTTON_IMPORTFROMFILE,192,324,85,15
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,219,233,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "확인",IDC_RADIO_SAMEFILEASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,200,32,10
+    CONTROL         "모두 이름 변경",IDC_RADIO_SAMEFILERENAME,"Button",BS_AUTORADIOBUTTON,76,200,68,10
+    CONTROL         "모두 대체",IDC_RADIO_SAMEFILEREPLACE,"Button",BS_AUTORADIOBUTTON,17,213,50,10
+    CONTROL         "모두 건너뛰기",IDC_RADIO_SAMEFILESKIP,"Button",BS_AUTORADIOBUTTON,76,213,50,10
+    CONTROL         "",IDC_RADIO_SAMEFILEREPLACENEWER,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,17,226,11,14
+    CONTROL         "확인",IDC_RADIO_ERRORASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,157,200,32,10
+    CONTROL         "재시도",IDC_RADIO_ERRORRETRY,"Button",BS_AUTORADIOBUTTON,225,199,40,10
+    CONTROL         "무시",IDC_RADIO_ERRORIGNORE,"Button",BS_AUTORADIOBUTTON,157,213,32,10
+    CONTROL         "끝내기",IDC_RADIO1_ERROREXIT,"Button",BS_AUTORADIOBUTTON,225,213,40,10
+    CONTROL         "창",IDC_RADIO_SHOWMODEWINDOW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,22,286,34,10
+    CONTROL         "트레이",IDC_RADIO_SHOWMODETRAY,"Button",BS_AUTORADIOBUTTON,78,286,40,10
+    CONTROL         "확인",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,160,262,32,10
+    CONTROL         "무시",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,204,262,32,10
+    CONTROL         "끝내기",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,240,262,51,10
+    LTEXT           "대상 폴더:",IDC_STATIC,10,104,38,8
+    LTEXT           "소스 파일/폴더:",IDC_STATIC,10,19,56,8
+    LTEXT           "(목록 상자로 파일/폴더 드래그&드롭)",IDC_STATIC,75,104,127,8
+    GROUPBOX        "동일 파일명’일 경우",IDC_STATIC,8,190,135,86
+    GROUPBOX        "모드 표시",IDC_STATIC_SHOWMODE,8,276,135,23
+    GROUPBOX        "오류’가 발생할 경우",IDC_STATIC,149,190,130,35
+    GROUPBOX        "오류시 재시도",IDC_STATIC,148,225,131,51
+    LTEXT           "최대 시간:",IDC_STATIC,160,235,38,8
+    LTEXT           "최대 시간 초과시:",IDC_STATIC,161,250,64,8
+    LISTBOX         IDC_LIST_DESTINATION,9,116,270,28,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "제거",IDC_BUTTON_DELETEDST,210,100,32,14
+    PUSHBUTTON      "지우기",IDC_BUTTON_CLEARDST,247,100,32,14
+    CONTROL         "복사 완료후 데이터 검증",IDC_CHECK_VERIFYDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,173,102,10
+    LTEXT           "완료후 명령 실행:",IDC_STATIC,13,307,64,8
+    EDITTEXT        IDC_EDIT_FINISHEVENT,97,305,161,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_IFCONDITION,77,229,61,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "원본 파일이",IDC_STATIC,30,229,44,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,77,244,53,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "아니면",IDC_STATIC,31,263,44,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,77,260,41,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "그러면",IDC_STATIC,31,246,33,8
+    LTEXT           ",",IDC_STATIC,133,248,9,8
+    PUSHBUTTON      "도움말",IDC_BUTTON_HELP,8,324,50,14
+END
+
+IDD_DIALOG_ABOUT DIALOGEX 0, 0, 183, 109
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "닫기",IDCANCEL,67,88,50,14
+    CTEXT           "Static",IDC_STATIC_ABOUTVERSION,38,2,109,8
+    CTEXT           "Static",IDC_STATIC_ALLRIGHT,41,68,108,11
+    CTEXT           "Static",IDC_STATIC_REGIST,53,21,84,8
+END
+
+IDD_DIALOG_MESSAGEBOX_COPYERROROPER DIALOGEX 0, 0, 248, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "끝내기",IDC_BUTTON_MSGBOX_CANCEL,170,58,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,13,4,224,33
+    PUSHBUTTON      "무시",IDC_BUTTON_MSGBOX_IGNORE,96,58,50,14
+    PUSHBUTTON      "재시도",IDC_BUTTON_MSGBOX_RETRY,22,58,50,14
+END
+
+IDD_DIALOG_SPEED DIALOGEX 0, 0, 98, 82
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_SPEED,"msctls_trackbar32",TBS_BOTH,2,11,94,20
+    LTEXT           "Static",IDC_STATIC_SPEED,71,2,19,8
+    LTEXT           "속도",IDC_STATIC,3,2,17,8
+    CONTROL         "데이터 검증",IDC_CHECK_VERIFYDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,44,58,10
+    LTEXT           "작업 완료후 :",IDC_STATIC,5,33,48,8
+    CONTROL         "창 닫기",IDC_CHECK_CLOSEWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,55,42,10
+    CONTROL         "PC 끄기",IDC_CHECK_SHUTDOWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,67,50,10
+END
+
+IDD_DIALOG_EDITWILDCARD DIALOGEX 0, 0, 233, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,44,64,50,14
+    PUSHBUTTON      "취소",IDCANCEL,140,64,50,14
+    LTEXT           "Static",IDC_STATIC_DESTINATIONWILDCARD,14,10,207,8,SS_PATHELLIPSIS
+    EDITTEXT        IDC_EDIT_WILDCARDINPUT,56,40,96,14,ES_AUTOHSCROLL
+    LTEXT           "필터 :",IDC_STATIC,20,42,22,8
+    PUSHBUTTON      "도움말",IDC_BUTTON_HELP,167,39,25,14
+    LTEXT           "(와일드카드로 필터 입력, 예: *.mp3)",IDC_STATIC_TIP,30,28,128,8
+END
+
+IDD_DIALOG_STDLAUNCH DIALOGEX 0, 0, 236, 64
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,150,47,50,14
+    LTEXT           "Static",IDC_STATIC_TEXT,29,6,187,28
+    PUSHBUTTON      "구성",IDC_BUTTON_CONFIGURATION,28,47,50,14
+    LTEXT           "PRO 버전 알아보기",IDC_STATIC_GETPRO,90,37,67,8
+END
+
+IDD_DIALOG_DOWNLOAD DIALOGEX 0, 0, 256, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "내려받는 중"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,191,47,50,14
+    CONTROL         "",IDC_PROGRESS_DOWNLOAD,"msctls_progress32",WS_BORDER,11,20,230,14
+    LTEXT           "-",IDC_STATIC_FILENAME,12,8,178,8
+    RTEXT           "0%",IDC_STATIC_PERCENT,208,6,33,8
+END
+
+IDD_DIALOG_BUGREPORT DIALOGEX 0, 0, 262, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ExtremeCopy 버그 보고서"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "버그 보고",IDOK,53,163,50,14
+    PUSHBUTTON      "취소",IDCANCEL,156,163,50,14
+    LTEXT           "ExtremeCopy 충돌 버그로 인하여 불편을 끼쳐드려 죄송합니다.\r\n\r \n저희가 버그를 개선할 수 있도록 ExtremeCopy 충돌이 발생한 시점의 상황을 알려주시면 감사하겠습니다.”",IDC_STATIC,15,7,236,44
+    LTEXT           "연락 이메일(옵션) :",IDC_STATIC,15,58,69,8
+    EDITTEXT        IDC_EDIT_EMAIL,93,56,148,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROBLEMCONTENT,15,87,236,71,ES_AUTOHSCROLL
+    LTEXT           "문제 설명 :",IDC_STATIC,16,75,40,8
+END
+
+IDD_DIALOG_TASKQUEUE DIALOGEX 0, 0, 243, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ExtremeCopy 작업 대기"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "실행 작업의 남은 횟수 :",IDC_STATIC,40,132,84,8
+    LTEXT           "작업 대기열에서 위치:",IDC_STATIC,43,145,80,8
+    LTEXT           "가장 빠른 방법으로 모든 작업을 완료하려면, 이 작업을 수행하기 전에 이전 작업의 완료를 대기하시길 권장합니다.",IDC_STATIC,14,107,216,19
+    LTEXT           "left time",IDC_STATIC_LEFTTIME,129,132,71,8
+    LTEXT           "position",IDC_STATIC_POSITION,127,145,10,8
+    CONTROL         "",IDC_SPIN_PRIORITY,"msctls_updown32",UDS_ARROWKEYS,142,142,11,14
+    PUSHBUTTON      "끝내기",IDCANCEL,179,182,50,14
+    PUSHBUTTON      "아무튼 실행",IDC_BUTTON_RUN,100,181,60,14
+    LTEXT           "연결된 장치가 사용중입니다.",IDC_STATIC,14,9,104,8
+    CONTROL         "대기열의 위치가 0가 되면 현재 작업이 자동으로 실행됩니다.",IDC_CHECK_PAUSE,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,12,162,229,10
+    LTEXT           "원본 파일:",IDC_STATIC,13,23,38,8
+    LTEXT           "대상 폴더:",IDC_STATIC,11,79,38,8
+    LISTBOX         IDC_LIST_SOURCEFILE,11,33,227,42,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_DESTINATIONFOLDER,11,90,227,15,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "도움말",IDC_BUTTON_HELP,12,180,50,14
+END
+
+IDD_DIALOG_STARTUPPOS DIALOGEX 0, 0, 316, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "시작 위치 설정"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,184,177,50,14
+    PUSHBUTTON      "취소",IDCANCEL,255,177,50,14
+    PUSHBUTTON      "기본",IDC_BUTTON_RESTOREDEFAULT,10,178,50,14
+    CONTROL         "",IDC_STATIC_SCREEN,"Static",SS_BLACKFRAME,11,8,294,146
+END
+
+IDD_DIALOG_MESSAGE DIALOGEX 0, 0, 175, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "닫기",IDCANCEL,115,58,50,14
+    LTEXT           "Static",IDC_STATIC_MESSAGE,16,10,141,35
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 244
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_DIALOG_MESSAGEBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MAIN_SIMPLY, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SAMENAME2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 265
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_CONFIGURATION, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPECIFYSRCDST, DIALOG
+    BEGIN
+        RIGHTMARGIN, 291
+        BOTTOMMARGIN, 344
+    END
+
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGEBOX_COPYERROROPER, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DIALOG_SPEED, DIALOG
+    BEGIN
+        RIGHTMARGIN, 96
+    END
+
+    IDD_DIALOG_EDITWILDCARD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STDLAUNCH, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_DOWNLOAD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_BUGREPORT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DIALOG_TASKQUEUE, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STARTUPPOS, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGE, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_TITLE        BITMAP                  "..\\XCRes_ENU\\Res\\TitleBackground.bmp"
+
+IDB_BITMAP_PROGRESSBAR  BITMAP                  "..\\XCRes_ENU\\Res\\ProgressBar.bmp"
+
+IDB_BITMAP_SPEEDBUTTONNORMAL BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonNormal.bmp"
+
+IDB_BITMAP_SPEEDBUTTONDOWN BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonDown.bmp"
+
+IDB_BITMAP_SPEEDBUTTONHOVER BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonHover.bmp"
+
+IDB_BITMAP_WINDOWS      BITMAP                  "..\\XCRes_ENU\\Res\\windows.bmp"
+
+IDB_BITMAP_TRACKBAR2    BITMAP                  "..\\XCRes_ENU\\Res\\TrackBar2.bmp"
+
+IDB_BITMAP_TRACKTHUMB2  BITMAP                  "..\\XCRes_ENU\\Res\\TrackThumb2.bmp"
+
+IDB_BITMAP_DLGBACKGROUND BITMAP                  "..\\XCRes_ENU\\Res\\DlgBackground.bmp"
+
+IDB_BITMAP_DOWNARROW    BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonNormal.bmp"
+
+IDB_BITMAP_UPARROW      BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonNormal.bmp"
+
+IDB_BITMAP_DOWNARROWDOWN BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonDown.bmp"
+
+IDB_BITMAP_DOWNARROWHOVER BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonHover.bmp"
+
+IDB_BITMAP_UPARROWDOWN  BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonDown.bmp"
+
+IDB_BITMAP_UPARROWHOVER BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonHover.bmp"
+
+IDB_BITMAP_EXTREMECOPYUI BITMAP                  "..\\XCRes_ENU\\Res\\ExetremeCopyUI.bmp"
+
+IDB_BITMAP_DESKTOP      BITMAP                  "..\\XCRes_ENU\\Res\\windows_desktop.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,0,0
+ PRODUCTVERSION 2,4,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "EaserSoft Inc."
+            VALUE "FileDescription", "ExtremeCopy Resource"
+            VALUE "FileVersion", "2.4.0.0"
+            VALUE "InternalName", "XCRes_KOR"
+            VALUE "LegalCopyright", "Copyright (C) 2020"
+            VALUE "OriginalFilename", "XCRes_KOR.dll"
+            VALUE "ProductName", "ExtremeCopy Resource"
+            VALUE "ProductVersion", "2.4.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HAND         CURSOR                  "..\\XCRes_ENU\\Res\\hand.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EXTREMECOPY         ICON                    "..\\XCRes_ENU\\Res\\ExtremeCopy.ico"
+
+IDI_ICON_STATUS_FAIL    ICON                    "..\\XCRes_ENU\\Res\\Status_Fail.ico"
+
+IDI_ICON_STATUS_RUNNING ICON                    "..\\XCRes_ENU\\Res\\Status_Running.ico"
+
+IDI_ICON_STATUS_SUCCESS ICON                    "..\\XCRes_ENU\\Res\\Status_Success.ico"
+
+IDI_ICON_STATUS_WAITING ICON                    "..\\XCRes_ENU\\Res\\Status_Waiting.ico"
+
+IDI_SMALL               ICON                    "..\\XCRes_ENU\\Res\\small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "TaskDialogMenu"
+    BEGIN
+        MENUITEM "As Copy Task",                ID_MENU_ASCOPYTASK
+        MENUITEM "As Move Task",                ID_MENU_ASMOVETASK
+    END
+    POPUP "OpenSrcMenu"
+    BEGIN
+        MENUITEM "File",                        ID_MENU_OPENSRCFILE
+        MENUITEM "Folder",                      ID_MENU_OPENSRCFOLDER
+    END
+    POPUP "FailedFileList"
+    BEGIN
+        MENUITEM "&Cancel",                     ID_MENU_FAILEDFILELIST_CANCEL
+        MENUITEM "&Retry",                      ID_MENU_FAILEDFILELIST_RETRY
+        MENUITEM SEPARATOR
+        POPUP "Location"
+        BEGIN
+            MENUITEM "Source",                      ID_MENU_FAILEDFILELIST_LOCATION_SOURCE
+            MENUITEM "Destination",                 ID_MENU_FAILEDFILELIST_LOCATION_DESTINATION
+        END
+        POPUP "Property"
+        BEGIN
+            MENUITEM "Source",                      ID_MENU_FAILEDFILELIST_PROPERTY_SOURCE
+            MENUITEM "Destination",                 ID_MENU_FAILEDFILELIST_PROPERTY_DESTINAMTION
+        END
+    END
+END
+
+IDR_MENU_TASKDLG MENU
+BEGIN
+    POPUP "도구"
+    BEGIN
+        MENUITEM "환경 설정",                       ID_MENU_CONFIGURATION
+        MENUITEM "제품 등록",                       ID_MENU_REGISTER
+    END
+    POPUP "도움말"
+    BEGIN
+        MENUITEM "제품 정보",                       ID_MENU_ABOUT
+        MENUITEM "도움말",                         ID_MENU_HELP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_EXTREMECOPY ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_SUREEXIT "정말로 현재 복사 작업을 취소하시겠습니까?"
+    IDS_TITLE_SAMEFILEDLG   "동일 파일명"
+    IDS_BUTTON_MORE         "펼침"
+    IDS_BUTTON_LESS         "접기"
+    IDS_BUTTON_CONTINUE     "계속"
+    IDC_EXTREMECOPY         "EXTREMECOPY"
+    IDS_BUTTON_PAUSE        "일시 중지"
+    IDS_TITLE_APP           "ExtremeCopy"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_ALREADREGISTED "제품이 등록되었습니다. 구매해주셔서 감사드립니다"
+    IDS_TITLE_CONFIGURATION "제품이 등록되었습니다. 구매해주셔서 감사드립니다.”"
+    IDS_UITYPE_SIMPLE       "간단히"
+    IDS_UITYPE_NORMAL       "일반"
+    IDS_FORMAT_COPYOF       "복사"
+    IDS_TITLE_WARNING       "경고"
+    IDS_MESSAGEBOX_INPUTSOURCEFILE "원본 파일 혹은 폴더를 지정하십시오!"
+    IDS_MESSAGEBOX_INPUTDESTINATIONFOLDER "대상 폴더를 지정하십시오!"
+    IDS_TITLE_APP_PRO       "ExtremeCopy Pro"
+    IDS_TITLE_ABOUT         "제품 정보"
+    IDS_LANGUAGE_NAME       "한국의"
+    IDS_RIGHTMENUITEM_PASTE "ExtremeCopy 붙여넣기"
+    IDS_MESSAGEBOX_STANDARDEDTIONNOMAINDIALOG 
+                            "표준 버전에 대한 메인 창은 없습니다. 윈도우 탐색기의 우클릭 메뉴에서 바로 ‘붙여넣기’ 혹은 ’익스트림 붙여넣기’를 사용할 수 있습니다."
+    IDS_TOOLTIP_MINIMIZETRAY "트레이로 최소화"
+    IDS_TOOLTIP_CONTROLCOPYSPEED "좌측에서 제어하여 현재 복사 기능을 제어할 수 있습니다."
+    IDS_FORMAT_TRAYUITEXT   "파일: %s\r\n속도: %s\r\n진행: %s  / %s\r\n경과: %s\r\n남음: %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICAIONPARAMETER "식별 매개 변수 없음: ‘%s / %s’"
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICATIONSWITCH "전환 식별 없음: ‘%s’"
+    IDS_CMDLN_ERROR_SPECIFYDESTINATIONFOLDER "대상 디렉토리를 지정하십시오.”"
+    IDS_CMDLN_ERROR_FORMAT_SPECIFYPARAMETER "‘%s’ 매개 변수에 오류가 있습니다.”"
+    IDS_CMDLN_ERROR_SPECIFYPRIMARYSWITCH 
+                            "실행할 기본 명령을 지정하십시오. 보기: ‘-src’ and ‘-dst’"
+    IDS_TITLE_ERROR         "오류"
+    IDS_CMDLN_ERROR_CMDLNERROR "명령줄 오류: "
+    IDS_STRING_ALLFILE      "모든 파일"
+    IDS_TOOLTIP_EXPORTFILEBUTTON 
+                            "파일에서 가져오기’를 클릭하거나 명령줄에서 ‘-task_file’을 사용할 때 재사용 가능한 ExtremeCopy 작업 파일로 현재 설정 내보내기"
+    IDS_TOOLTIP_IMPORTFILE  "현재 설정으로 ExtremeCopy 작업 파일 가져오기."
+    IDS_TASKXMLERROR_CANTSUPPORTVERSION 
+                            "현재 작업 파일 버전을 지원할 수 없습니다. 응용 프로그램이 구버전일 수 있습니다."
+    IDS_TASKXMLERROR_EXECUTECOMMAND "'명령 실행’ 오류"
+    IDS_TASKXMLERROR_SHOWMODE "’모드 표시’ 오류"
+    IDS_TASKXMLERROR_SAMEFILEREACTION "'동일 파일 재실행’ 오류"
+    IDS_TASKXMLERROR_ERRORREACTION "'오류 재실행’ 오류"
+    IDS_TASKXMLERROR_OUTOFRETRY "’재시도 횟수 초과’ 오류"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_SWITCHDOESNTSUPPORTINCURRENTEDITION 
+                            "현재 버전에서는 ’%s’로 전환이 지원되지 않습니다."
+    IDS_TITLE_WILDCARDDLG   "필터"
+    IDS_MESSAGEBOX_INPUTLEGALWILDCARD "’*’ 혹은 ’?’를 포함하여 정확한 와일드카드를 입력하십시오.”"
+    IDS_TITLE_REGISTER      "제품 등록"
+    IDS_RIGHTMENUITEM_EXECUTEBYXC " ExtremeCopy에 의해 실행"
+    IDS_MESSAGEBOX_ERROREXITAPP "오류로 인해 복사 작업이 종료됩니다."
+    IDS_ABOUT_FREEFORHOMEUSER "개인 사용자는 무료입니다."
+    IDS_ABOUT_ALREADYREGESITER "이미 등록되었습니다!"
+    IDS_ABOUT_UNREGISTER    "등록되지 않았습니다!”"
+    IDS_TASKXMLERROR_INVALIDFORMAT "잘못된  ExtremeCopy 작업 파일입니다!"
+    IDS_TASKXMLERROR_NOSRCORDSTFILEORFOLDER "원본 또는 대상에 지정된 파일이나 폴더가 없습니다."
+    IDS_FAILFILETITLE_NO    "아니오"
+    IDS_FAILFILETITLE_STATUS "상태"
+    IDS_FAILFILETITLE_SOURCEFILE "원본"
+    IDS_FAILFILETITLE_DESTINATION "대상"
+    IDS_FAILFILETITLE_ERRORCODESTRING "원인"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILFILETITLE_CREATETIME "시간"
+    IDS_FAILFILETITLE_STATUS_FAILED "실패됨"
+    IDS_FAILFILETITLE_STATUS_WAITING "대기중"
+    IDS_FAILFILETITLE_STATUS_SUCCESS "성공"
+    IDS_FAILFILETITLE_STATUS_RUNNING "실행중"
+    IDS_MESSAGEBOX_OVERMAXFAILEDFILESNUMBER 
+                            "너무 많은 파일 실패. 최대 ‘무시’ 횟수를 초과하여 현재 오류 발생.메시지:"
+    IDS_RIGHTMENUITEM_WINDOWPASTE "Windows 붙여넣"
+    IDS_FAILFILETITLE_ERRORCODE "코드"
+    IDS_ERROR_APPERROR      "오류가 발견되었습니다."
+    IDS_ERROR_INVALIDFILENAME "잘못된 파일명입니다."
+    IDS_ERROR_UNKNOWN       "알 수 없는 오류"
+    IDS_ERROR_SUCCESS       "성공!"
+    IDS_MESSAGEBOX_QUITCONFIRM "ExtremeCopy가 실행중입니다. 그래도 종료하시겠습니까?"
+    IDS_STRING_VERIFYINGDATA "데이터 검증중...."
+    IDS_MESSAGEBOX_INVALIDFILENAME "잘못된 파일명입니다."
+    IDS_MESSAGEBOX_CANOTREADFILEDATA "파일 데이터를 읽을 수 없습니다."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_WRITEFILEFAILED "파일 데이터 작성이 실패되었습니다."
+    IDS_STRING_SOURCEFILE   "원본 파일"
+    IDS_STRING_DESTINATIONFILE "대상 파일"
+    IDS_STRING_STATUS_COPYING "복사중"
+    IDS_STRING_STATUS_PAUSE "붙여넣기"
+    IDS_STRING_STATUS_VERFYING "검증중"
+    IDS_STRING_STATUS_FINISHED "마침"
+    IDS_STRING_STATUS_READY "준비"
+    IDS_MESSAGEBOX_AREYOUUSRESKIP "정말로 건너뛰시겠습니까?"
+    IDS_STRING_VERIFICATION_SAME "동일함"
+    IDS_STRING_VERIFICATION_DIFF "다름"
+    IDS_MESSAGEBOX_RECURSIVEFOLDERERROR "잘못된 중복 폴드.\r\n원본: %s\r\n 대상:%s"
+    IDS_MESSAGEBOX_RESTARTFORUPDATELANGUAGE 
+                            "언어 변경을 적용하려면 ExtremeCopy를 재시작해야 합니다."""
+    IDS_MESSAGEBOX_NEWVERSIONFORMAT 
+                            "새 버전 (%s %s %s)을 사용할 수 있습니다. 내려받으시겠습니까?r\n\r\n예를 선택하면 저장할 폴드를 선택합니다."
+    IDS_STRING_FINALVERSION "마지막"
+    IDS_MESSAGEBOX_AREYOUSURECANCELDOWNLOAD "다운로드 중인 파일을 취소하시겠습니까?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING_STATUS_MOVING "이동중"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_PLEASESPECIFYVALIDEMAIL "유효한 이메일 주소를 지정하시기 바랍니다!"
+    IDS_MESSAGEBOX_ALLOFFOLLOWTASKSWILLPAUSE 
+                            "현재 작업이 완료되기 전까지 다음의 대기중인 모든 작업은 자동 실행되지 않습니다. 수동으로 실행하시겠습니까?"
+    IDS_MESSAGEBOX_AREYOUSURERUNANYWAY "정말로 현재 작업을 실행하시겠습니까?"
+    IDS_STRING_ASKME        "확인"
+    IDS_STRING_REPLACE      "대체"
+    IDS_STRING_SKIP         "건너뛰기"
+    IDS_STRING_RENAME       "이름 변경"
+    IDS_STRING_BIGGER       "더 큰 경우"
+    IDS_STRING_OLDER        "더 오래된 경우"
+    IDS_STRING_NEWER        "더 최신인 경우"
+    IDS_STRING_SMALLER      "더 작은 경우"
+    IDS_STRING_SAMETIMEANDSIZE "시간과 크기가 동일하면"
+    IDS_RIGHTMENUITEM_EXTREME_COPY "익스트림 복사"
+    IDS_RIGHTMENUITEM_EXTREME_MOVE "익스트림 붙여넣기"
+    IDS_RIGHTMENUITEM_LAUNCH_WITH_EXTREMECOPY "ExtremeCopy Pro 로 실행"
+END
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_MENUITEM     BITMAP                  "..\\XCRes_ENU\\Res\\MenuItem.bmp"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

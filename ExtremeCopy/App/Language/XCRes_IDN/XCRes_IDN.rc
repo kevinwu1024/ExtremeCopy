@@ -1,0 +1,907 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_MENUITEM     BITMAP                  "..\\XCRes_ENU\\Res\\MenuItem.bmp"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Indonesian (Indonesia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_IND)
+LANGUAGE LANG_INDONESIAN, SUBLANG_DEFAULT
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_TITLE        BITMAP                  "..\\XCRes_ENU\\Res\\TitleBackground.bmp"
+
+IDB_BITMAP_PROGRESSBAR  BITMAP                  "..\\XCRes_ENU\\Res\\ProgressBar.bmp"
+
+IDB_BITMAP_SPEEDBUTTONNORMAL BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonNormal.bmp"
+
+IDB_BITMAP_SPEEDBUTTONDOWN BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonDown.bmp"
+
+IDB_BITMAP_SPEEDBUTTONHOVER BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonHover.bmp"
+
+IDB_BITMAP_WINDOWS      BITMAP                  "..\\XCRes_ENU\\Res\\windows.bmp"
+
+IDB_BITMAP_TRACKBAR2    BITMAP                  "..\\XCRes_ENU\\Res\\TrackBar2.bmp"
+
+IDB_BITMAP_TRACKTHUMB2  BITMAP                  "..\\XCRes_ENU\\Res\\TrackThumb2.bmp"
+
+IDB_BITMAP_DLGBACKGROUND BITMAP                  "..\\XCRes_ENU\\Res\\DlgBackground.bmp"
+
+IDB_BITMAP_DOWNARROW    BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonNormal.bmp"
+
+IDB_BITMAP_UPARROW      BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonNormal.bmp"
+
+IDB_BITMAP_DOWNARROWDOWN BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonDown.bmp"
+
+IDB_BITMAP_DOWNARROWHOVER BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonHover.bmp"
+
+IDB_BITMAP_UPARROWDOWN  BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonDown.bmp"
+
+IDB_BITMAP_UPARROWHOVER BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonHover.bmp"
+
+IDB_BITMAP_EXTREMECOPYUI BITMAP                  "..\\XCRes_ENU\\Res\\ExetremeCopyUI.bmp"
+
+IDB_BITMAP_DESKTOP      BITMAP                  "..\\XCRes_ENU\\Res\\windows_desktop.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 298, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "Dari:",IDC_STATIC_FROM,10,25,31,8
+    LTEXT           "--",IDC_STATIC_SOURCEFILE,49,24,226,8,SS_PATHELLIPSIS
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,49,38,226,8,SS_PATHELLIPSIS
+    LTEXT           "Sekarang:",IDC_STATIC,9,47,38,8
+    LTEXT           "Total:",IDC_STATIC,23,55,20,8
+    LTEXT           "Kecepatan:",IDC_STATIC,5,65,38,8
+    LTEXT           "Waktu Berlangsung:",IDC_STATIC,2,73,67,8
+    LTEXT           "Waktu Tersisa:",IDC_STATIC,2,83,50,8
+    LTEXT           "Ukuran Tuntas:",IDC_STATIC,104,73,61,8
+    LTEXT           "Ukuran Sisa:",IDC_STATIC,113,83,42,8
+    RTEXT           "Berkas:",IDC_STATIC,14,12,27,8
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,50,12,216,11,SS_ENDELLIPSIS
+    CTEXT           "-",IDC_STATIC_SPEED,51,65,37,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,67,73,35,8
+    LTEXT           "Menghitung",IDC_STATIC_REMAINTIME,53,83,38,8
+    LTEXT           "-",IDC_STATIC_TRANSFORMSIZE,158,73,27,8
+    LTEXT           "-",IDC_STATIC_REMAINSIZE,154,83,37,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,48,56,226,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,48,48,226,6
+    LTEXT           "Total Ukuran:",IDC_STATIC,109,65,48,8
+    LTEXT           "-",IDC_STATIC_TOTALSIZE,158,65,33,8
+    LTEXT           "Berkas Tuntas:",IDC_STATIC,198,73,50,8
+    LTEXT           "Berkas Sisa:",IDC_STATIC,198,83,43,8
+    LTEXT           "Berkas Total:",IDC_STATIC,199,65,51,8
+    LTEXT           "-",IDC_STATIC_DONEFILES,249,73,45,8
+    LTEXT           "-",IDC_STATIC_REMAINFILES,242,83,45,8
+    LTEXT           "-",IDC_STATIC_TOTALFILES,249,65,45,8
+    RTEXT           "Ke:",IDC_STATIC_TO,9,37,32,8
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,1,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,134,288,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,4,104,8,14
+    LTEXT           "Senarai Berkas Gagal:",IDC_STATIC,5,124,85,8
+    PUSHBUTTON      "Coba lagi Semua yang Gagal",IDC_BUTTON_RETRYALLFAILED,5,249,108,14
+    LTEXT           "Status: ",IDC_STATIC,5,92,26,8
+    LTEXT           "-",IDC_STATIC_STATUS,37,92,50,8
+    LTEXT           "Verifikasi:",IDC_STATIC,105,92,39,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,150,92,51,8
+    PUSHBUTTON      "&Jalankan",IDC_BUTTON_RUNANDPAUSE,26,103,49,15
+    PUSHBUTTON      "&Keluar",IDC_BUTTON_EXIT,213,104,49,14
+    PUSHBUTTON      "&Abaikan",IDC_BUTTON_SKIP,92,103,49,15
+    PUSHBUTTON      "Verifikasikan Data",IDC_BUTTON_VERIFYDATA,136,249,76,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Pelajari Edisi Pro",IDC_STATIC_GETPRO,113,2,55,8
+    PUSHBUTTON      "&Bantuan",IDC_BUTTON_HELP,243,249,50,14
+END
+
+IDD_DIALOG_MESSAGEBOX DIALOGEX 0, 0, 248, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Ya",IDC_BUTTON_MSGBOX_YES,54,43,50,14
+    PUSHBUTTON      "&Tidak",IDC_BUTTON_MSGBOX_NO,153,43,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,29,7,187,30
+    PUSHBUTTON      "&OK",IDC_BUTTON_MSGBOX_OK,104,43,50,14
+END
+
+IDD_DIALOG_MAIN_SIMPLY DIALOGEX 0, 0, 278, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Sekarang:",IDC_STATIC,3,35,32,8
+    LTEXT           "Total:",IDC_STATIC,17,43,20,8
+    LTEXT           "Kecepatan:",IDC_STATIC,3,56,43,8
+    LTEXT           "Waktu Berlangsung:",IDC_STATIC,109,56,66,8
+    LTEXT           "Waktu Tersisa:",IDC_STATIC,170,68,51,8
+    LTEXT           "Berkas:",IDC_STATIC,21,12,210,8,SS_ENDELLIPSIS
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,20,13,189,11
+    CTEXT           "-",IDC_STATIC_SPEED,46,56,42,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,178,56,34,8
+    LTEXT           "Menghitung",IDC_STATIC_REMAINTIME,223,68,43,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,39,44,234,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,39,36,234,6
+    LTEXT           "Ke:",IDC_STATIC_TO,23,24,12,8
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,44,24,234,8,SS_PATHELLIPSIS
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,2,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,111,269,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,4,80,8,14
+    LTEXT           "Senarai Berkas Gagal:",IDC_STATIC,5,100,102,8
+    PUSHBUTTON      "Coba lagi Semua yang Gagal",IDC_BUTTON_RETRYALLFAILED,4,225,103,14
+    LTEXT           "Status:",IDC_STATIC,4,68,26,8
+    LTEXT           "-",IDC_STATIC_STATUS,36,68,34,8
+    LTEXT           "Verifikasi:",IDC_STATIC,71,68,39,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,112,68,51,8
+    PUSHBUTTON      "Verifikasikan Data",IDC_BUTTON_VERIFYDATA,127,225,78,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "&Jalankan",IDC_BUTTON_RUNANDPAUSE,20,79,49,15
+    PUSHBUTTON      "&Keluar",IDC_BUTTON_EXIT,212,79,49,15
+    PUSHBUTTON      "&Abaikan",IDC_BUTTON_SKIP,85,79,49,15
+    LTEXT           "Pelajari Edisi Pro",IDC_STATIC_GETPRO,108,2,55,8
+    PUSHBUTTON      "&Bantuan",IDC_BUTTON_HELP,223,225,50,14
+END
+
+IDD_DIALOG_SAMENAME2 DIALOGEX 0, 0, 300, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Berkas Baru:",IDC_STATIC,9,81,43,8
+    LTEXT           "Static",IDC_STATIC_SOURCENAME,74,80,218,8,SS_PATHELLIPSIS
+    LTEXT           "Static",IDC_STATIC_SAMEFILENAME,76,16,167,9,SS_ENDELLIPSIS
+    LTEXT           "Berkas yang Sama:",IDC_STATIC,6,17,65,8
+    LTEXT           "Waktu Pembuatan:",IDC_STATIC,9,92,65,8
+    LTEXT           "Ukuran:",IDC_STATIC,24,103,26,8
+    LTEXT           "Static",IDC_STATIC_SOURCESIZE,55,103,32,8
+    LTEXT           "Static",IDC_STATIC_SOURCECREATETIME,71,92,71,8
+    LTEXT           "Waktu Ubahsuai:",IDC_STATIC,147,92,62,8
+    LTEXT           "Static",IDC_STATIC_SOURCEMODIFYTIME,209,92,85,8
+    LTEXT           "Berkas Lama:",IDC_STATIC,21,33,52,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONNAME,75,33,159,8,SS_PATHELLIPSIS
+    LTEXT           "Waktu Pembuatan:",IDC_STATIC,9,44,66,8
+    LTEXT           "Ukuran:",IDC_STATIC,21,55,28,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONSIZE,55,55,31,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONCREATETIME,73,44,73,8
+    LTEXT           "Waktu Ubahsuai:",IDC_STATIC,146,44,56,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONMODIFYTIME,210,44,80,8
+    LTEXT           "Ganti dengan:",IDC_STATIC_REPLACE,17,67,74,10
+    LTEXT           "Static",IDC_STATIC_ICON,256,6,35,25
+    PUSHBUTTON      "&Ganti",IDC_BUTTON_REPLACE,92,119,67,14
+    PUSHBUTTON      "&Abaikan",IDC_BUTTON_SKIP,233,119,67,14
+    PUSHBUTTON      "Ganti &Semua",IDC_BUTTON_REPLACEALL,163,119,67,14
+    PUSHBUTTON      "&Tambah",IDC_BUTTON_MORELESS,6,120,34,14
+    PUSHBUTTON      "Na&ma Ulang",IDC_BUTTON_RENAME,92,140,67,14
+    PUSHBUTTON      "Na&ma Ulang Semua",IDC_BUTTON_RNAMEALL,163,140,67,14
+    PUSHBUTTON      "Aba&ikan Semua",IDC_BUTTON_SKIPALL,233,140,67,14
+    CONTROL         "Ukuran yang Sama",IDC_CHECK_SKIPSAMESIZE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,57,166,75,10
+    CONTROL         "Waktu Ubahsuai yang Sama",IDC_CHECK_SKIPSAMEMODIFYTIME,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,140,166,107,10
+    GROUPBOX        "Abaikan Semua berdasarkan Syarat, atau Ganti",IDC_STATIC,45,156,211,23
+    PUSHBUTTON      "&Bantuan",IDC_BUTTON_HELP,6,140,32,14
+    PUSHBUTTON      "Keluar",IDC_BUTTON_EXIT,45,140,41,14
+    LTEXT           "Lebih Baru",IDC_STATIC_NEWER,131,69,34,8
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 254, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Silahkan masukkan nomor seri anda:",IDC_STATIC,13,14,108,8
+    EDITTEXT        IDC_EDIT_NUMBER1,19,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,65,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER2,79,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,125,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER3,137,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,183,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER4,198,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "&Batal",IDC_BUTTON_CANCEL,103,52,50,14
+    PUSHBUTTON      "&OK",IDC_BUTTON_REGISTER,28,52,50,14
+    LTEXT           "Static",IDC_STATIC_LICENCE,125,7,117,8
+    PUSHBUTTON      "&Beli",IDC_BUTTON_BUY,181,52,50,14
+END
+
+IDD_DIALOG_CONFIGURATION DIALOGEX 0, 0, 390, 240
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",ID_BUTTON_OK,225,218,50,14
+    PUSHBUTTON      "&Batal",IDC_BUTTON_CANCEL,315,218,50,14
+    LTEXT           "Gaya Antarmuka Pengguna:",IDC_STATIC,15,20,91,8
+    COMBOBOX        IDC_COMBO_UITYPE,117,19,89,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Sebagai penyalin bawaan Explorer",IDC_CHECK_ASDEFAULTCOPYING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,49,153,10
+    CONTROL         "Mainkan suara setelah penyalinan tuntas:",IDC_CHECK_PLAYFINISHEDSOUND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,137,166,10
+    EDITTEXT        IDC_EDIT_SOUNDFILE,29,149,160,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SELECTSOUNDFILE,191,150,16,13
+    CONTROL         "Jendela Paling Atas",IDC_CHECK_TOPMOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,61,146,10
+    CTEXT           "Static",IDC_STATIC_VERSIONNAME,102,3,150,8
+    CONTROL         "Minimum ke Baki Batang Tugas",IDC_CHECK_MINIMUMTOTRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,72,143,10
+    CONTROL         "Tulis Berkas Log",IDC_CHECK_WRITELOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,83,141,10
+    LTEXT           "Maks. Berkas Gagal dalam Senarai:",IDC_STATIC,17,195,119,8
+    EDITTEXT        IDC_EDIT_MAXFAILEDFILE,135,192,57,14,ES_NUMBER
+    LTEXT           "Bahasa: ",IDC_STATIC,16,35,39,8
+    COMBOBOX        IDC_COMBO_LANGUAGE,116,35,90,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Verifikasikan data setelah penyalinan tuntas",IDC_CHECK_VERIFYDATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,94,194,10
+    CONTROL         "Tutup jendela setelah terverifikasi",IDC_CHECK_CLOSEAFTERVERIFY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,105,163,10
+    LTEXT           "Salinan data penyangga ukuran:",IDC_STATIC,19,170,105,8
+    COMBOBOX        IDC_COMBO_FILEDATABUF,135,168,39,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MB",IDC_STATIC,181,170,10,8
+    CONTROL         "Tanya Saya",IDC_RADIO_SAMEFILE_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,225,26,54,10
+    CONTROL         "Namai Ulang Semua",IDC_RADIO_SAMEFILE_RENAMEALL,"Button",BS_AUTORADIOBUTTON,283,26,79,10
+    CONTROL         "Ganti Semua",IDC_RADIO_SAMEFILE_REPLACEALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,39,56,10
+    CONTROL         "Lompati Semua",IDC_RADIO_SAMEFILE_SKIPALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,283,40,61,10
+    CONTROL         "",IDC_RADIO_SAMEFILE_REPLACENEWER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,53,16,10
+    CONTROL         "Tanya Saya",IDC_RADIO_ERROR_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,229,128,54,10
+    CONTROL         "Coba Lagi",IDC_RADIO_ERROR_RETRY,"Button",BS_AUTORADIOBUTTON,301,127,47,10
+    CONTROL         "Abaikan",IDC_RADIO_ERROR_IGNORE,"Button",BS_AUTORADIOBUTTON,229,141,41,10
+    CONTROL         "Keluar",IDC_RADIO1_ERROR_EXIT,"Button",BS_AUTORADIOBUTTON,301,141,36,10
+    GROUPBOX        "Jika bertemu 'Nama Berkas yang Sama' maka",IDC_STATIC,215,16,170,95
+    GROUPBOX        "Jika bertemu 'Galat' maka",IDC_STATIC,216,117,168,36
+    CONTROL         "Otomatis periksa versi terbaru",IDC_CHECK_CHECKNEWVERSION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,116,113,10
+    PUSHBUTTON      "Posisi Hidupkan",IDC_BUTTON_POSITIONDLG,16,218,70,14
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,287,166,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Tanya Saya",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,228,195,54,10
+    CONTROL         "Abaikan",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,281,195,41,10
+    CONTROL         "Keluar",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,325,195,36,10
+    GROUPBOX        "Coba Lagi Gagal",IDC_STATIC,215,158,169,51
+    LTEXT           "Jumlah Maksimum:",IDC_STATIC,228,168,60,8
+    LTEXT           "Jika melebihi jumlah Maks. lalu:",IDC_STATIC,229,183,99,8
+    COMBOBOX        IDC_COMBO_IFCONDITION,296,53,80,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Jika file sumber",IDC_STATIC,238,54,50,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,296,71,80,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "atau",IDC_STATIC,266,91,21,8
+    LTEXT           ",",IDC_STATIC,378,56,8,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,296,89,80,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "file sumber",IDC_STATIC,250,73,38,8
+    PUSHBUTTON      "&Bantuan",IDC_BUTTON_HELP,106,218,50,14
+    CONTROL         "antrian tugas jika penyimpanan yang digunakan",IDC_CHECK_QUEUETASK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,127,169,10
+END
+
+IDD_DIALOG_SPECIFYSRCDST DIALOGEX 0, 0, 345, 354
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+MENU IDR_MENU_TASKDLG
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Pelajari Edisi Pro",IDC_STATIC_GETPRO,136,2,55,8
+    PUSHBUTTON      "&Tapis",IDC_BUTTON_WILDCARD2,162,16,42,14,WS_DISABLED
+    PUSHBUTTON      "&Hapus",IDC_BUTTON_DELETE,210,16,41,14
+    PUSHBUTTON      "Bers&ihkan",IDC_BUTTON_CLEAR,288,16,48,14
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSESRCFILE,88,18,14,11
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSEDSTFOLDER,62,104,14,11
+    PUSHBUTTON      "&Tambah",IDC_BUTTON_MORELESS,9,151,39,14
+    PUSHBUTTON      "&Salin",IDC_BUTTON_RUNCOPY,63,151,50,14
+    PUSHBUTTON      "&Pindahkan",IDC_BUTTON_RUNMOVE,122,151,50,14
+    PUSHBUTTON      "&Keluar",IDC_BUTTON_EXIT,282,151,52,14
+    LISTBOX         IDC_LIST_SOURCEFILE,9,32,326,66,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "E&kspor ke Berkas",IDC_BUTTON_EXPORTTOFILE,153,332,85,15
+    PUSHBUTTON      "&Impor dari Berkas",IDC_BUTTON_IMPORTFROMFILE,248,332,85,15
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,266,242,26,12,ES_NUMBER
+    CONTROL         "Tanya Saya",IDC_RADIO_SAMEFILEASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,200,70,10
+    CONTROL         "Ganti Judul Semua",IDC_RADIO_SAMEFILERENAME,"Button",BS_AUTORADIOBUTTON,90,200,72,10
+    CONTROL         "Ganti Semua",IDC_RADIO_SAMEFILEREPLACE,"Button",BS_AUTORADIOBUTTON,17,213,70,10
+    CONTROL         "Abaikan Semua",IDC_RADIO_SAMEFILESKIP,"Button",BS_AUTORADIOBUTTON,90,214,68,10
+    CONTROL         "",IDC_RADIO_SAMEFILEREPLACENEWER,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,17,224,11,14
+    CONTROL         "Tanya Saya",IDC_RADIO_ERRORASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,187,203,72,10
+    CONTROL         "Coba Lagi",IDC_RADIO_ERRORRETRY,"Button",BS_AUTORADIOBUTTON,269,202,57,10
+    CONTROL         "Abaikan",IDC_RADIO_ERRORIGNORE,"Button",BS_AUTORADIOBUTTON,187,216,66,10
+    CONTROL         "Keluar",IDC_RADIO1_ERROREXIT,"Button",BS_AUTORADIOBUTTON,269,216,52,10
+    CONTROL         "Jendela",IDC_RADIO_SHOWMODEWINDOW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,34,293,54,10
+    CONTROL         "Baki",IDC_RADIO_SHOWMODETRAY,"Button",BS_AUTORADIOBUTTON,103,293,53,10
+    CONTROL         "Tanya Saya",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,188,271,55,10
+    CONTROL         "Abaikan",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,245,271,45,10
+    CONTROL         "Keluar",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,290,271,33,10
+    LTEXT           "Pelipat Tujuan:",IDC_STATIC,10,105,51,8
+    LTEXT           "Berkas/Pelipat Asal:",IDC_STATIC,10,19,71,8
+    LTEXT           "(Seret && Jatuhkan berkas/pelipat ke dalam Kotak Senarai)",IDC_STATIC,76,106,185,8
+    GROUPBOX        "Jika bertemu 'Nama Berkas yang Sama' maka",IDC_STATIC,8,190,163,89
+    GROUPBOX        "Moda Tampilan",IDC_STATIC_SHOWMODE,9,283,161,23
+    GROUPBOX        "Jika bertemu 'Galat' maka",IDC_STATIC,179,192,157,36
+    GROUPBOX        "Coba Lagi Gagal",IDC_STATIC,180,234,154,57
+    LTEXT           "Jumlah Maksimum:",IDC_STATIC,195,244,65,8
+    LTEXT           "Jika melebihi jumlah Maks. maka kemudian:",IDC_STATIC,188,259,125,8
+    LISTBOX         IDC_LIST_DESTINATION,9,118,326,28,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Hapus",IDC_BUTTON_DELETEDST,260,102,32,14
+    PUSHBUTTON      "Ber&sihkan",IDC_BUTTON_CLEARDST,294,102,41,14
+    CONTROL         "Verifikasikan data setelah penyalinan tuntas",IDC_CHECK_VERIFYDATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,173,197,10
+    LTEXT           "Jalankan perintah setelah tuntas:",IDC_STATIC,13,313,118,8
+    EDITTEXT        IDC_EDIT_FINISHEVENT,129,312,204,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_IFCONDITION,84,225,70,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_THENOPERATION,84,242,70,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "atau",IDC_STATIC,54,261,21,8
+    LTEXT           ",",IDC_STATIC,156,228,8,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,84,260,70,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Jika file sumber",IDC_STATIC,30,227,50,8
+    LTEXT           "file sumber",IDC_STATIC,42,243,38,8
+    PUSHBUTTON      "&Bantuan",IDC_BUTTON_HELP,10,332,50,14
+END
+
+IDD_DIALOG_ABOUT DIALOGEX 0, 0, 183, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Tutup",IDCANCEL,67,91,50,14
+    CTEXT           "Static",IDC_STATIC_ABOUTVERSION,38,2,109,8
+    CTEXT           "Static",IDC_STATIC_ALLRIGHT,41,66,108,11
+    CTEXT           "Static",IDC_STATIC_REGIST,53,19,84,8
+END
+
+IDD_DIALOG_MESSAGEBOX_COPYERROROPER DIALOGEX 0, 0, 248, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Keluar",IDC_BUTTON_MSGBOX_CANCEL,170,58,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,13,4,224,33
+    PUSHBUTTON      "&Abaikan",IDC_BUTTON_MSGBOX_IGNORE,96,58,50,14
+    PUSHBUTTON      "&Coba Lagi",IDC_BUTTON_MSGBOX_RETRY,22,58,50,14
+END
+
+IDD_DIALOG_SPEED DIALOGEX 0, 0, 137, 78
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_SPEED,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS,2,11,126,17
+    LTEXT           "Static",IDC_STATIC_SPEED,103,2,19,8
+    LTEXT           "Kecepatan",IDC_STATIC,3,2,44,8
+    CONTROL         "Verifikasikan data setelah tuntas",IDC_CHECK_VERIFYDATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,43,119,10
+    LTEXT           "Setelah Tugas Beres :",IDC_STATIC,5,33,71,8
+    CONTROL         "Tutup Jendela",IDC_CHECK_CLOSEWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,54,61,10
+    CONTROL         "Tutup Padam",IDC_CHECK_SHUTDOWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,65,50,10
+END
+
+IDD_DIALOG_EDITWILDCARD DIALOGEX 0, 0, 233, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,44,64,50,14
+    PUSHBUTTON      "&Batal",IDCANCEL,140,64,50,14
+    LTEXT           "Static",IDC_STATIC_DESTINATIONWILDCARD,14,10,207,8,SS_PATHELLIPSIS
+    EDITTEXT        IDC_EDIT_WILDCARDINPUT,56,40,96,14,ES_AUTOHSCROLL
+    LTEXT           "Tapis :",IDC_STATIC,20,42,22,8
+    PUSHBUTTON      "&Bantuan",IDC_BUTTON_HELP,167,39,36,14
+    LTEXT           "(Masukkan tapis dengan wildcard, contohnya *.mp3)",IDC_STATIC_TIP,30,28,190,8
+END
+
+IDD_DIALOG_STDLAUNCH DIALOGEX 0, 0, 236, 64
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Batal",IDCANCEL,150,47,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,29,7,187,22
+    PUSHBUTTON      "Konfigurasi",IDC_BUTTON_CONFIGURATION,28,47,50,14
+    LTEXT           "Pelajari Edisi Pro",IDC_STATIC_GETPRO,90,37,53,8
+END
+
+IDD_DIALOG_DOWNLOAD DIALOGEX 0, 0, 256, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mengunduh"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Batal",IDCANCEL,191,47,50,14
+    CONTROL         "",IDC_PROGRESS_DOWNLOAD,"msctls_progress32",WS_BORDER,11,20,230,14
+    LTEXT           "-",IDC_STATIC_FILENAME,12,8,178,8
+    RTEXT           "0%",IDC_STATIC_PERCENT,208,6,33,8
+END
+
+IDD_DIALOG_BUGREPORT DIALOGEX 0, 0, 262, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Laporan Kutu ExtremeCopy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Laporkan Kutu",IDOK,49,178,75,14
+    PUSHBUTTON      "Batal",IDCANCEL,154,178,50,14
+    LTEXT           "Kami mohon maaf karena menampilkan dialog ini untuk menyampaikan bahwa ExtremeCopy berhenti bekerja akibat kutu.",IDC_STATIC,15,13,236,20
+    LTEXT           "Mohon beritahu kami situasi yang terjadi saat sedang menggunakan ExtremeCopy agar kami dapat memperbaiki aplikasi ini di masa depan. Terima Kasih!",IDC_STATIC,15,32,236,25
+    LTEXT           "Surel kontak (opsional):",IDC_STATIC,15,72,76,8
+    EDITTEXT        IDC_EDIT_EMAIL,103,70,148,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROBLEMCONTENT,15,101,236,71,ES_AUTOHSCROLL
+    LTEXT           "Gambaran Masalah:",IDC_STATIC,16,89,64,8
+END
+
+IDD_DIALOG_TASKQUEUE DIALOGEX 0, 0, 243, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Antrian Tugas ExtremeCopy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Sisa Waktu Tugas yang sedang Berjalan:",IDC_STATIC,10,141,132,8
+    LTEXT           "Posisi dalam Antrian Tugas:",IDC_STATIC,33,154,88,8
+    LTEXT           "Jika anda ingin menuntaskan seluruh tugas ini dengan cara tercepat, kami anjurkan agar anda menunggu tugas sebelumnya beres terlebih dahulu sebelum menjalankan tugas ini",IDC_STATIC,14,107,216,28
+    LTEXT           "left time",IDC_STATIC_LEFTTIME,143,141,71,8
+    LTEXT           "position",IDC_STATIC_POSITION,127,154,12,8
+    CONTROL         "",IDC_SPIN_PRIORITY,"msctls_updown32",UDS_ARROWKEYS,142,151,11,14
+    PUSHBUTTON      "Keluar",IDCANCEL,184,191,50,14
+    PUSHBUTTON      "Tetap Jalankan",IDC_BUTTON_RUN,91,190,60,14
+    LTEXT           "Ada penyimpanan relatif yang sedang sibuk.",IDC_STATIC,14,9,143,8
+    CONTROL         "Tugas saat ini akan berjalan secara otomatis begitu posisi antrian mencapai 0.",IDC_CHECK_PAUSE,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,12,171,265,10
+    LTEXT           "Berkas Asal:",IDC_STATIC,13,23,40,8
+    LTEXT           "Pelipat Tujuan:",IDC_STATIC,11,79,49,8
+    LISTBOX         IDC_LIST_SOURCEFILE,11,33,227,42,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_DESTINATIONFOLDER,11,90,227,15,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Bantuan",IDC_BUTTON_HELP,9,190,50,14
+END
+
+IDD_DIALOG_STARTUPPOS DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Penataan Posisi Hidupkan"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,184,162,50,14
+    PUSHBUTTON      "Batal",IDCANCEL,255,162,50,14
+    PUSHBUTTON      "Standar",IDC_BUTTON_RESTOREDEFAULT,10,161,50,14
+    CONTROL         "",IDC_STATIC_SCREEN,"Static",SS_BLACKFRAME,11,8,294,146
+END
+
+IDD_DIALOG_MESSAGE DIALOGEX 0, 0, 175, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Tutup",IDCANCEL,115,58,50,14
+    LTEXT           "Static",IDC_STATIC_MESSAGE,16,10,141,35
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGEBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MAIN_SIMPLY, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SAMENAME2, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_CONFIGURATION, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPECIFYSRCDST, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGEBOX_COPYERROROPER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPEED, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_EDITWILDCARD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STDLAUNCH, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_DOWNLOAD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_BUGREPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_TASKQUEUE, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STARTUPPOS, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGE, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,0,0
+ PRODUCTVERSION 2,4,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "EaserSoft"
+            VALUE "FileDescription", "ExtremeCopy Resource"
+            VALUE "FileVersion", "2.4.0.0"
+            VALUE "InternalName", "XCRes_IDN"
+            VALUE "LegalCopyright", "Copyright (C) 2020"
+            VALUE "OriginalFilename", "XCRes_IDN.dll"
+            VALUE "ProductName", "ExtremeCopy Resource"
+            VALUE "ProductVersion", "2.4.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HAND         CURSOR                  "..\\XCRes_ENU\\Res\\hand.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EXTREMECOPY         ICON                    "..\\XCRes_ENU\\Res\\ExtremeCopy.ico"
+
+IDI_ICON_STATUS_FAIL    ICON                    "..\\XCRes_ENU\\Res\\Status_Fail.ico"
+
+IDI_ICON_STATUS_RUNNING ICON                    "..\\XCRes_ENU\\Res\\Status_Running.ico"
+
+IDI_ICON_STATUS_SUCCESS ICON                    "..\\XCRes_ENU\\Res\\Status_Success.ico"
+
+IDI_ICON_STATUS_WAITING ICON                    "..\\XCRes_ENU\\Res\\Status_Waiting.ico"
+
+IDI_SMALL               ICON                    "..\\XCRes_ENU\\Res\\small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "TaskDialogMenu"
+    BEGIN
+        MENUITEM "Selaku Tugas Salin",          ID_MENU_ASCOPYTASK
+        MENUITEM "Selaku Tugas Pindah",         ID_MENU_ASMOVETASK
+    END
+    POPUP "OpenSrcMenu"
+    BEGIN
+        MENUITEM "Berkas",                      ID_MENU_OPENSRCFILE
+        MENUITEM "Pelipat",                     ID_MENU_OPENSRCFOLDER
+    END
+    POPUP "FailedFileList"
+    BEGIN
+        MENUITEM "&Batal",                      ID_MENU_FAILEDFILELIST_CANCEL
+        MENUITEM "&Coba Lagi",                  ID_MENU_FAILEDFILELIST_RETRY
+        MENUITEM SEPARATOR
+        POPUP "Lokasi"
+        BEGIN
+            MENUITEM "Asal",                        ID_MENU_FAILEDFILELIST_LOCATION_SOURCE
+            MENUITEM "Tujuan",                      ID_MENU_FAILEDFILELIST_LOCATION_DESTINATION
+        END
+        POPUP "Properti"
+        BEGIN
+            MENUITEM "Asal",                        ID_MENU_FAILEDFILELIST_PROPERTY_SOURCE
+            MENUITEM "Tujuan",                      ID_MENU_FAILEDFILELIST_PROPERTY_DESTINAMTION
+        END
+    END
+END
+
+IDR_MENU_TASKDLG MENU
+BEGIN
+    POPUP "Alat"
+    BEGIN
+        MENUITEM "Konfigurasi",                 ID_MENU_CONFIGURATION
+        MENUITEM "Daftar",                      ID_MENU_REGISTER
+    END
+    POPUP "Bantuan"
+    BEGIN
+        MENUITEM "Tentang",                     ID_MENU_ABOUT
+        MENUITEM "Bantuan",                     ID_MENU_HELP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_EXTREMECOPY ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_SUREEXIT "Anda yakin hendak membatalkan tugas salin saat ini?"
+    IDS_TITLE_SAMEFILEDLG   "Nama Berkas yang Sama"
+    IDS_BUTTON_MORE         "&Tambah"
+    IDS_BUTTON_LESS         "&Kurang"
+    IDS_BUTTON_CONTINUE     "Lanjutkan"
+    IDC_EXTREMECOPY         "EXTREMECOPY"
+    IDS_BUTTON_PAUSE        "&Jeda"
+    IDS_TITLE_APP           "ExtremeCopy"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_ALREADREGISTED 
+                            "Anda telah mendaftar, Terima kasih untuk membeli!"
+    IDS_TITLE_CONFIGURATION "Konfigurasi"
+    IDS_UITYPE_SIMPLE       "Sederhana"
+    IDS_UITYPE_NORMAL       "Normal"
+    IDS_FORMAT_COPYOF       "Salin"
+    IDS_TITLE_WARNING       "Peringatan"
+    IDS_MESSAGEBOX_INPUTSOURCEFILE "Harap tetapkan berkas atau pelipat asal!"
+    IDS_MESSAGEBOX_INPUTDESTINATIONFOLDER "Harap tetapkan pelipat tujuan!"
+    IDS_TITLE_APP_PRO       "ExtremeCopy Pro"
+    IDS_TITLE_ABOUT         "Tentang"
+    IDS_LANGUAGE_NAME       "Indonesian"
+    IDS_RIGHTMENUITEM_PASTE "Pasta Extreme"
+    IDS_MESSAGEBOX_STANDARDEDTIONNOMAINDIALOG 
+                            "Tidak ada jendela utama untuk versi standar, anda bisa menggunakan 'Pasta' atau 'Pasta Ekstrem' secara langsung dari menu klik kanan Windows Explorer."
+    IDS_TOOLTIP_MINIMIZETRAY "Minimalkan ke baki batang tugas"
+    IDS_TOOLTIP_CONTROLCOPYSPEED 
+                            "Anda bisa mengendalikan fitur salin saat ini dengan kendali di sebelah kiri"
+    IDS_FORMAT_TRAYUITEXT   "Berkas: %s\r\nKecepatan: %s\r\nPerkembangan: %s / %s \r\nBerlangsung: %s\r\nTersisa: %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICAIONPARAMETER 
+                            "Tak ada parameter identifikasi: '%s' dari '%s'"
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICATIONSWITCH 
+                            "Tak ada pertukaran identifikasi: '%s'"
+    IDS_CMDLN_ERROR_SPECIFYDESTINATIONFOLDER 
+                            "Silahkan tetapkan direktori tujuan"
+    IDS_CMDLN_ERROR_FORMAT_SPECIFYPARAMETER "parameter '%s' mengalami galat"
+    IDS_CMDLN_ERROR_SPECIFYPRIMARYSWITCH 
+                            "Silahkan tetapkan perintah primer untuk dijalankan, seperti: '-src' dan '-dst'"
+    IDS_TITLE_ERROR         "Galat"
+    IDS_CMDLN_ERROR_CMDLNERROR "Galat Baris Perintah: "
+    IDS_STRING_ALLFILE      "Semua Berkas"
+    IDS_TOOLTIP_EXPORTFILEBUTTON 
+                            "Ekspor penataan saat ini ke berkas tugas ExtremeCopy yang dapat digunakan lagi ketika mengklik 'Impor dari berkas' atau menggunakan '-task_file' dalam baris perintah"
+    IDS_TOOLTIP_IMPORTFILE  "Impor berkas tugas ExtremeCopy ke penataan saat ini."
+    IDS_TASKXMLERROR_CANTSUPPORTVERSION 
+                            "Tak bisa mendukung versi berkas tugas saat ini. Mungkin aplikasi anda sudah usang."
+    IDS_TASKXMLERROR_EXECUTECOMMAND "Galat 'eksekusi perintah' "
+    IDS_TASKXMLERROR_SHOWMODE "Galat 'moda tampilan'"
+    IDS_TASKXMLERROR_SAMEFILEREACTION "Galat 'reaksi berkas yang sama'"
+    IDS_TASKXMLERROR_ERRORREACTION "Galat 'reaksi galat'"
+    IDS_TASKXMLERROR_OUTOFRETRY "Galat 'melampaui batas jumlah coba lagi'"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_SWITCHDOESNTSUPPORTINCURRENTEDITION 
+                            "Bertukar '%s' tak didukung dalam edisi ini"
+    IDS_TITLE_WILDCARDDLG   "Tapis"
+    IDS_MESSAGEBOX_INPUTLEGALWILDCARD 
+                            "Silahkan masukkan wildcard sah yang termasuk '*' atau '?'"
+    IDS_TITLE_REGISTER      "Daftar"
+    IDS_RIGHTMENUITEM_EXECUTEBYXC "Eksekusi oleh ExtremeCopy"
+    IDS_MESSAGEBOX_ERROREXITAPP "Tugas Salin akan Keluar akibat Galat"
+    IDS_ABOUT_FREEFORHOMEUSER "Gratis Bagi Pengguna Rumahan"
+    IDS_ABOUT_ALREADYREGESITER "Telah Terdaftar!"
+    IDS_ABOUT_UNREGISTER    "Tak Terdaftar!"
+    IDS_TASKXMLERROR_INVALIDFORMAT "Berkas Tugas ExtremeCopy Tak Sah!"
+    IDS_TASKXMLERROR_NOSRCORDSTFILEORFOLDER 
+                            "Tidak ada berkas maupun pelipat yang ditetapkan baik dalam asal maupun tujuan"
+    IDS_FAILFILETITLE_NO    "Tidak."
+    IDS_FAILFILETITLE_STATUS "Status"
+    IDS_FAILFILETITLE_SOURCEFILE "Asal"
+    IDS_FAILFILETITLE_DESTINATION "Tujuan"
+    IDS_FAILFILETITLE_ERRORCODESTRING "Alasan"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILFILETITLE_CREATETIME "Waktu"
+    IDS_FAILFILETITLE_STATUS_FAILED "Gagal"
+    IDS_FAILFILETITLE_STATUS_WAITING "Menunggu"
+    IDS_FAILFILETITLE_STATUS_SUCCESS "Sukses"
+    IDS_FAILFILETITLE_STATUS_RUNNING "Berjalan"
+    IDS_MESSAGEBOX_OVERMAXFAILEDFILESNUMBER 
+                            "Terlalu Banyak Berkas Gagal, hingga melebihi Jumlah Maks. 'Abaikan', dan Pesan Galat Saat Ini ialah:"
+    IDS_RIGHTMENUITEM_WINDOWPASTE "Pasta Windows"
+    IDS_FAILFILETITLE_ERRORCODE "Kode"
+    IDS_ERROR_APPERROR      "Galat terdeteksi oleh aplikasi"
+    IDS_ERROR_INVALIDFILENAME "Nama berkas tak sah"
+    IDS_ERROR_UNKNOWN       "Galat Tak Dikenal"
+    IDS_ERROR_SUCCESS       "Sukses!"
+    IDS_MESSAGEBOX_QUITCONFIRM 
+                            "ExtremeCopy sedang berjalan, anda tetap yakin hendak keluar?"
+    IDS_STRING_VERIFYINGDATA "Memverifikasikan data ...."
+    IDS_MESSAGEBOX_INVALIDFILENAME "Nama Berkas Tak Sah"
+    IDS_MESSAGEBOX_CANOTREADFILEDATA "Tak bisa membaca berkas data"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_WRITEFILEFAILED "Penulisan data gagal"
+    IDS_STRING_SOURCEFILE   "Berkas Asal"
+    IDS_STRING_DESTINATIONFILE "Berkas Target"
+    IDS_STRING_STATUS_COPYING "Menyalin"
+    IDS_STRING_STATUS_PAUSE "Jeda"
+    IDS_STRING_STATUS_VERFYING "Memverifikasikan"
+    IDS_STRING_STATUS_FINISHED "Tuntas"
+    IDS_STRING_STATUS_READY "Siap"
+    IDS_MESSAGEBOX_AREYOUUSRESKIP "Anda yakin hendak mengabaikan?"
+    IDS_STRING_VERIFICATION_SAME "Sama"
+    IDS_STRING_VERIFICATION_DIFF "Berbeda"
+    IDS_MESSAGEBOX_RECURSIVEFOLDERERROR 
+                            "Pelipat Rekursif Tak Tepat.\r\n Asal: %s\r\n Tujuan:%s"
+    IDS_MESSAGEBOX_RESTARTFORUPDATELANGUAGE 
+                            "Bahasa Antarmuka Pengguna tak akan diubah hingga meluncurkan ExtremeCopy lagi"
+    IDS_MESSAGEBOX_NEWVERSIONFORMAT 
+                            "Terdapat versi baru %s %s % tersedia, apakah anda ingin mengunduhnya?\r\n\r\nJika anda memilih Ya, tentukan sebuah pelipat untuk menaruhnya"
+    IDS_STRING_FINALVERSION "Final"
+    IDS_MESSAGEBOX_AREYOUSURECANCELDOWNLOAD 
+                            "Apakah anda yakin ingin membatalkan pengunduhan berkas?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING_STATUS_MOVING "bergerak"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_PLEASESPECIFYVALIDEMAIL 
+                            "Silahkan tetapkan alamat surel yang sah!"
+    IDS_MESSAGEBOX_ALLOFFOLLOWTASKSWILLPAUSE 
+                            "Seluruh antrian tugas berikut ini tak akan berjalan otomatis hingga tugas saat ini beres, apakah anda yakin hendak menjalankannya secara manual?"
+    IDS_MESSAGEBOX_AREYOUSURERUNANYWAY 
+                            "Apakah anda yakin tetap ingin menjalankan tugas?"
+    IDS_STRING_ASKME        "Tanya Saya"
+    IDS_STRING_REPLACE      "Ganti "
+    IDS_STRING_SKIP         "Lompati "
+    IDS_STRING_RENAME       "Namai Ulang"
+    IDS_STRING_BIGGER       "Lebih Besar"
+    IDS_STRING_OLDER        "Lebih Tua"
+    IDS_STRING_NEWER        "Lebih Baru"
+    IDS_STRING_SMALLER      "Lebih Kecil"
+    IDS_STRING_SAMETIMEANDSIZE "Sama Waktu Dan Ukuran"
+    IDS_RIGHTMENUITEM_EXTREME_COPY "Ekstrim copy ke sini"
+    IDS_RIGHTMENUITEM_EXTREME_MOVE "Ekstrim pindah ke sini"
+    IDS_RIGHTMENUITEM_LAUNCH_WITH_EXTREMECOPY "Memulai dengan ExtremeCopy Pro"
+END
+
+#endif    // Indonesian (Indonesia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

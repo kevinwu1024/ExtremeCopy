@@ -1,0 +1,908 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+LANGUAGE LANG_PORTUGUESE, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 304, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "De:",IDC_STATIC_FROM,3,25,28,8
+    LTEXT           "--",IDC_STATIC_SOURCEFILE,48,24,247,8,SS_PATHELLIPSIS
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,48,38,247,8,SS_PATHELLIPSIS
+    LTEXT           "Atual:",IDC_STATIC,3,47,28,8
+    LTEXT           "Total:",IDC_STATIC,3,54,20,8
+    LTEXT           "Velocidade:",IDC_STATIC,3,65,42,8
+    LTEXT           "Tempo decorrido:",IDC_STATIC,3,73,56,8
+    LTEXT           "Tempo restante:",IDC_STATIC,3,83,53,8
+    LTEXT           "Processados:",IDC_STATIC,105,73,66,8
+    LTEXT           "Restante:",IDC_STATIC,106,83,61,8
+    LTEXT           "Arquivo:",IDC_STATIC,3,12,29,8
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,48,12,247,11,SS_ENDELLIPSIS
+    CTEXT           "-",IDC_STATIC_SPEED,47,65,37,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,65,73,35,8
+    LTEXT           "calculando",IDC_STATIC_REMAINTIME,63,83,35,8
+    LTEXT           "-",IDC_STATIC_TRANSFORMSIZE,156,73,27,8
+    LTEXT           "-",IDC_STATIC_REMAINSIZE,156,83,27,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,48,56,247,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,48,48,247,6
+    LTEXT           "Tam. total:",IDC_STATIC,106,65,40,8
+    LTEXT           "-",IDC_STATIC_TOTALSIZE,156,65,33,8
+    LTEXT           "Processados:",IDC_STATIC,197,73,43,8
+    LTEXT           "Restantes:",IDC_STATIC,197,83,43,8
+    LTEXT           "Node arquivos:",IDC_STATIC,197,65,64,8
+    LTEXT           "-",IDC_STATIC_DONEFILES,255,73,45,8
+    LTEXT           "-",IDC_STATIC_REMAINFILES,255,83,45,8
+    LTEXT           "-",IDC_STATIC_TOTALFILES,255,65,45,8
+    LTEXT           "Para: ",IDC_STATIC_TO,3,37,22,8
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,1,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,134,298,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,5,104,8,14
+    LTEXT           "Lista de falhas:",IDC_STATIC,5,124,53,8
+    PUSHBUTTON      "Tentar todos de novo",IDC_BUTTON_RETRYALLFAILED,5,249,99,14
+    LTEXT           "Status: ",IDC_STATIC,3,92,26,8
+    LTEXT           "-",IDC_STATIC_STATUS,37,92,50,8
+    LTEXT           "Verificação:",IDC_STATIC,106,92,39,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,156,92,51,8
+    PUSHBUTTON      "&Executar",IDC_BUTTON_RUNANDPAUSE,31,104,49,14
+    PUSHBUTTON      "&Fechar",IDC_BUTTON_EXIT,239,104,49,14
+    PUSHBUTTON      "&Ignorar",IDC_BUTTON_SKIP,92,104,49,14
+    PUSHBUTTON      "Verificar dados",IDC_BUTTON_VERIFYDATA,181,249,58,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Experimentar a Edição Pro",IDC_STATIC_GETPRO,101,2,90,8
+    PUSHBUTTON      "&Ajuda",IDC_BUTTON_HELP,252,249,50,14
+END
+
+IDD_DIALOG_MESSAGEBOX DIALOGEX 0, 0, 248, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Sim",IDC_BUTTON_MSGBOX_YES,54,43,50,14
+    PUSHBUTTON      "&Não",IDC_BUTTON_MSGBOX_NO,153,43,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,29,7,187,30
+    PUSHBUTTON      "&OK",IDC_BUTTON_MSGBOX_OK,104,43,50,14
+END
+
+IDD_DIALOG_MAIN_SIMPLY DIALOGEX 0, 0, 286, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Atual:",IDC_STATIC,3,35,28,8
+    LTEXT           "Total:",IDC_STATIC,3,43,20,8
+    LTEXT           "Velocidade:",IDC_STATIC,3,56,43,8
+    LTEXT           "Tempo decorrido:",IDC_STATIC,87,56,60,8
+    LTEXT           "Tempo restante:",IDC_STATIC,183,56,54,8
+    LTEXT           "Arquivo:",IDC_STATIC,21,12,210,8,SS_ENDELLIPSIS
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,20,13,189,11
+    CTEXT           "-",IDC_STATIC_SPEED,44,56,42,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,145,56,34,8
+    LTEXT           "Calculando",IDC_STATIC_REMAINTIME,240,56,35,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,39,44,238,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,39,36,238,6
+    LTEXT           "Para:",IDC_STATIC_TO,3,24,21,8
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,41,24,238,8,SS_PATHELLIPSIS
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,2,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,111,277,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,4,80,8,14
+    LTEXT           "Lista de falhas:",IDC_STATIC,5,100,53,8
+    PUSHBUTTON      "Tentar todos de novo",IDC_BUTTON_RETRYALLFAILED,4,225,80,14
+    LTEXT           "Status: ",IDC_STATIC,3,68,26,8
+    LTEXT           "-",IDC_STATIC_STATUS,33,68,34,8
+    LTEXT           "Verificação:",IDC_STATIC,87,68,39,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,144,68,51,8
+    PUSHBUTTON      "Verificar dados",IDC_BUTTON_VERIFYDATA,150,225,58,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "&Executar",IDC_BUTTON_RUNANDPAUSE,24,80,49,14
+    PUSHBUTTON      "&Fechar",IDC_BUTTON_EXIT,187,80,49,14
+    PUSHBUTTON      "&Ignorar",IDC_BUTTON_SKIP,81,80,49,14
+    LTEXT           "Experimentar a Edição Pro",IDC_STATIC_GETPRO,101,2,90,8
+    PUSHBUTTON      "&Ajuda",IDC_BUTTON_HELP,232,225,50,14
+END
+
+IDD_DIALOG_SAMENAME2 DIALOGEX 0, 0, 282, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Novo arquivo:",IDC_STATIC,9,81,45,8
+    LTEXT           "Static",IDC_STATIC_SOURCENAME,59,80,184,8,SS_PATHELLIPSIS
+    LTEXT           "Static",IDC_STATIC_SAMEFILENAME,61,16,114,9,SS_ENDELLIPSIS
+    LTEXT           "Mesmo arquivo:",IDC_STATIC,5,17,55,8
+    LTEXT           "Criação:",IDC_STATIC,28,92,29,8
+    LTEXT           "Tamanho:",IDC_STATIC,22,103,31,8
+    LTEXT           "Static",IDC_STATIC_SOURCESIZE,59,103,32,8
+    LTEXT           "Static",IDC_STATIC_SOURCECREATETIME,59,92,71,8
+    LTEXT           "Modificação:",IDC_STATIC,133,92,42,8
+    LTEXT           "Static",IDC_STATIC_SOURCEMODIFYTIME,182,92,74,8
+    LTEXT           "Arquivo antigo:",IDC_STATIC,5,33,55,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONNAME,60,33,183,8,SS_PATHELLIPSIS
+    LTEXT           "Criação:",IDC_STATIC,27,44,42,8
+    LTEXT           "Tamanho:",IDC_STATIC,21,55,41,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONSIZE,59,55,31,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONCREATETIME,59,44,73,8
+    LTEXT           "Modificação:",IDC_STATIC,132,44,42,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONMODIFYTIME,181,44,80,8
+    LTEXT           "Substituído por:",IDC_STATIC_REPLACE,4,67,82,10
+    LTEXT           "Static",IDC_STATIC_ICON,181,6,35,25
+    PUSHBUTTON      "&Substituir",IDC_BUTTON_REPLACE,101,119,52,14
+    PUSHBUTTON      "&Ignorar",IDC_BUTTON_SKIP,225,119,52,14
+    PUSHBUTTON      "Substituir &tudo",IDC_BUTTON_REPLACEALL,159,119,61,14
+    PUSHBUTTON      "&Mais",IDC_BUTTON_MORELESS,7,120,25,14
+    PUSHBUTTON      "Re&nomear",IDC_BUTTON_RENAME,101,140,52,14
+    PUSHBUTTON      "R&enomear tudo",IDC_BUTTON_RNAMEALL,159,140,61,14
+    PUSHBUTTON      "&Ignorar tudo",IDC_BUTTON_SKIPALL,225,140,52,14
+    CONTROL         "Mesmo tamanho",IDC_CHECK_SKIPSAMESIZE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,38,166,68,10
+    CONTROL         "Mesma data de modificação",IDC_CHECK_SKIPSAMEMODIFYTIME,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,125,166,117,10
+    GROUPBOX        "Ignorar tudo pelos critérios indicados; do contrário, substituir",IDC_STATIC,32,156,224,23
+    PUSHBUTTON      "&Ajuda",IDC_BUTTON_HELP,7,140,25,14
+    PUSHBUTTON      "Fechar",IDC_BUTTON_EXIT,36,140,50,14
+    LTEXT           "Mais atual",IDC_STATIC_NEWER,115,69,33,8
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 254, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Favor informar a licença:",IDC_STATIC,13,13,108,8
+    EDITTEXT        IDC_EDIT_NUMBER1,19,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,65,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER2,79,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,125,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER3,137,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,183,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER4,198,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "&Cancelar",IDC_BUTTON_CANCEL,103,56,50,14
+    PUSHBUTTON      "&OK",IDC_BUTTON_REGISTER,28,56,50,14
+    LTEXT           "Static",IDC_STATIC_LICENCE,125,13,117,8
+    PUSHBUTTON      "&Comprar",IDC_BUTTON_BUY,181,56,50,14
+END
+
+IDD_DIALOG_CONFIGURATION DIALOGEX 0, 0, 392, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",ID_BUTTON_OK,233,219,50,14
+    PUSHBUTTON      "&Cancelar",IDC_BUTTON_CANCEL,323,219,50,14
+    LTEXT           "Capa da Interface Gráfica:",IDC_STATIC,6,20,93,8
+    COMBOBOX        IDC_COMBO_UITYPE,100,19,89,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tornar o copiador padrão do Explorer",IDC_CHECK_ASDEFAULTCOPYING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,50,164,10
+    CONTROL         "Usar aviso sonoro após copiar:",IDC_CHECK_PLAYFINISHEDSOUND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,144,183,10
+    EDITTEXT        IDC_EDIT_SOUNDFILE,29,157,160,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SELECTSOUNDFILE,191,158,16,13
+    CONTROL         "Janela sempre na frente",IDC_CHECK_TOPMOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,62,158,10
+    CTEXT           "Static",IDC_STATIC_VERSIONNAME,30,3,150,8
+    CONTROL         "Minimizar na Área de Notificação",IDC_CHECK_MINIMUMTOTRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,74,186,10
+    CONTROL         "Criar log",IDC_CHECK_WRITELOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,86,106,10
+    LTEXT           "Máx. de falhados na lista:",IDC_STATIC,49,201,86,8
+    EDITTEXT        IDC_EDIT_MAXFAILEDFILE,140,198,57,14,ES_NUMBER
+    LTEXT           "Idioma: ",IDC_STATIC,16,35,39,8
+    COMBOBOX        IDC_COMBO_LANGUAGE,99,35,90,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Verificar dados após término da cópia",IDC_CHECK_VERIFYDATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,98,184,10
+    CONTROL         "Fechar a janela após a verificação",IDC_CHECK_CLOSEAFTERVERIFY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,110,184,10
+    LTEXT           "Cópia Tamanho do buffer de dados:",IDC_STATIC,15,180,116,8
+    COMBOBOX        IDC_COMBO_FILEDATABUF,137,178,39,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MB",IDC_STATIC,183,180,10,8
+    CONTROL         "Perguntar-me",IDC_RADIO_SAMEFILE_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,225,26,60,10
+    CONTROL         "Renomear tudo",IDC_RADIO_SAMEFILE_RENAMEALL,"Button",BS_AUTORADIOBUTTON,294,26,65,10
+    CONTROL         "Substituir tudo",IDC_RADIO_SAMEFILE_REPLACEALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,39,63,10
+    CONTROL         "Ignorar tudo",IDC_RADIO_SAMEFILE_SKIPALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,294,39,61,10
+    CONTROL         "",IDC_RADIO_SAMEFILE_REPLACENEWER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,53,16,10
+    CONTROL         "Perguntar-me",IDC_RADIO_ERROR_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,234,128,60,10
+    CONTROL         "Tentar de novo",IDC_RADIO_ERROR_RETRY,"Button",BS_AUTORADIOBUTTON,292,127,65,10
+    CONTROL         "Ignorar",IDC_RADIO_ERROR_IGNORE,"Button",BS_AUTORADIOBUTTON,234,141,40,10
+    CONTROL         "Fechar",IDC_RADIO1_ERROR_EXIT,"Button",BS_AUTORADIOBUTTON,292,141,38,10
+    GROUPBOX        "Se o nome for idêntico,",IDC_STATIC,220,15,171,98
+    GROUPBOX        "Se houver erro,",IDC_STATIC,220,119,169,36
+    CONTROL         "Procurar atualização automaticamente",IDC_CHECK_CHECKNEWVERSION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,122,139,10
+    PUSHBUTTON      "Startup Position",IDC_BUTTON_POSITIONDLG,13,219,70,14
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,287,166,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Perguntar-me",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,228,195,60,10
+    CONTROL         "Ignorar",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,286,195,40,10
+    CONTROL         "Fechar",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,330,195,38,10
+    GROUPBOX        "Error Retry",IDC_STATIC,219,159,170,51
+    LTEXT           "Maximum Times:",IDC_STATIC,228,168,53,8
+    LTEXT           "Se passar máx. de tentativas:",IDC_STATIC,229,183,98,8
+    COMBOBOX        IDC_COMBO_IFCONDITION,296,52,80,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "se arquivo fonte",IDC_STATIC,237,53,54,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,296,70,66,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "senão",IDC_STATIC,256,92,33,8
+    LTEXT           ",",IDC_STATIC,378,55,8,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,296,90,49,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "então",IDC_STATIC,255,73,33,8
+    PUSHBUTTON      "&Ajuda",IDC_BUTTON_HELP,100,219,50,14
+    CONTROL         "Fila de tarefas Auto se o armazenamento relacionado em uso",IDC_CHECK_QUEUETASK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,133,211,10
+END
+
+IDD_DIALOG_SPECIFYSRCDST DIALOGEX 0, 0, 333, 356
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+MENU IDR_MENU_TASKDLG
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Experimentar a Edição Pro",IDC_STATIC_GETPRO,114,2,90,8
+    PUSHBUTTON      "&Filtrar",IDC_BUTTON_WILDCARD2,201,16,42,14,WS_DISABLED
+    PUSHBUTTON      "&Remover",IDC_BUTTON_DELETE,249,16,36,14
+    PUSHBUTTON      "&Apagar",IDC_BUTTON_CLEAR,286,16,36,14
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSESRCFILE,99,18,14,11
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSEDSTFOLDER,73,102,14,11
+    PUSHBUTTON      "&Mais",IDC_BUTTON_MORELESS,9,151,28,14
+    PUSHBUTTON      "&Copiar",IDC_BUTTON_RUNCOPY,53,151,50,14
+    PUSHBUTTON      "&Mover",IDC_BUTTON_RUNMOVE,112,151,50,14
+    PUSHBUTTON      "&Fechar",IDC_BUTTON_EXIT,268,151,52,14
+    LISTBOX         IDC_LIST_SOURCEFILE,9,32,312,66,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "E&xportar como arquivo",IDC_BUTTON_EXPORTTOFILE,140,336,85,15
+    PUSHBUTTON      "&Importar de arquivo",IDC_BUTTON_IMPORTFROMFILE,235,336,85,15
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,253,243,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Perguntar-me",IDC_RADIO_SAMEFILEASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,200,63,10
+    CONTROL         "Renomear todos",IDC_RADIO_SAMEFILERENAME,"Button",BS_AUTORADIOBUTTON,76,200,65,10
+    CONTROL         "Substituir todos",IDC_RADIO_SAMEFILEREPLACE,"Button",BS_AUTORADIOBUTTON,11,213,63,10
+    CONTROL         "Ignorar todos",IDC_RADIO_SAMEFILESKIP,"Button",BS_AUTORADIOBUTTON,76,214,66,10
+    CONTROL         "",IDC_RADIO_SAMEFILE_REPLACENEWER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,230,11,10
+    CONTROL         "Perguntar-me",IDC_RADIO_ERRORASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,184,202,57,10
+    CONTROL         "Tentar de novo",IDC_RADIO_ERRORRETRY,"Button",BS_AUTORADIOBUTTON,243,201,64,10
+    CONTROL         "Ignorar",IDC_RADIO_ERRORIGNORE,"Button",BS_AUTORADIOBUTTON,184,215,53,10
+    CONTROL         "Fechar",IDC_RADIO1_ERROREXIT,"Button",BS_AUTORADIOBUTTON,243,215,49,10
+    CONTROL         "Janela",IDC_RADIO_SHOWMODEWINDOW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,21,298,38,10
+    CONTROL         "Área de Notificação",IDC_RADIO_SHOWMODETRAY,"Button",BS_AUTORADIOBUTTON,77,298,78,10
+    CONTROL         "Perguntar-me",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,177,272,58,10
+    CONTROL         "Ignorar",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,238,272,37,10
+    CONTROL         "Fechar",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,282,272,36,10
+    LTEXT           "Pasta de destino:",IDC_STATIC,10,103,62,8
+    LTEXT           "Arquivo/pasta de origem:",IDC_STATIC,10,19,85,8
+    LTEXT           "(Arraste && solte arquivos/pastas na lista)",IDC_STATIC,90,104,136,8
+    GROUPBOX        "Se houver nome idêntico,",IDC_STATIC,8,190,157,95
+    GROUPBOX        "Modo de Exibição",IDC_STATIC_SHOWMODE,9,288,156,23
+    GROUPBOX        "Se houver erro,",IDC_STATIC,174,191,147,36
+    GROUPBOX        "Tentar de novo",IDC_STATIC,173,235,148,54
+    LTEXT           "Máximo de tentativas:",IDC_STATIC,194,245,53,8
+    LTEXT           "Se as tentativas falharem:",IDC_STATIC,178,260,91,8
+    LISTBOX         IDC_LIST_DESTINATION,9,116,311,28,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Remover",IDC_BUTTON_DELETEDST,243,100,36,14
+    PUSHBUTTON      "&Apagar",IDC_BUTTON_CLEARDST,285,100,36,14
+    CONTROL         "Verificar dados após o término da cópia",IDC_CHECK_VERIFYDATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,173,201,10
+    LTEXT           "Executar comando ao terminar:",IDC_STATIC,13,319,105,8
+    EDITTEXT        IDC_EDIT_FINISHEVENT,116,317,203,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_IFCONDITION,75,229,80,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "se arquivo fonte",IDC_STATIC,21,231,54,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,75,246,80,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "senão",IDC_STATIC,34,267,33,8
+    LTEXT           ",",IDC_STATIC,157,232,8,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,75,265,80,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "então",IDC_STATIC,36,249,33,8
+    PUSHBUTTON      "&Ajuda",IDC_BUTTON_HELP,14,336,50,14
+END
+
+IDD_DIALOG_ABOUT DIALOGEX 0, 0, 183, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Fechar",IDCANCEL,67,89,50,14
+    CTEXT           "Static",IDC_STATIC_ABOUTVERSION,38,2,109,8
+    CTEXT           "Static",IDC_STATIC_ALLRIGHT,41,69,108,11
+    CTEXT           "Static",IDC_STATIC_REGIST,53,20,84,8
+END
+
+IDD_DIALOG_MESSAGEBOX_COPYERROROPER DIALOGEX 0, 0, 248, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Fechar",IDC_BUTTON_MSGBOX_CANCEL,170,58,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,13,4,224,33
+    PUSHBUTTON      "&Ignorar",IDC_BUTTON_MSGBOX_IGNORE,96,58,50,14
+    PUSHBUTTON      "&Tentar de novo",IDC_BUTTON_MSGBOX_RETRY,14,58,58,14
+END
+
+IDD_DIALOG_SPEED DIALOGEX 0, 0, 112, 77
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_SPEED,"msctls_trackbar32",TBS_BOTH,1,11,107,20
+    LTEXT           "Static",IDC_STATIC_SPEED,84,2,19,8
+    LTEXT           "Velocidade",IDC_STATIC,3,2,21,8
+    CONTROL         "Verificar dados ao terminar",IDC_CHECK_VERIFYDATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,42,98,10
+    LTEXT           "Após concluir a tarefa:",IDC_STATIC,5,32,74,8
+    CONTROL         "Fechar a janela",IDC_CHECK_CLOSEWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,53,65,10
+    CONTROL         "Fechar o programa",IDC_CHECK_SHUTDOWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,64,88,10
+END
+
+IDD_DIALOG_EDITWILDCARD DIALOGEX 0, 0, 233, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,44,64,50,14
+    PUSHBUTTON      "&Cancelar",IDCANCEL,140,64,50,14
+    LTEXT           "Static",IDC_STATIC_DESTINATIONWILDCARD,14,10,207,8,SS_PATHELLIPSIS
+    EDITTEXT        IDC_EDIT_WILDCARDINPUT,56,40,96,14,ES_AUTOHSCROLL
+    LTEXT           "Filtros:",IDC_STATIC,20,42,22,8
+    PUSHBUTTON      "&Ajuda",IDC_BUTTON_HELP,167,39,34,14
+    LTEXT           "(especifique os filtros assim: *.mp3 *.txt)",IDC_STATIC_TIP,30,28,145,8
+END
+
+IDD_DIALOG_STDLAUNCH DIALOGEX 0, 0, 236, 64
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Cancelar",IDCANCEL,150,47,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,29,7,187,22
+    PUSHBUTTON      "Configuração",IDC_BUTTON_CONFIGURATION,28,47,50,14
+    LTEXT           "Experimentar a Edição Pro",IDC_STATIC_GETPRO,70,37,85,8
+END
+
+IDD_DIALOG_DOWNLOAD DIALOGEX 0, 0, 256, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Baixando"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancelar",IDCANCEL,191,47,50,14
+    CONTROL         "",IDC_PROGRESS_DOWNLOAD,"msctls_progress32",WS_BORDER,11,20,230,14
+    LTEXT           "-",IDC_STATIC_FILENAME,12,8,178,8
+    RTEXT           "0%",IDC_STATIC_PERCENT,208,6,33,8
+END
+
+IDD_DIALOG_BUGREPORT DIALOGEX 0, 0, 262, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ExtremeCopy Bug Report"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Comunicar Defeito",IDOK,52,157,71,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,157,157,50,14
+    LTEXT           "Desculpe o aviso, mas o ExtremeCopy travou por causa de defeito.\r\n\r\nFavor informar-nos possíveis detalhes do que estava fazendo quando isto aconteceu para que possamos aperfeiçoar o programa para você no futuro.",IDC_STATIC,15,7,236,45
+    LTEXT           "Email p/ contato (opcional):",IDC_STATIC,15,54,88,8
+    EDITTEXT        IDC_EDIT_EMAIL,103,52,148,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROBLEMCONTENT,15,83,236,71,ES_AUTOHSCROLL
+    LTEXT           "Descrição do problema:",IDC_STATIC,16,71,76,8
+END
+
+IDD_DIALOG_TASKQUEUE DIALOGEX 0, 0, 280, 209
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fila de Tarefas do ExtremeCopy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Tempo restante para o fim da tarefa:",IDC_STATIC,15,142,120,8
+    LTEXT           "Posição da tarefa na fila de espera:",IDC_STATIC,19,154,115,8
+    LTEXT           "Se quiser terminar todas estas tarefas o mais rapidamente possível, recomendamos que espere a conclusão das anteriores antes de executar esta.",IDC_STATIC,14,107,248,30
+    LTEXT           "left time",IDC_STATIC_LEFTTIME,137,142,71,8
+    LTEXT           "position",IDC_STATIC_POSITION,136,154,14,8
+    CONTROL         "",IDC_SPIN_PRIORITY,"msctls_updown32",UDS_ARROWKEYS,159,152,11,14
+    PUSHBUTTON      "Fechar",IDCANCEL,217,188,50,14
+    PUSHBUTTON      "Executar assim mesmo",IDC_BUTTON_RUN,111,188,80,14
+    LTEXT           "A armazenagem relativa est?cheia.",IDC_STATIC,14,9,116,8
+    CONTROL         "A tarefa atual ser?executada automaticamente \r\nlogo que a posição na fila for 0.",IDC_CHECK_PAUSE,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,9,171,268,10
+    LTEXT           "Arquivos de origem:",IDC_STATIC,13,23,65,8
+    LTEXT           "Pastas de destino:",IDC_STATIC,11,79,60,8
+    LISTBOX         IDC_LIST_SOURCEFILE,11,33,260,42,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_DESTINATIONFOLDER,11,90,260,15,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Ajuda",IDC_BUTTON_HELP,13,188,50,14
+END
+
+IDD_DIALOG_STARTUPPOS DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuração da Posição Inicial"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,184,162,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,255,162,50,14
+    PUSHBUTTON      "Padrão",IDC_BUTTON_RESTOREDEFAULT,10,161,50,14
+    CONTROL         "",IDC_STATIC_SCREEN,"Static",SS_BLACKFRAME,11,8,294,146
+END
+
+IDD_DIALOG_MESSAGE DIALOGEX 0, 0, 175, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancelar",IDCANCEL,115,58,50,14
+    LTEXT           "Static",IDC_STATIC_MESSAGE,16,10,141,35
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGEBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MAIN_SIMPLY, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SAMENAME2, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_CONFIGURATION, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPECIFYSRCDST, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGEBOX_COPYERROROPER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPEED, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_EDITWILDCARD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STDLAUNCH, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_DOWNLOAD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_BUGREPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_TASKQUEUE, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STARTUPPOS, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGE, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_TITLE        BITMAP                  "..\\XCRes_ENU\\Res\\TitleBackground.bmp"
+
+IDB_BITMAP_PROGRESSBAR  BITMAP                  "..\\XCRes_ENU\\Res\\ProgressBar.bmp"
+
+IDB_BITMAP_SPEEDBUTTONNORMAL BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonNormal.bmp"
+
+IDB_BITMAP_SPEEDBUTTONDOWN BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonDown.bmp"
+
+IDB_BITMAP_SPEEDBUTTONHOVER BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonHover.bmp"
+
+IDB_BITMAP_WINDOWS      BITMAP                  "..\\XCRes_ENU\\Res\\windows.bmp"
+
+IDB_BITMAP_TRACKBAR2    BITMAP                  "..\\XCRes_ENU\\Res\\TrackBar2.bmp"
+
+IDB_BITMAP_TRACKTHUMB2  BITMAP                  "..\\XCRes_ENU\\Res\\TrackThumb2.bmp"
+
+IDB_BITMAP_DLGBACKGROUND BITMAP                  "..\\XCRes_ENU\\Res\\DlgBackground.bmp"
+
+IDB_BITMAP_DOWNARROW    BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonNormal.bmp"
+
+IDB_BITMAP_UPARROW      BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonNormal.bmp"
+
+IDB_BITMAP_DOWNARROWDOWN BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonDown.bmp"
+
+IDB_BITMAP_DOWNARROWHOVER BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonHover.bmp"
+
+IDB_BITMAP_UPARROWDOWN  BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonDown.bmp"
+
+IDB_BITMAP_UPARROWHOVER BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonHover.bmp"
+
+IDB_BITMAP_EXTREMECOPYUI BITMAP                  "..\\XCRes_ENU\\Res\\ExetremeCopyUI.bmp"
+
+IDB_BITMAP_DESKTOP      BITMAP                  "..\\XCRes_ENU\\Res\\windows_desktop.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,0,0
+ PRODUCTVERSION 2,4,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "EaserSoft"
+            VALUE "FileDescription", "ExtremeCopy Resource"
+            VALUE "FileVersion", "2.4.0.0"
+            VALUE "InternalName", "XCRes_PRT"
+            VALUE "LegalCopyright", "Copyright (C) 2020"
+            VALUE "OriginalFilename", "XCRes_PRT.dll"
+            VALUE "ProductName", "ExtremeCopy resource file"
+            VALUE "ProductVersion", "2.4.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HAND         CURSOR                  "..\\XCRes_ENU\\Res\\hand.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EXTREMECOPY         ICON                    "..\\XCRes_ENU\\Res\\ExtremeCopy.ico"
+
+IDI_ICON_STATUS_FAIL    ICON                    "..\\XCRes_ENU\\Res\\Status_Fail.ico"
+
+IDI_ICON_STATUS_RUNNING ICON                    "..\\XCRes_ENU\\Res\\Status_Running.ico"
+
+IDI_ICON_STATUS_SUCCESS ICON                    "..\\XCRes_ENU\\Res\\Status_Success.ico"
+
+IDI_ICON_STATUS_WAITING ICON                    "..\\XCRes_ENU\\Res\\Status_Waiting.ico"
+
+IDI_SMALL               ICON                    "..\\XCRes_ENU\\Res\\small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "TaskDialogMenu"
+    BEGIN
+        MENUITEM "Como Tarefa de Cópia",        ID_MENU_ASCOPYTASK
+        MENUITEM "Como Tarefa de Transferência", ID_MENU_ASMOVETASK
+    END
+    POPUP "OpenSrcMenu"
+    BEGIN
+        MENUITEM "Arquivo",                     ID_MENU_OPENSRCFILE
+        MENUITEM "Pasta",                       ID_MENU_OPENSRCFOLDER
+    END
+    POPUP "FailedFileList"
+    BEGIN
+        MENUITEM "&Cancelar",                   ID_MENU_FAILEDFILELIST_CANCEL
+        MENUITEM "&Tentar de novo",             ID_MENU_FAILEDFILELIST_RETRY
+        MENUITEM SEPARATOR
+        POPUP "Local"
+        BEGIN
+            MENUITEM "Origem",                      ID_MENU_FAILEDFILELIST_LOCATION_SOURCE
+            MENUITEM "Destino",                     ID_MENU_FAILEDFILELIST_LOCATION_DESTINATION
+        END
+        POPUP "Propriedades"
+        BEGIN
+            MENUITEM "Origem",                      ID_MENU_FAILEDFILELIST_PROPERTY_SOURCE
+            MENUITEM "Destino",                     ID_MENU_FAILEDFILELIST_PROPERTY_DESTINAMTION
+        END
+    END
+END
+
+IDR_MENU_TASKDLG MENU
+BEGIN
+    POPUP "Ferramenta"
+    BEGIN
+        MENUITEM "Configuração",                ID_MENU_CONFIGURATION
+        MENUITEM "Licenciar",                   ID_MENU_REGISTER
+    END
+    POPUP "Ajuda"
+    BEGIN
+        MENUITEM "Sobre",                       ID_MENU_ABOUT
+        MENUITEM "Ajuda",                       ID_MENU_HELP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_EXTREMECOPY ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_SUREEXIT "Quer mesmo cancelar a operação de cópia atual?"
+    IDS_TITLE_SAMEFILEDLG   "Arquivo de nome idêntico"
+    IDS_BUTTON_MORE         "&Mais"
+    IDS_BUTTON_LESS         "&Menos"
+    IDS_BUTTON_CONTINUE     "Continuar"
+    IDC_EXTREMECOPY         "EXTREMECOPY"
+    IDS_BUTTON_PAUSE        "&Pausa"
+    IDS_TITLE_APP           "ExtremeCopy"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_ALREADREGISTED 
+                            "Você está licenciado. Obrigado pela compra!"
+    IDS_TITLE_CONFIGURATION "Configurar"
+    IDS_UITYPE_SIMPLE       "Simples"
+    IDS_UITYPE_NORMAL       "Normal"
+    IDS_FORMAT_COPYOF       "Copiar"
+    IDS_TITLE_WARNING       "Aviso"
+    IDS_MESSAGEBOX_INPUTSOURCEFILE 
+                            "Favor especificar um arquivo ou pasta de origem!"
+    IDS_MESSAGEBOX_INPUTDESTINATIONFOLDER 
+                            "Favor especificar a pasta de destino!"
+    IDS_TITLE_APP_PRO       "ExtremeCopy Pro"
+    IDS_TITLE_ABOUT         "Sobre"
+    IDS_LANGUAGE_NAME       "Português"
+    IDS_RIGHTMENUITEM_PASTE "Colagem Ultrarrápida"
+    IDS_MESSAGEBOX_STANDARDEDTIONNOMAINDIALOG 
+                            "A versão padrão não tem janela. Você pode 'colar' ou fazer 'Colagem Ultrarrápida' diretamente do menu de contexto do Windows Explorer."
+    IDS_TOOLTIP_MINIMIZETRAY "Minimizar na Área de Notificação"
+    IDS_TOOLTIP_CONTROLCOPYSPEED 
+                            "Voc?pode controlar as características da tarefa de cópia atual pelos botões no lado esquerdo do painel"
+    IDS_FORMAT_TRAYUITEXT   "Arquivo: %s\r\nVelocidade: %s\r\nAndamento: %s / %s \r\nDecorrido: %s\r\nRestante: %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICAIONPARAMETER 
+                            "Nenhum parâmetro de identificação: '%s' de '%s'"
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICATIONSWITCH 
+                            "Nenhum comando de identificação: '%s'"
+    IDS_CMDLN_ERROR_SPECIFYDESTINATIONFOLDER 
+                            "Favor especificar a pasta de destino"
+    IDS_CMDLN_ERROR_FORMAT_SPECIFYPARAMETER "O parâmetro '%s' contém erro"
+    IDS_CMDLN_ERROR_SPECIFYPRIMARYSWITCH 
+                            "Favor especificar o comando principal para execut?lo, tal como: '-src' e '-dst'"
+    IDS_TITLE_ERROR         "Erro"
+    IDS_CMDLN_ERROR_CMDLNERROR "Erro de Linha de Comando: "
+    IDS_STRING_ALLFILE      "Todos os arquivos"
+    IDS_TOOLTIP_EXPORTFILEBUTTON 
+                            "Exporta a configuração da tarefa atual do ExtremeCopy, que poder?ser usada novamente ao se clicar em 'Importar configuração' ou como comando DOS, como '-task_file'"
+    IDS_TOOLTIP_IMPORTFILE  "Incorporar tarefa do ExtremeCopy ?configuração atual."
+    IDS_TASKXMLERROR_CANTSUPPORTVERSION 
+                            "A versão da tarefa atual ?inválida. Talvez seu programa seja antigo."
+    IDS_TASKXMLERROR_EXECUTECOMMAND "Erro de 'comando executar'"
+    IDS_TASKXMLERROR_SHOWMODE "Erro de 'modo de exibição'"
+    IDS_TASKXMLERROR_SAMEFILEREACTION "Erro de 'resposta de mesmo arquivo'"
+    IDS_TASKXMLERROR_ERRORREACTION "Erro de 'resposta de erro'"
+    IDS_TASKXMLERROR_OUTOFRETRY "Erro de 'tentativas esgotadas'"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_SWITCHDOESNTSUPPORTINCURRENTEDITION 
+                            "Mudar para '%s' não suportado na edição atual"
+    IDS_TITLE_WILDCARDDLG   "Filtrar"
+    IDS_MESSAGEBOX_INPUTLEGALWILDCARD 
+                            "Favor especificar filtro válido, com '*' ou '?'"
+    IDS_TITLE_REGISTER      "Licenciar"
+    IDS_RIGHTMENUITEM_EXECUTEBYXC "Executar com o ExtremeCopy"
+    IDS_MESSAGEBOX_ERROREXITAPP 
+                            "A Tarefa de Cópia será abortada devido a erro"
+    IDS_ABOUT_FREEFORHOMEUSER "Gratuito para Uso Doméstico"
+    IDS_ABOUT_ALREADYREGESITER "Programa Licenciado!"
+    IDS_ABOUT_UNREGISTER    "Não-Licenciado!"
+    IDS_TASKXMLERROR_INVALIDFORMAT "Tarefa do ExtremeCopy Inválida!"
+    IDS_TASKXMLERROR_NOSRCORDSTFILEORFOLDER 
+                            "Não nenhum arquivo ou pasta especificado na origem ou no destino"
+    IDS_FAILFILETITLE_NO    "Não."
+    IDS_FAILFILETITLE_STATUS "Status"
+    IDS_FAILFILETITLE_SOURCEFILE "Origem"
+    IDS_FAILFILETITLE_DESTINATION "Destino"
+    IDS_FAILFILETITLE_ERRORCODESTRING "Motivo"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILFILETITLE_CREATETIME "Hora"
+    IDS_FAILFILETITLE_STATUS_FAILED "Falhados"
+    IDS_FAILFILETITLE_STATUS_WAITING "Aguardando"
+    IDS_FAILFILETITLE_STATUS_SUCCESS "Processados"
+    IDS_FAILFILETITLE_STATUS_RUNNING "Em execução"
+    IDS_MESSAGEBOX_OVERMAXFAILEDFILESNUMBER 
+                            "Muitas falhas de processamento. Veja a mensagem de erro do máximo de ignorados e erros atuais:"
+    IDS_RIGHTMENUITEM_WINDOWPASTE "Colar pelo Windows"
+    IDS_FAILFILETITLE_ERRORCODE "Código"
+    IDS_ERROR_APPERROR      "Erro detectado pelo programa"
+    IDS_ERROR_INVALIDFILENAME "Nome de arquivo inválido"
+    IDS_ERROR_UNKNOWN       "Erro desconhecido"
+    IDS_ERROR_SUCCESS       "Feito!"
+    IDS_MESSAGEBOX_QUITCONFIRM 
+                            "O ExtremeCopy está sendo executado. Quer mesmo fechá-lo?"
+    IDS_STRING_VERIFYINGDATA "Verificando dados ...."
+    IDS_MESSAGEBOX_INVALIDFILENAME "Nome de arquivo inválido"
+    IDS_MESSAGEBOX_CANOTREADFILEDATA "Não foi possível ler dados do arquivo"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_WRITEFILEFAILED "Falha ao tentar gravar dados de arquivo"
+    IDS_STRING_SOURCEFILE   "Arquivo de Origem"
+    IDS_STRING_DESTINATIONFILE "Arquivo de Destino"
+    IDS_STRING_STATUS_COPYING "Copiando"
+    IDS_STRING_STATUS_PAUSE "Pausa"
+    IDS_STRING_STATUS_VERFYING "Verificando"
+    IDS_STRING_STATUS_FINISHED "Processados"
+    IDS_STRING_STATUS_READY "Pronto"
+    IDS_MESSAGEBOX_AREYOUUSRESKIP "Quer mesmo ignorar estes?"
+    IDS_STRING_VERIFICATION_SAME "Idênticos"
+    IDS_STRING_VERIFICATION_DIFF "Diferentes"
+    IDS_MESSAGEBOX_RECURSIVEFOLDERERROR 
+                            "Subpasta inválida.\r\n Origem: %s\r\n Destino:%s"
+    IDS_MESSAGEBOX_RESTARTFORUPDATELANGUAGE 
+                            "O novo idioma da interface s?aparecer?na próxima abertura do ExtremeCopy"
+    IDS_MESSAGEBOX_NEWVERSIONFORMAT 
+                            "Saiu uma nova versão: %s %s %s - gostaria de baixá-la?\r\n\r\nSe clicar em Sim, especifique uma pasta para salvá-la."
+    IDS_STRING_FINALVERSION "Final"
+    IDS_MESSAGEBOX_AREYOUSURECANCELDOWNLOAD "Quer mesmo cancelar o download?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING_STATUS_MOVING "Movendo"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_PLEASESPECIFYVALIDEMAIL 
+                            "Favor especificar um email válido!"
+    IDS_MESSAGEBOX_ALLOFFOLLOWTASKSWILLPAUSE 
+                            "Todas as seguintes tarefas na fila de espera só serão executadas após o término da atual. Quer mesmo executá-la manualmente?"
+    IDS_MESSAGEBOX_AREYOUSURERUNANYWAY 
+                            "Quer executar a tarefa atual assim mesmo?"
+    IDS_STRING_ASKME        "Perguntar-me"
+    IDS_STRING_REPLACE      "Substituir"
+    IDS_STRING_SKIP         "Ignorar"
+    IDS_STRING_RENAME       "Renomear"
+    IDS_STRING_BIGGER       "Maior"
+    IDS_STRING_OLDER        "Mais velho"
+    IDS_STRING_NEWER        "Mais novo"
+    IDS_STRING_SMALLER      "Menor"
+    IDS_STRING_SAMETIMEANDSIZE "Mesmo tempo e tamanho"
+    IDS_RIGHTMENUITEM_EXTREME_COPY "Cópia extremo para aqui"
+    IDS_RIGHTMENUITEM_EXTREME_MOVE "Movimento extremo para aqui"
+    IDS_RIGHTMENUITEM_LAUNCH_WITH_EXTREMECOPY "Lançar com ExtremeCopy Pro"
+END
+
+#endif    // Portuguese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_MENUITEM     BITMAP                  "..\\XCRes_ENU\\Res\\MenuItem.bmp"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

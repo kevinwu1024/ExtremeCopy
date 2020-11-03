@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ECLComparionDemo", "ECLComparionDemo\ECLComparionDemo.vcxproj", "{4EFEFFBC-2090-4E66-8CA6-E37861186792}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EFEFFBC-2090-4E66-8CA6-E37861186792}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4EFEFFBC-2090-4E66-8CA6-E37861186792}.Debug|Win32.Build.0 = Debug|Win32
+		{4EFEFFBC-2090-4E66-8CA6-E37861186792}.Release|Win32.ActiveCfg = Release|Win32
+		{4EFEFFBC-2090-4E66-8CA6-E37861186792}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

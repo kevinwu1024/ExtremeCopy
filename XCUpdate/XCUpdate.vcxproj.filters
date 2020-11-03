@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{651a4f2b-d479-44c2-b9c6-941256c8a4f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="XCUpdate.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XCUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\WndShadow.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptCmdLineParser.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptFolderSize.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptGlobal.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptMsgQue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptNamePipe.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptRegistry.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptShellTray.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptString.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptThread.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptThreadLock.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptTime.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptTypeDef.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinGraphic.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinHandleMang.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinMessage.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinPath.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\sgi_stl_alloc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\stl_config.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\stl_threads.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\ptMultipleLanguage.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\XCConfiguration.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="XCNewsChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\TinyXML\tinystr.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\TinyXML\tinyxml.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="XCDownloadDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\XCGlobal.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\ptCommCtrl.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\ptDialog.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\CompileMacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptFileDialog.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptProgressBar.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XCUpdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptCmdLineParser.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptFolderSize.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptMsgQue.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptNamePipe.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptRegistry.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptShellTray.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptString.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptThread.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptTime.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptWinHandleMang.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptWinPath.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\WndShadow.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\ptMultipleLanguage.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\XCConfiguration.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="XCNewsChecker.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\TinyXML\tinystr.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\TinyXML\tinyxml.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\TinyXML\tinyxmlerror.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\TinyXML\tinyxmlparser.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="XCDownloadDlg.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\XCGlobal.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\ptCommCtrl.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\ptDialog.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptFileDialog.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptProgressBar.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XCUpdate.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

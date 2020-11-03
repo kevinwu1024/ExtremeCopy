@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug64|Win32">
+      <Configuration>Debug64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Dev)|Win32">
+      <Configuration>Release(Dev)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release64|Win32">
+      <Configuration>Release64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{898D5C62-EFB3-4C89-8E8C-292C813C4C09}</ProjectGuid>
+    <RootNamespace>XCTesting</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug64|Win32'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release64|Win32'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\Practise_Think\Code\OpenSrc\cppunit-1.12.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Practise_Think\Code\OpenSrc\cppunit-1.12.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\Practise_Think\Code\OpenSrc\cppunit-1.12.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Practise_Think\Code\OpenSrc\cppunit-1.12.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\Practise_Think\Code\OpenSrc\cppunit-1.12.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Practise_Think\Code\OpenSrc\cppunit-1.12.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\XCTesting.ico" />
+    <None Include="res\XCTesting.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\App\AppRegister.h" />
+    <ClInclude Include="..\..\App\CompileMacro.h" />
+    <ClInclude Include="..\..\App\ExtremeCopy.h" />
+    <ClInclude Include="..\..\App\ptMultipleLanguage.h" />
+    <ClInclude Include="..\..\App\UI\AboutDlg.h" />
+    <ClInclude Include="..\..\App\UI\ConfigurationDialog.h" />
+    <ClInclude Include="..\..\App\UI\CptComboBox.h" />
+    <ClInclude Include="..\..\App\UI\CptEditBox.h" />
+    <ClInclude Include="..\..\App\UI\CptFileDialog.h" />
+    <ClInclude Include="..\..\App\UI\CptImageList.h" />
+    <ClInclude Include="..\..\App\UI\CptListBox.h" />
+    <ClInclude Include="..\..\App\UI\CptProgressBar.h" />
+    <ClInclude Include="..\..\App\UI\CptPropertySheet.h" />
+    <ClInclude Include="..\..\App\UI\CptSkinHeaderCtrl.h" />
+    <ClInclude Include="..\..\App\UI\CptSkinHorizontalScrollbar.h" />
+    <ClInclude Include="..\..\App\UI\CptSkinTabBar.h" />
+    <ClInclude Include="..\..\App\UI\CptSkinTabCtrl.h" />
+    <ClInclude Include="..\..\App\UI\CptTabCtrl.h" />
+    <ClInclude Include="..\..\App\UI\Hyperlink.h" />
+    <ClInclude Include="..\..\App\UI\MainDialog.h" />
+    <ClInclude Include="..\..\App\UI\ptCommCtrl.h" />
+    <ClInclude Include="..\..\App\UI\ptDialog.h" />
+    <ClInclude Include="..\..\App\UI\ptListView.h" />
+    <ClInclude Include="..\..\App\UI\ptMessageBox.h" />
+    <ClInclude Include="..\..\App\UI\ptSkinButton.h" />
+    <ClInclude Include="..\..\App\UI\ptSkinProgress.h" />
+    <ClInclude Include="..\..\App\UI\ptSkinTrackBar.h" />
+    <ClInclude Include="..\..\App\UI\ptWinToolTip.h" />
+    <ClInclude Include="..\..\App\UI\RegisterCountdownDlg.h" />
+    <ClInclude Include="..\..\App\UI\RegisterDlg.h" />
+    <ClInclude Include="..\..\App\UI\SameFileDialog.h" />
+    <ClInclude Include="..\..\App\UI\SkinDialog.h" />
+    <ClInclude Include="..\..\App\UI\SpeedDialog.h" />
+    <ClInclude Include="..\..\App\UI\XCFailFileListView.h" />
+    <ClInclude Include="..\..\App\UI\XCTaskEditDlg.h" />
+    <ClInclude Include="..\..\App\UI\XCWildcardEditDlg.h" />
+    <ClInclude Include="..\..\App\XCCommandLine.h" />
+    <ClInclude Include="..\..\App\XCConfiguration.h" />
+    <ClInclude Include="..\..\App\XCCopyTask.h" />
+    <ClInclude Include="..\..\App\XCFailedFile.h" />
+    <ClInclude Include="..\..\App\XCGlobal.h" />
+    <ClInclude Include="..\..\App\XCLog.h" />
+    <ClInclude Include="..\..\App\XCNormalWndUIState.h" />
+    <ClInclude Include="..\..\App\XCRunMode.h" />
+    <ClInclude Include="..\..\App\XCStatistics.h" />
+    <ClInclude Include="..\..\App\XCTaryUIState.h" />
+    <ClInclude Include="..\..\App\XCTransApp.h" />
+    <ClInclude Include="..\..\App\XCVerifyResult.h" />
+    <ClInclude Include="..\..\Common\CptCharCode.h" />
+    <ClInclude Include="..\..\Common\ptCmdLineParser.h" />
+    <ClInclude Include="..\..\Common\ptFolderSize.h" />
+    <ClInclude Include="..\..\Common\ptGlobal.h" />
+    <ClInclude Include="..\..\Common\ptMsgQue.h" />
+    <ClInclude Include="..\..\Common\ptNamePipe.h" />
+    <ClInclude Include="..\..\Common\ptRegistry.h" />
+    <ClInclude Include="..\..\Common\ptShellTray.h" />
+    <ClInclude Include="..\..\Common\ptString.h" />
+    <ClInclude Include="..\..\Common\ptThread.h" />
+    <ClInclude Include="..\..\Common\ptThreadLock.h" />
+    <ClInclude Include="..\..\Common\ptTime.h" />
+    <ClInclude Include="..\..\Common\ptTypeDef.h" />
+    <ClInclude Include="..\..\Common\ptWinGraphic.h" />
+    <ClInclude Include="..\..\Common\ptWinMessage.h" />
+    <ClInclude Include="..\..\Common\ptWinPath.h" />
+    <ClInclude Include="..\..\Common\sgi_stl_alloc.h" />
+    <ClInclude Include="..\..\Common\stl_config.h" />
+    <ClInclude Include="..\..\Common\stl_threads.h" />
+    <ClInclude Include="..\..\Common\TinyXML\tinystr.h" />
+    <ClInclude Include="..\..\Common\TinyXML\tinyxml.h" />
+    <ClInclude Include="..\..\Common\WndShadow.h" />
+    <ClInclude Include="..\..\Core\XCAsyncFileDataTransFilter.h" />
+    <ClInclude Include="..\..\Core\XCCopyCondition.h" />
+    <ClInclude Include="..\..\Core\XCCopyingEvent.h" />
+    <ClInclude Include="..\..\Core\XCCore.h" />
+    <ClInclude Include="..\..\Core\XCCoreDefine.h" />
+    <ClInclude Include="..\..\Core\XCDestinationFilter.h" />
+    <ClInclude Include="..\..\Core\XCDuplicateOutputTransFilter.h" />
+    <ClInclude Include="..\..\Core\XCFileChangingBuffer.h" />
+    <ClInclude Include="..\..\Core\XCFileDataBuffer.h" />
+    <ClInclude Include="..\..\Core\XCFileDataCacheTransFilter.h" />
+    <ClInclude Include="..\..\Core\XCFilterProtocol.h" />
+    <ClInclude Include="..\..\Core\XCLocalFileAsynDestnationFilter2.h" />
+    <ClInclude Include="..\..\Core\XCLocalFileAsynSourceFilter.h" />
+    <ClInclude Include="..\..\Core\XCLocalFileSyncDestnationFilter.h" />
+    <ClInclude Include="..\..\Core\XCLocalFileSyncSourceFilter.h" />
+    <ClInclude Include="..\..\Core\XCNetworkSourceFilter.h" />
+    <ClInclude Include="..\..\Core\XCPin.h" />
+    <ClInclude Include="..\..\Core\XCSameDriveMoveFile.h" />
+    <ClInclude Include="..\..\Core\XCSourceFilter.h" />
+    <ClInclude Include="..\..\Core\XCSyncFileDataTransFilter.h" />
+    <ClInclude Include="..\..\Core\XCTransformFilter.h" />
+    <ClInclude Include="..\..\Core\XCWinStorageRelative.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestCase_CptCmdLineParser.h" />
+    <ClInclude Include="TestCase_CptString.h" />
+    <ClInclude Include="TestCase_XCCoreRunning.h" />
+    <ClInclude Include="TestCase_XCGlobal.h" />
+    <ClInclude Include="TestCase_XCSourceFilter.h" />
+    <ClInclude Include="TestCase_XCStatistics.h" />
+    <ClInclude Include="XCTesting.h" />
+    <ClInclude Include="XCTestingDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\App\ptMultipleLanguage.cpp" />
+    <ClCompile Include="..\..\App\XCGlobal.cpp" />
+    <ClCompile Include="..\..\App\XCVerifyResult.cpp" />
+    <ClCompile Include="..\..\Common\ptCmdLineParser.cpp" />
+    <ClCompile Include="..\..\Common\ptFolderSize.cpp" />
+    <ClCompile Include="..\..\Common\ptMsgQue.cpp" />
+    <ClCompile Include="..\..\Common\ptNamePipe.cpp" />
+    <ClCompile Include="..\..\Common\ptRegistry.cpp" />
+    <ClCompile Include="..\..\Common\ptShellTray.cpp" />
+    <ClCompile Include="..\..\Common\ptString.cpp" />
+    <ClCompile Include="..\..\Common\ptThread.cpp" />
+    <ClCompile Include="..\..\Common\ptTime.cpp" />
+    <ClCompile Include="..\..\Common\ptWinPath.cpp" />
+    <ClCompile Include="..\..\Common\TinyXML\tinystr.cpp" />
+    <ClCompile Include="..\..\Common\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="..\..\Common\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\Common\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\Common\WndShadow.cpp" />
+    <ClCompile Include="..\..\Core\XCAsyncFileDataTransFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCCopyCondition.cpp" />
+    <ClCompile Include="..\..\Core\XCCopyingEvent.cpp" />
+    <ClCompile Include="..\..\Core\XCCore.cpp" />
+    <ClCompile Include="..\..\Core\XCCoreDefine.cpp" />
+    <ClCompile Include="..\..\Core\XCDestinationFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCDuplicateOutputTransFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCFileChangingBuffer.cpp" />
+    <ClCompile Include="..\..\Core\XCFileDataBuffer.cpp" />
+    <ClCompile Include="..\..\Core\XCFileDataCacheTransFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCLocalFileAsynDestnationFilter2.cpp" />
+    <ClCompile Include="..\..\Core\XCLocalFileAsynSourceFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCLocalFileSyncDestnationFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCLocalFileSyncSourceFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCNetworkSourceFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCPin.cpp" />
+    <ClCompile Include="..\..\Core\XCSameDriveMoveFile.cpp" />
+    <ClCompile Include="..\..\Core\XCSourceFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCSyncFileDataTransFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCTransformFilter.cpp" />
+    <ClCompile Include="..\..\Core\XCWinStorageRelative.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestCase_CptCmdLineParser.cpp" />
+    <ClCompile Include="TestCase_CptString.cpp" />
+    <ClCompile Include="TestCase_XCCoreRunning.cpp" />
+    <ClCompile Include="TestCase_XCGlobal.cpp" />
+    <ClCompile Include="TestCase_XCSourceFilter.cpp" />
+    <ClCompile Include="TestCase_XCStatistics.cpp" />
+    <ClCompile Include="XCTesting.cpp" />
+    <ClCompile Include="XCTestingDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XCTesting.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,23 @@
+LIBRARY			"ExtremeCopy.dll"
+;DESCRIPTION		"ExtremeCopy Dynamic Link Library"
+
+EXPORTS
+	ExtremeCopy_Stop					@1 ;
+	ExtremeCopy_Pause					@2 ;
+	ExtremeCopy_Continue				@3 ;
+	
+	ExtremeCopy_StartA					@4 ;
+	ExtremeCopy_StartW					@5 ;
+	
+	ExtremeCopy_GetState				@6 ;
+	
+	ExtremeCopy_AttachSrcA				@7 ;
+	ExtremeCopy_AttachSrcW				@8 ;
+	
+	ExtremeCopy_SetDestinationFolderA	@9 ;
+	ExtremeCopy_SetDestinationFolderW	@10 ;
+	
+	ExtremeCopy_SetLicenseKeyA			@11 ;
+	ExtremeCopy_SetLicenseKeyW			@12 ;
+
+	ExtremeCopy_SetBufferSize			@13 ;

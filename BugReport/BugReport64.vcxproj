@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Dev)|Win32">
+      <Configuration>Release(Dev)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A780503E-9946-4769-B2AF-459196CF7941}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BugReport</RootNamespace>
+    <ProjectName>XCBugReport</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Build\x64\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Build\x64\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Build\x64\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <ExecutablePath>$(VCInstallDir)\bin\x86_amd64;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(WindowsSdkDir)\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="BugReport.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ExtremeCopy\App\ptMultipleLanguage.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptComboBox.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptEditBox.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptFileDialog.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptImageList.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptListBox.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptProgressBar.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptPropertySheet.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptTabCtrl.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\Hyperlink.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\ptCommCtrl.h" />
+    <ClInclude Include="..\ExtremeCopy\App\UI\ptDialog.h" />
+    <ClInclude Include="..\ExtremeCopy\App\XCConfiguration.h" />
+    <ClInclude Include="..\ExtremeCopy\App\XCGlobal.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptCmdLineParser.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptFolderSize.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptGlobal.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptMsgQue.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptNamePipe.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptRegistry.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptShellTray.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptString.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptThread.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptThreadLock.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptTime.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptTypeDef.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinGraphic.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinHandleMang.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinMessage.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinPath.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\sgi_stl_alloc.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\stl_config.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\stl_threads.h" />
+    <ClInclude Include="..\ExtremeCopy\Common\WndShadow.h" />
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="BugReport.h" />
+    <ClInclude Include="CSmtp.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="openssl\aes.h" />
+    <ClInclude Include="openssl\asn1.h" />
+    <ClInclude Include="openssl\asn1t.h" />
+    <ClInclude Include="openssl\asn1_mac.h" />
+    <ClInclude Include="openssl\bio.h" />
+    <ClInclude Include="openssl\blowfish.h" />
+    <ClInclude Include="openssl\bn.h" />
+    <ClInclude Include="openssl\buffer.h" />
+    <ClInclude Include="openssl\cast.h" />
+    <ClInclude Include="openssl\comp.h" />
+    <ClInclude Include="openssl\conf.h" />
+    <ClInclude Include="openssl\conf_api.h" />
+    <ClInclude Include="openssl\crypto.h" />
+    <ClInclude Include="openssl\des.h" />
+    <ClInclude Include="openssl\des_old.h" />
+    <ClInclude Include="openssl\dh.h" />
+    <ClInclude Include="openssl\dsa.h" />
+    <ClInclude Include="openssl\dso.h" />
+    <ClInclude Include="openssl\dtls1.h" />
+    <ClInclude Include="openssl\ebcdic.h" />
+    <ClInclude Include="openssl\ec.h" />
+    <ClInclude Include="openssl\ecdh.h" />
+    <ClInclude Include="openssl\ecdsa.h" />
+    <ClInclude Include="openssl\engine.h" />
+    <ClInclude Include="openssl\err.h" />
+    <ClInclude Include="openssl\evp.h" />
+    <ClInclude Include="openssl\e_os2.h" />
+    <ClInclude Include="openssl\hmac.h" />
+    <ClInclude Include="openssl\idea.h" />
+    <ClInclude Include="openssl\krb5_asn.h" />
+    <ClInclude Include="openssl\kssl.h" />
+    <ClInclude Include="openssl\lhash.h" />
+    <ClInclude Include="openssl\md2.h" />
+    <ClInclude Include="openssl\md4.h" />
+    <ClInclude Include="openssl\md5.h" />
+    <ClInclude Include="openssl\objects.h" />
+    <ClInclude Include="openssl\obj_mac.h" />
+    <ClInclude Include="openssl\ocsp.h" />
+    <ClInclude Include="openssl\opensslconf.h" />
+    <ClInclude Include="openssl\opensslv.h" />
+    <ClInclude Include="openssl\ossl_typ.h" />
+    <ClInclude Include="openssl\pem.h" />
+    <ClInclude Include="openssl\pem2.h" />
+    <ClInclude Include="openssl\pkcs12.h" />
+    <ClInclude Include="openssl\pkcs7.h" />
+    <ClInclude Include="openssl\pqueue.h" />
+    <ClInclude Include="openssl\pq_compat.h" />
+    <ClInclude Include="openssl\rand.h" />
+    <ClInclude Include="openssl\rc2.h" />
+    <ClInclude Include="openssl\rc4.h" />
+    <ClInclude Include="openssl\ripemd.h" />
+    <ClInclude Include="openssl\rsa.h" />
+    <ClInclude Include="openssl\safestack.h" />
+    <ClInclude Include="openssl\sha.h" />
+    <ClInclude Include="openssl\ssl.h" />
+    <ClInclude Include="openssl\ssl2.h" />
+    <ClInclude Include="openssl\ssl23.h" />
+    <ClInclude Include="openssl\ssl3.h" />
+    <ClInclude Include="openssl\stack.h" />
+    <ClInclude Include="openssl\store.h" />
+    <ClInclude Include="openssl\symhacks.h" />
+    <ClInclude Include="openssl\tls1.h" />
+    <ClInclude Include="openssl\tmdiff.h" />
+    <ClInclude Include="openssl\txt_db.h" />
+    <ClInclude Include="openssl\ui.h" />
+    <ClInclude Include="openssl\ui_compat.h" />
+    <ClInclude Include="openssl\x509.h" />
+    <ClInclude Include="openssl\x509v3.h" />
+    <ClInclude Include="openssl\x509_vfy.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="XCBugReportDlg.h" />
+    <ClInclude Include="XZip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ExtremeCopy\App\ptMultipleLanguage.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptComboBox.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptEditBox.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptFileDialog.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptImageList.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptListBox.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptProgressBar.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptPropertySheet.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptTabCtrl.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\Hyperlink.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\ptCommCtrl.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\ptDialog.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\UI\ptWinToolTip.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\XCConfiguration.cpp" />
+    <ClCompile Include="..\ExtremeCopy\App\XCGlobal.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptCmdLineParser.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptFolderSize.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptMsgQue.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptNamePipe.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptRegistry.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptShellTray.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptString.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptThread.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptTime.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptWinHandleMang.cpp" />
+    <ClCompile Include="..\ExtremeCopy\Common\ptWinPath.cpp" />
+    <ClCompile Include="base64.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BugReport.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CSmtp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="XCBugReportDlg.cpp" />
+    <ClCompile Include="XZip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BugReport.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

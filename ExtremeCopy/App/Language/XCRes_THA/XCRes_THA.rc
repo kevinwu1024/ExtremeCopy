@@ -1,0 +1,883 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Thai (Thailand) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_THA)
+LANGUAGE LANG_THAI, SUBLANG_DEFAULT
+#pragma code_page(874)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 285, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "จาก:",IDC_STATIC_FROM,21,25,25,8
+    LTEXT           "--",IDC_STATIC_SOURCEFILE,49,24,180,8,SS_PATHELLIPSIS
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,49,38,181,8,SS_PATHELLIPSIS
+    LTEXT           "ปัจจุบัน:",IDC_STATIC,16,46,26,8
+    LTEXT           "ทั้งหมด:",IDC_STATIC,16,54,26,8
+    LTEXT           "ความเร็ว:",IDC_STATIC,17,65,29,8
+    LTEXT           "เวลาผ่านไป:",IDC_STATIC,6,73,39,8
+    LTEXT           "เวลาที่เหลือ:",IDC_STATIC,5,83,40,8
+    LTEXT           "ขนาดที่เสร็จสิ้น:",IDC_STATIC,90,73,50,8
+    LTEXT           "ขนาดที่คงเหลือ:",IDC_STATIC,84,83,51,8
+    LTEXT           "ไฟล์:",IDC_STATIC,30,12,17,8
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,50,12,180,11,SS_ENDELLIPSIS
+    CTEXT           "-",IDC_STATIC_SPEED,47,65,37,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,47,73,35,8
+    LTEXT           "กำลังคำนวณ",IDC_STATIC_REMAINTIME,47,83,35,8
+    LTEXT           "-",IDC_STATIC_TRANSFORMSIZE,144,73,27,8
+    LTEXT           "-",IDC_STATIC_REMAINSIZE,143,83,27,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,48,56,228,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,48,48,228,6
+    LTEXT           "ขนาดทั้งหมด:",IDC_STATIC,91,65,44,8
+    LTEXT           "-",IDC_STATIC_TOTALSIZE,144,65,33,8
+    LTEXT           "ไฟล์ที่เสร็จสิ้น:",IDC_STATIC,181,73,46,8
+    LTEXT           "ไฟล์ที่คงเหลือ:",IDC_STATIC,175,83,47,8
+    LTEXT           "ไฟล์ทั้งหมด:",IDC_STATIC,182,65,40,8
+    LTEXT           "-",IDC_STATIC_DONEFILES,230,73,45,8
+    LTEXT           "-",IDC_STATIC_REMAINFILES,219,83,45,8
+    LTEXT           "-",IDC_STATIC_TOTALFILES,230,65,45,8
+    LTEXT           "ไปที่: ",IDC_STATIC_TO,26,37,20,8
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,1,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,134,279,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,5,104,8,14
+    LTEXT           "รายการไฟล์ล้มเหลว:",IDC_STATIC,5,124,64,8
+    PUSHBUTTON      "ลองใหม่ทั้งหมด",IDC_BUTTON_RETRYALLFAILED,5,249,80,14
+    LTEXT           "สถานะ: ",IDC_STATIC,5,92,26,8
+    LTEXT           "-",IDC_STATIC_STATUS,37,92,50,8
+    LTEXT           "ตรวจสอบ:",IDC_STATIC,88,92,33,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,133,92,51,8
+    PUSHBUTTON      "เริ่ม",IDC_BUTTON_RUNANDPAUSE,32,104,49,14
+    PUSHBUTTON      "ออก",IDC_BUTTON_EXIT,228,104,49,14
+    PUSHBUTTON      "ข้าม",IDC_BUTTON_SKIP,101,104,49,14
+    PUSHBUTTON      "Verify Data",IDC_BUTTON_VERIFYDATA,107,249,58,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "เรียนรู้เวอร์ชัน รุ่นมืออาชีพ",IDC_STATIC_GETPRO,105,2,79,8
+    PUSHBUTTON      "ช่วยเหลือ",IDC_BUTTON_HELP,228,249,50,14
+END
+
+IDD_DIALOG_MESSAGEBOX DIALOGEX 0, 0, 248, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ใช่",IDC_BUTTON_MSGBOX_YES,54,43,50,14
+    PUSHBUTTON      "ไม่",IDC_BUTTON_MSGBOX_NO,153,43,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,29,7,187,30
+    PUSHBUTTON      "ตกลง",IDC_BUTTON_MSGBOX_OK,104,43,50,14
+END
+
+IDD_DIALOG_MAIN_SIMPLY DIALOGEX 0, 0, 242, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "ปัจจุบัน:",IDC_STATIC,7,35,26,8
+    LTEXT           "ทั้งหมด:",IDC_STATIC,7,43,26,8
+    LTEXT           "ความเร็ว:",IDC_STATIC,3,56,29,8
+    LTEXT           "เวลาผ่านไป:",IDC_STATIC,76,56,39,8
+    LTEXT           "เวลาที่เหลือ:",IDC_STATIC,155,56,40,8
+    LTEXT           "File:",IDC_STATIC,21,12,210,8,SS_ENDELLIPSIS
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,20,13,189,11
+    CTEXT           "-",IDC_STATIC_SPEED,33,56,42,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,117,56,34,8
+    LTEXT           "กำลังคำนวณ",IDC_STATIC_REMAINTIME,199,56,35,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,39,44,196,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,39,36,196,6
+    LTEXT           "ไปที่:",IDC_STATIC_TO,19,24,18,8
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,47,24,184,8,SS_PATHELLIPSIS
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,2,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,111,234,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,4,80,8,14
+    LTEXT           "รายการไฟล์ล้มเหลว :",IDC_STATIC,5,100,66,8
+    PUSHBUTTON      "ลองใหม่ทั้งหมด",IDC_BUTTON_RETRYALLFAILED,4,225,80,14
+    LTEXT           "สถานะ: ",IDC_STATIC,3,68,26,8
+    LTEXT           "-",IDC_STATIC_STATUS,36,68,34,8
+    LTEXT           "ตรวจสอบ:",IDC_STATIC,78,68,33,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,117,68,51,8
+    PUSHBUTTON      "Verify Data",IDC_BUTTON_VERIFYDATA,108,225,58,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "เริ่ม",IDC_BUTTON_RUNANDPAUSE,24,80,49,14
+    PUSHBUTTON      "ออก",IDC_BUTTON_EXIT,187,80,49,14
+    PUSHBUTTON      "ข้าม",IDC_BUTTON_SKIP,81,80,49,14
+    LTEXT           "เรียนรู้เวอร์ชัน รุ่นมืออาชีพ",IDC_STATIC_GETPRO,82,2,79,8
+    PUSHBUTTON      "ช่วยเหลือ",IDC_BUTTON_HELP,188,225,50,14
+END
+
+IDD_DIALOG_SAMENAME2 DIALOGEX 0, 0, 279, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "ไฟล์ใหม่:",IDC_STATIC,20,81,30,8
+    LTEXT           "Static",IDC_STATIC_SOURCENAME,52,82,184,8,SS_PATHELLIPSIS
+    LTEXT           "Static",IDC_STATIC_SAMEFILENAME,61,18,114,9,SS_ENDELLIPSIS
+    LTEXT           "ไฟล์เหมือนกัน:",IDC_STATIC,5,17,48,8
+    LTEXT           "สร้างเมื่อ:",IDC_STATIC,19,92,30,8
+    LTEXT           "ขนาด:",IDC_STATIC,28,103,21,8
+    LTEXT           "Static",IDC_STATIC_SOURCESIZE,55,103,32,8
+    LTEXT           "Static",IDC_STATIC_SOURCECREATETIME,55,92,71,8
+    LTEXT           "เวลาแก้ไข:",IDC_STATIC,130,92,36,8
+    LTEXT           "Static",IDC_STATIC_SOURCEMODIFYTIME,176,92,74,8
+    LTEXT           "ไฟล์เดิม:",IDC_STATIC,21,33,29,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONNAME,51,33,183,8,SS_PATHELLIPSIS
+    LTEXT           "สร้างเมื่อ:",IDC_STATIC,19,44,30,8
+    LTEXT           "ขนาด:",IDC_STATIC,29,55,21,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONSIZE,55,55,31,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONCREATETIME,55,44,73,8
+    LTEXT           "เวลาแก้ไข:",IDC_STATIC,132,44,36,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONMODIFYTIME,178,44,80,8
+    LTEXT           "เขียนทับโดยไฟล์ที่  :",IDC_STATIC_REPLACE,17,67,70,10
+    LTEXT           "Static",IDC_STATIC_ICON,181,6,35,25
+    PUSHBUTTON      "เขียนทับ",IDC_BUTTON_REPLACE,90,119,61,14
+    PUSHBUTTON      "ข้าม",IDC_BUTTON_SKIP,216,119,61,14
+    PUSHBUTTON      "เขียนทับทั้งหมด",IDC_BUTTON_REPLACEALL,153,119,61,14
+    PUSHBUTTON      "แสดงรายละเอียด",IDC_BUTTON_MORELESS,3,120,66,14
+    PUSHBUTTON      "เปลี่ยนชื่อ",IDC_BUTTON_RENAME,90,140,61,14
+    PUSHBUTTON      "เปลี่ยนชื่อทั้งหมด",IDC_BUTTON_RNAMEALL,153,140,61,14
+    PUSHBUTTON      "ข้ามทั้งหมด",IDC_BUTTON_SKIPALL,216,140,61,14
+    CONTROL         "ขนาดเท่ากัน",IDC_CHECK_SKIPSAMESIZE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,89,166,54,10
+    CONTROL         "แก้ไขปรับปรุงพร้อมกัน",IDC_CHECK_SKIPSAMEMODIFYTIME,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,165,166,85,10
+    GROUPBOX        "เลือกเงื่อนไขที่ต้องการให้ข้าม มิฉะนั้นจะเขียนทับ",IDC_STATIC,70,156,186,23
+    PUSHBUTTON      "ช่วยเหลือ",IDC_BUTTON_HELP,3,140,38,14
+    PUSHBUTTON      "ออก",IDC_BUTTON_EXIT,44,140,42,14
+    LTEXT           "ใหม่กว่า",IDC_STATIC_NEWER,95,67,25,8
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 254, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "กรุณากรอกซีเรียลนัมเบอร์ เพื่อลงทะเบียนโปรแกรม",IDC_STATIC,11,14,158,8
+    EDITTEXT        IDC_EDIT_NUMBER1,19,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,65,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER2,79,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,125,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER3,137,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,183,33,8,8
+    EDITTEXT        IDC_EDIT_NUMBER4,198,31,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "ยกเลิก",IDC_BUTTON_CANCEL,103,56,50,14
+    PUSHBUTTON      "ตกลง",IDC_BUTTON_REGISTER,28,56,50,14
+    LTEXT           "Static",IDC_STATIC_LICENCE,172,15,70,8
+    PUSHBUTTON      "ซื้อ",IDC_BUTTON_BUY,181,56,50,14
+END
+
+IDD_DIALOG_CONFIGURATION DIALOGEX 0, 0, 384, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ตกลง",ID_BUTTON_OK,230,214,50,14
+    PUSHBUTTON      "ยกเลิก",IDC_BUTTON_CANCEL,310,214,50,14
+    LTEXT           "รูปแบบอินเตอร์เฟซ:",IDC_STATIC,16,20,63,8
+    COMBOBOX        IDC_COMBO_UITYPE,100,19,89,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ใช้เป็นโปรแกรมคัดลอกเริ่มต้น",IDC_CHECK_ASDEFAULTCOPYING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,50,108,10
+    CONTROL         "เปิดเสียงเมื่อคัดลอกเสร็จสิ้น:",IDC_CHECK_PLAYFINISHEDSOUND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,146,105,10
+    EDITTEXT        IDC_EDIT_SOUNDFILE,29,158,160,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SELECTSOUNDFILE,191,158,16,13
+    CONTROL         "ให้หน้าต่างอยู่ด้านบนเสมอ",IDC_CHECK_TOPMOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,62,95,10
+    CTEXT           "Static",IDC_STATIC_VERSIONNAME,105,3,150,8
+    CONTROL         "ย่อขนาดลงไปไว้ที่ทราสบาร์",IDC_CHECK_MINIMUMTOTRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,74,99,10
+    CONTROL         "เขียนไฟล์บันทึก",IDC_CHECK_WRITELOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,86,65,10
+    LTEXT           "ระบุจำนวนไฟล์ (ที่ล้มเหลวในรายการ)สูงสุด:",IDC_STATIC,14,199,133,8
+    EDITTEXT        IDC_EDIT_MAXFAILEDFILE,150,196,57,14,ES_NUMBER
+    LTEXT           "ภาษา:",IDC_STATIC,15,35,20,8
+    COMBOBOX        IDC_COMBO_LANGUAGE,99,35,90,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ตรวจสอบข้อมูลหลังจากคัดลอก",IDC_CHECK_VERIFYDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,98,112,10
+    CONTROL         "ปิดหน้าต่างนี้หลังจากเสร็จสิ้นงาน",IDC_CHECK_CLOSEAFTERVERIFY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,110,125,10
+    LTEXT           "ใช้บัฟเฟอร์ในการคัดลอก:",IDC_STATIC,17,180,79,8
+    COMBOBOX        IDC_COMBO_FILEDATABUF,103,179,39,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MB",IDC_STATIC,149,180,10,8
+    CONTROL         "ถามก่อนทุกครั้ง",IDC_RADIO_SAMEFILE_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,225,26,63,10
+    CONTROL         "เปลี่ยนชื่อทั้งหมด",IDC_RADIO_SAMEFILE_RENAMEALL,"Button",BS_AUTORADIOBUTTON,292,26,69,10
+    CONTROL         "เขียนทับทั้งหมด",IDC_RADIO_SAMEFILE_REPLACEALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,39,65,10
+    CONTROL         "ข้ามทั้งหมด",IDC_RADIO_SAMEFILE_SKIPALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,292,40,50,10
+    CONTROL         "",IDC_RADIO_SAMEFILE_REPLACENEWER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,53,11,10
+    CONTROL         "ถามก่อนทุกครั้ง",IDC_RADIO_ERROR_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,228,123,63,10
+    CONTROL         "ลองใหม่",IDC_RADIO_ERROR_RETRY,"Button",BS_AUTORADIOBUTTON,297,122,41,10
+    CONTROL         "ไม่ต้องสนใจ",IDC_RADIO_ERROR_IGNORE,"Button",BS_AUTORADIOBUTTON,228,136,54,10
+    CONTROL         "ออก",IDC_RADIO1_ERROR_EXIT,"Button",BS_AUTORADIOBUTTON,297,136,30,10
+    GROUPBOX        "ถ้าพบชื่อไฟล์เหมือนกันให้ทำการ",IDC_STATIC,216,16,164,88
+    GROUPBOX        "ถ้าพบข้อผิดพลาดให้ทำการ",IDC_STATIC,216,112,164,36
+    CONTROL         "ตรวจสอบเวอร์ชันใหม่อัตโนมัติ",IDC_CHECK_CHECKNEWVERSION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,122,108,10
+    PUSHBUTTON      "ตำแหน่งเริ่มต้น",IDC_BUTTON_POSITIONDLG,13,214,70,14
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,327,166,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "ถามก่อนทุกครั้ง",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,228,195,63,10
+    CONTROL         "ไม่ต้องสนใจ",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,292,195,54,10
+    CONTROL         "ออก",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,344,195,30,10
+    GROUPBOX        "เมื่อผิดพลาดแล้วลองใหม่",IDC_STATIC,216,158,164,51
+    LTEXT           "จำนวนครั้งสูงสุดที่กำหนดไว้:",IDC_STATIC,228,168,87,8
+    LTEXT           "ถ้าเกินจากที่กำหนดไว้ให้ทำการ:",IDC_STATIC,229,183,98,8
+    COMBOBOX        IDC_COMBO_IFCONDITION,300,52,69,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ถ้าแฟ้มแหล่งที่มา",IDC_STATIC,237,53,61,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,300,67,69,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "มิฉะนั้น",IDC_STATIC,237,85,33,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,300,83,69,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "แล้ว",IDC_STATIC,237,69,33,8
+    CONTROL         "งานหลายคิวถ้าเก็บรักษาที่เกี่ยวข้องในการใช้งาน",IDC_CHECK_QUEUETASK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,133,159,10
+    PUSHBUTTON      "ช่วยเหลือ",IDC_BUTTON_HELP,101,214,50,14
+END
+
+IDD_DIALOG_SPECIFYSRCDST DIALOGEX 0, 0, 319, 347
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+MENU IDR_MENU_TASKDLG
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "เรียนรู้เวอร์ชัน รุ่นมืออาชีพ",IDC_STATIC_GETPRO,112,2,79,8
+    PUSHBUTTON      "คัดกรอง",IDC_BUTTON_WILDCARD2,162,16,42,14,WS_DISABLED
+    PUSHBUTTON      "ลบ",IDC_BUTTON_DELETE,210,16,32,14
+    PUSHBUTTON      "ล้างรายการ",IDC_BUTTON_CLEAR,247,16,43,14
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSESRCFILE,84,18,14,11
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSEDSTFOLDER,73,102,14,11
+    PUSHBUTTON      "แสดงรายละเอียด",IDC_BUTTON_MORELESS,9,151,63,14
+    PUSHBUTTON      "คัดลอก",IDC_BUTTON_RUNCOPY,84,151,50,14
+    PUSHBUTTON      "ย้าย",IDC_BUTTON_RUNMOVE,143,151,50,14
+    PUSHBUTTON      "ออก",IDC_BUTTON_EXIT,256,151,52,14
+    LISTBOX         IDC_LIST_SOURCEFILE,10,32,302,66,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "ส่งออกไปที่",IDC_BUTTON_EXPORTTOFILE,127,324,85,15
+    PUSHBUTTON      "นำเข้าจาก",IDC_BUTTON_IMPORTFROMFILE,222,324,85,15
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,252,233,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "ถามก่อนทุกครั้ง",IDC_RADIO_SAMEFILEASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,200,63,10
+    CONTROL         "เปลี่ยนชื่อทั้งหมด",IDC_RADIO_SAMEFILERENAME,"Button",BS_AUTORADIOBUTTON,76,200,69,10
+    CONTROL         "เขียนทับทั้งหมด",IDC_RADIO_SAMEFILEREPLACE,"Button",BS_AUTORADIOBUTTON,13,213,65,10
+    CONTROL         "ข้ามทั้งหมด",IDC_RADIO_SAMEFILESKIP,"Button",BS_AUTORADIOBUTTON,76,213,50,10
+    CONTROL         "",IDC_RADIO_SAMEFILEREPLACENEWER,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,17,226,11,14
+    CONTROL         "ถามก่อนทุกครั้ง",IDC_RADIO_ERRORASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,157,200,63,10
+    CONTROL         "ลองใหม่",IDC_RADIO_ERRORRETRY,"Button",BS_AUTORADIOBUTTON,225,199,41,10
+    CONTROL         "ไม่ต้องสนใจ",IDC_RADIO_ERRORIGNORE,"Button",BS_AUTORADIOBUTTON,157,213,54,10
+    CONTROL         "ออก",IDC_RADIO1_ERROREXIT,"Button",BS_AUTORADIOBUTTON,225,213,30,10
+    CONTROL         "หน้าต่างปกติ",IDC_RADIO_SHOWMODEWINDOW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,22,286,54,10
+    CONTROL         "แบบย่อ",IDC_RADIO_SHOWMODETRAY,"Button",BS_AUTORADIOBUTTON,78,286,39,10
+    CONTROL         "ถามก่อนทุกครั้ง",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,174,262,63,10
+    CONTROL         "ไม่ต้องสนใจ",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,174,273,54,10
+    CONTROL         "ออก",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,174,286,30,10
+    LTEXT           "โฟลเดอร์ปลายทาง:",IDC_STATIC,10,104,60,8
+    LTEXT           "ไฟล์/โฟลเดอร์ ต้นทาง:",IDC_STATIC,10,19,71,8
+    LTEXT           "(ลากและวาง ไฟล์/โฟลเดอร์ ในกล่องรายการ)",IDC_STATIC,90,104,137,8
+    GROUPBOX        "ถ้าพบชื่อไฟล์เหมือนกันให้ทำการ",IDC_STATIC,8,190,135,86
+    GROUPBOX        "แสดงหน้าต่าง",IDC_STATIC_SHOWMODE,8,276,135,23
+    GROUPBOX        "ถ้าพบข้อผิดพลาดให้ทำการ",IDC_STATIC,149,190,152,35
+    GROUPBOX        "เมื่อผิดพลาดแล้วลองใหม่",IDC_STATIC,148,225,152,73
+    LTEXT           "จำนวนครั้งสูงสุดที่กำหนดไว้:",IDC_STATIC,160,235,87,8
+    LTEXT           "ถ้าเกินจากที่กำหนดไว้ให้ทำการ:",IDC_STATIC,161,250,98,8
+    LISTBOX         IDC_LIST_DESTINATION,9,116,302,28,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "ลบ",IDC_BUTTON_DELETEDST,233,100,32,14
+    PUSHBUTTON      "ล้างรายการ",IDC_BUTTON_CLEARDST,270,100,43,14
+    CONTROL         "ตรวจสอบข้อมูล หลังจากที่การคัดลอกเสร็จสิ้น",IDC_CHECK_VERIFYDATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,173,155,10
+    LTEXT           "รันคำสั่งหลังจากการคัดลอกเสร็จสิ้น:",IDC_STATIC,13,307,111,8
+    EDITTEXT        IDC_EDIT_FINISHEVENT,133,305,175,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_IFCONDITION,77,229,61,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ถ้าแฟ้มแหล่งที่มา",IDC_STATIC,30,229,44,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,77,244,61,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "มิฉะนั้น",IDC_STATIC,31,263,33,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,77,260,61,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "แล้ว",IDC_STATIC,31,246,33,8
+    PUSHBUTTON      "ช่วยเหลือ",IDC_BUTTON_HELP,10,324,34,14
+END
+
+IDD_DIALOG_ABOUT DIALOGEX 0, 0, 183, 109
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ปิด",IDCANCEL,67,88,50,14
+    CTEXT           "Static",IDC_STATIC_ABOUTVERSION,38,2,109,8
+    CTEXT           "Static",IDC_STATIC_ALLRIGHT,41,68,108,11
+    CTEXT           "Static",IDC_STATIC_REGIST,53,21,84,8
+END
+
+IDD_DIALOG_MESSAGEBOX_COPYERROROPER DIALOGEX 0, 0, 248, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ออก",IDC_BUTTON_MSGBOX_CANCEL,170,58,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,13,4,224,33
+    PUSHBUTTON      "ไม่ต้องสนใจ",IDC_BUTTON_MSGBOX_IGNORE,96,58,50,14
+    PUSHBUTTON      "ลองใหม่",IDC_BUTTON_MSGBOX_RETRY,22,58,50,14
+END
+
+IDD_DIALOG_SPEED DIALOGEX 0, 0, 98, 82
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_SPEED,"msctls_trackbar32",TBS_BOTH,2,11,94,20
+    LTEXT           "Static",IDC_STATIC_SPEED,71,2,19,8
+    LTEXT           "ความเร็ว",IDC_STATIC,3,2,26,8
+    CONTROL         "ตรวจสอบข้อมูล",IDC_CHECK_VERIFYDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,44,64,10
+    LTEXT           "หลังจากเสร็จงาน :",IDC_STATIC,5,33,56,8
+    CONTROL         "ปิดหน้าต่าง",IDC_CHECK_CLOSEWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,55,49,10
+    CONTROL         "ปิดเครื่อง",IDC_CHECK_SHUTDOWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,67,50,10
+END
+
+IDD_DIALOG_EDITWILDCARD DIALOGEX 0, 0, 233, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ตกลง",IDOK,44,64,50,14
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,140,64,50,14
+    LTEXT           "Static",IDC_STATIC_DESTINATIONWILDCARD,14,10,207,8,SS_PATHELLIPSIS
+    EDITTEXT        IDC_EDIT_WILDCARDINPUT,56,40,96,14,ES_AUTOHSCROLL
+    LTEXT           "คัดกรอง :",IDC_STATIC,20,42,31,8
+    PUSHBUTTON      "ช่วยเหลือ",IDC_BUTTON_HELP,167,39,43,14
+    LTEXT           "(คัดกรองการนำเข้าที่ไม่ได้รับอนุญาต ตัวอย่างเช่น *.mp3)",IDC_STATIC_TIP,30,28,175,8
+END
+
+IDD_DIALOG_STDLAUNCH DIALOGEX 0, 0, 236, 64
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,150,47,50,14
+    LTEXT           "Static",IDC_STATIC_TEXT,29,6,187,28
+    PUSHBUTTON      "ตั้งค่าโปรแกรม",IDC_BUTTON_CONFIGURATION,28,47,50,14
+    LTEXT           "เรียนรู้เวอร์ชัน รุ่นมืออาชีพ",IDC_STATIC_GETPRO,74,38,79,8
+END
+
+IDD_DIALOG_DOWNLOAD DIALOGEX 0, 0, 256, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "กำลังดาวน์โหลด"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,191,47,50,14
+    CONTROL         "",IDC_PROGRESS_DOWNLOAD,"msctls_progress32",WS_BORDER,11,20,230,14
+    LTEXT           "-",IDC_STATIC_FILENAME,12,8,178,8
+    RTEXT           "0%",IDC_STATIC_PERCENT,208,6,33,8
+END
+
+IDD_DIALOG_BUGREPORT DIALOGEX 0, 0, 262, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "รายงานข้อผิดพลาดของ ExtremeCopy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ส่งข้อผิดพลาด",IDOK,53,157,59,14
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,158,157,50,14
+    LTEXT           "ขออภัยกับข้อผิดพลาดที่เกิดขึ้นในโปรแกรม ExtremeCopy นี้\n\nกรุณาแจ้งให้เราทราบ เกี่ยวกับข้อผิดพลาดดังกล่าว เพื่อจะนำไปแก้ไขและปรับปรุงให้ดีขึ้นในเวอร์ชันต่อไป ขอขอบคุณ!",IDC_STATIC,15,7,236,36
+    LTEXT           "ติดต่อผ่านอีเมล์ (ทางเลือกเพิ่มเติม) :",IDC_STATIC,15,54,114,8
+    EDITTEXT        IDC_EDIT_EMAIL,137,52,114,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROBLEMCONTENT,15,83,236,71,ES_AUTOHSCROLL
+    LTEXT           "คำอธิบายของปัญหาที่พบ :",IDC_STATIC,16,71,80,8
+END
+
+IDD_DIALOG_TASKQUEUE DIALOGEX 0, 0, 243, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "คิวงานของ ExtremeCopy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "การทำงานเหลือเวลาอีก :",IDC_STATIC,41,132,77,8
+    LTEXT           "ตำแหน่งงานที่รออยู่ในคิว:",IDC_STATIC,40,145,78,8
+    LTEXT           "ถ้าคุณต้องการความรวดเร็วในการทำงาน แนะนำให้คุณรอสักครู่ เมื่องานแรกเสร็จสิ้นแล้ว จึงทำงานถัดไป",IDC_STATIC,14,107,216,19
+    LTEXT           "left time",IDC_STATIC_LEFTTIME,129,132,71,8
+    LTEXT           "position",IDC_STATIC_POSITION,127,145,10,8
+    CONTROL         "",IDC_SPIN_PRIORITY,"msctls_updown32",UDS_ARROWKEYS,142,142,11,14
+    PUSHBUTTON      "ออก",IDCANCEL,183,181,50,14
+    PUSHBUTTON      "ดำเนินการ",IDC_BUTTON_RUN,94,181,60,14
+    LTEXT           "อุปกรณ์ที่ถูกเชื่อมต่อในขณะนี้",IDC_STATIC,14,9,91,8
+    CONTROL         "Current task will run automatically once position of queue is 0 .",IDC_CHECK_PAUSE,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,12,162,216,10
+    LTEXT           "ไฟล์ต้นทาง:",IDC_STATIC,13,23,38,8
+    LTEXT           "โฟลเดอร์ปลายทาง:",IDC_STATIC,11,79,60,8
+    LISTBOX         IDC_LIST_SOURCEFILE,11,33,227,42,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_DESTINATIONFOLDER,11,90,227,15,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "ช่วยเหลือ",IDC_BUTTON_HELP,10,181,43,14
+END
+
+IDD_DIALOG_STARTUPPOS DIALOGEX 0, 0, 316, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ตั้งค่าตำแหน่งเริ่มต้นบนเดสก์ท็อปของโปรแกรม"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ตกลง",IDOK,184,177,50,14
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,255,177,50,14
+    PUSHBUTTON      "ใช้ค่าเริ่มต้น",IDC_BUTTON_RESTOREDEFAULT,10,177,50,14
+    CONTROL         "",IDC_STATIC_SCREEN,"Static",SS_BLACKFRAME,11,8,294,146
+END
+
+IDD_DIALOG_MESSAGE DIALOGEX 0, 0, 175, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ปิด",IDCANCEL,115,58,50,14
+    LTEXT           "Static",IDC_STATIC_MESSAGE,16,10,141,35
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 284
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_DIALOG_MESSAGEBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MAIN_SIMPLY, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SAMENAME2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 260
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_CONFIGURATION, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPECIFYSRCDST, DIALOG
+    BEGIN
+        RIGHTMARGIN, 318
+        BOTTOMMARGIN, 344
+    END
+
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGEBOX_COPYERROROPER, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DIALOG_SPEED, DIALOG
+    BEGIN
+        RIGHTMARGIN, 96
+    END
+
+    IDD_DIALOG_EDITWILDCARD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STDLAUNCH, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_DOWNLOAD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_BUGREPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_TASKQUEUE, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STARTUPPOS, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGE, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_TITLE        BITMAP                  "Res\\TitleBackground.bmp"
+IDB_BITMAP_PROGRESSBAR  BITMAP                  "Res\\ProgressBar.bmp"
+IDB_BITMAP_SPEEDBUTTONNORMAL BITMAP                  "Res\\SpeedButtonNormal.bmp"
+IDB_BITMAP_SPEEDBUTTONDOWN BITMAP                  "Res\\SpeedButtonDown.bmp"
+IDB_BITMAP_SPEEDBUTTONHOVER BITMAP                  "Res\\SpeedButtonHover.bmp"
+IDB_BITMAP_WINDOWS      BITMAP                  "Res\\windows.bmp"
+IDB_BITMAP_TRACKBAR2    BITMAP                  "Res\\TrackBar2.bmp"
+IDB_BITMAP_TRACKTHUMB2  BITMAP                  "Res\\TrackThumb2.bmp"
+IDB_BITMAP_DLGBACKGROUND BITMAP                  "Res\\DlgBackground.bmp"
+IDB_BITMAP_DOWNARROW    BITMAP                  "Res\\DownArrowButtonNormal.bmp"
+IDB_BITMAP_UPARROW      BITMAP                  "Res\\UpArrowButtonNormal.bmp"
+IDB_BITMAP_DOWNARROWDOWN BITMAP                  "Res\\DownArrowButtonDown.bmp"
+IDB_BITMAP_DOWNARROWHOVER BITMAP                  "Res\\DownArrowButtonHover.bmp"
+IDB_BITMAP_UPARROWDOWN  BITMAP                  "Res\\UpArrowButtonDown.bmp"
+IDB_BITMAP_UPARROWHOVER BITMAP                  "Res\\UpArrowButtonHover.bmp"
+IDB_BITMAP_EXTREMECOPYUI BITMAP                  "Res\\ExetremeCopyUI.bmp"
+IDB_BITMAP_DESKTOP      BITMAP                  "Res\\windows_desktop.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,3,0,0
+ PRODUCTVERSION 2,3,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "EaserSoft Inc."
+            VALUE "FileDescription", "ExtremeCopy Resource 32 bits"
+            VALUE "FileVersion", "2.3.0.0"
+            VALUE "InternalName", "XCRes_THA"
+            VALUE "LegalCopyright", "Copyright (C) 2012"
+            VALUE "OriginalFilename", "XCRes_THA.dll"
+            VALUE "ProductName", "ExtremeCopy Resource"
+            VALUE "ProductVersion", "2.3.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HAND         CURSOR                  "Res\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EXTREMECOPY         ICON                    "Res\\ExtremeCopy.ico"
+IDI_ICON_STATUS_FAIL    ICON                    "Res\\Status_Fail.ico"
+IDI_ICON_STATUS_RUNNING ICON                    "Res\\Status_Running.ico"
+IDI_ICON_STATUS_SUCCESS ICON                    "Res\\Status_Success.ico"
+IDI_ICON_STATUS_WAITING ICON                    "Res\\Status_Waiting.ico"
+IDI_SMALL               ICON                    "Res\\small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "TaskDialogMenu"
+    BEGIN
+        MENUITEM "งานที่คัดลอก",                ID_MENU_ASCOPYTASK
+        MENUITEM "งานที่ย้าย",                  ID_MENU_ASMOVETASK
+    END
+    POPUP "OpenSrcMenu"
+    BEGIN
+        MENUITEM "ไฟล์",                        ID_MENU_OPENSRCFILE
+        MENUITEM "โฟลเดอร์",                    ID_MENU_OPENSRCFOLDER
+    END
+    POPUP "FailedFileList"
+    BEGIN
+        MENUITEM "ยกเลิก",                      ID_MENU_FAILEDFILELIST_CANCEL
+        MENUITEM "ลองใหม่",                     ID_MENU_FAILEDFILELIST_RETRY
+        MENUITEM SEPARATOR
+        POPUP "ตำแหน่งที่ตั้ง"
+        BEGIN
+            MENUITEM "ต้นทาง",                      ID_MENU_FAILEDFILELIST_LOCATION_SOURCE
+            MENUITEM "ปลายทาง",                     ID_MENU_FAILEDFILELIST_LOCATION_DESTINATION
+        END
+        POPUP "คุณสมบัติ"
+        BEGIN
+            MENUITEM "ต้นทาง",                      ID_MENU_FAILEDFILELIST_PROPERTY_SOURCE
+            MENUITEM "ปลายทาง",                     ID_MENU_FAILEDFILELIST_PROPERTY_DESTINAMTION
+        END
+    END
+END
+
+IDR_MENU_TASKDLG MENU
+BEGIN
+    POPUP "เครื่องมือ"
+    BEGIN
+        MENUITEM "ตั้งค่าโปรแกรม",              ID_MENU_CONFIGURATION
+        MENUITEM "ลงทะเบียน",                   ID_MENU_REGISTER
+    END
+    POPUP "ช่วยเหลือ"
+    BEGIN
+        MENUITEM "เกี่ยวกับ",                   ID_MENU_ABOUT
+        MENUITEM "ช่วยเหลือ",                   ID_MENU_HELP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_EXTREMECOPY ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_SUREEXIT "คุณต้องการยกเลิกการคัดลอกหรือไม่?"
+    IDS_TITLE_SAMEFILEDLG   "ชื่อไฟล์เหมือนกัน"
+    IDS_BUTTON_MORE         "แสดงรายละเอียด"
+    IDS_BUTTON_LESS         "ซ่อนรายละเอียด"
+    IDS_BUTTON_CONTINUE     "ดำเนินการต่อ"
+    IDC_EXTREMECOPY         "EXTREMECOPY"
+    IDS_BUTTON_PAUSE        "พัก"
+    IDS_TITLE_APP           "ExtremeCopy"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_ALREADREGISTED 
+                            "คุณลงทะเบียนเรียบร้อยแล้ว ขอบคุณสำหรับการสั่งซื้อ!"
+    IDS_TITLE_CONFIGURATION "การตั้งค่า"
+    IDS_UITYPE_SIMPLE       "แก้ไข"
+    IDS_UITYPE_NORMAL       "รูปแบบปกติ"
+    IDS_FORMAT_COPYOF       "คัดลอก"
+    IDS_TITLE_WARNING       "แจ้งเตือน"
+    IDS_MESSAGEBOX_INPUTSOURCEFILE "กรุณาระบุไฟล์หรือโฟลเดอร์ต้นทาง!"
+    IDS_MESSAGEBOX_INPUTDESTINATIONFOLDER "กรุณาระบุโฟลเดอร์ปลายทาง!"
+    IDS_TITLE_APP_PRO       "ExtremeCopy Pro"
+    IDS_TITLE_ABOUT         "เกี่ยวกับ"
+    IDS_LANGUAGE_NAME       "ภาษาไทย"
+    IDS_RIGHTMENUITEM_PASTE "วางด้วย Extreme"
+    IDS_MESSAGEBOX_STANDARDEDTIONNOMAINDIALOG 
+                            "สำหรับเวอร์ชันมาตรฐานนี้ จะไม่แสดงหน้าต่างหลัก แต่คุณยังสามารถใช้งานได้ โดยการคลิกขวาของ Windows Explorer เพื่อทำการ ‘วาง’  หรือ ‘วางด้วย Extreme’ ได้"
+    IDS_TOOLTIP_MINIMIZETRAY "ย่อหน้าต่างไปอยู่ที่ทราสบาร์"
+    IDS_TOOLTIP_CONTROLCOPYSPEED 
+                            "คุณสามารถควบคุมการคัดลอกในปัจจุบันได้ ด้วยตัวควบคุมด้านซ้าย"
+    IDS_FORMAT_TRAYUITEXT   "ไฟล์: %s\r\nความเร็ว: %s\r\nความก้าวหน้า: %s / %s \r\nความผิดพลาด: %s\r\nเหลืออยู่: %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICAIONPARAMETER 
+                            "ไม่มีตัวแปรที่เป็นอัตลักษณ์: '%s' ของ '%s'"
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICATIONSWITCH 
+                            "ไม่มีตัวเปลี่ยนอัตลักษณ์: '%s'"
+    IDS_CMDLN_ERROR_SPECIFYDESTINATIONFOLDER "กรุณาระบุโฟลเดอร์ปลายทาง"
+    IDS_CMDLN_ERROR_FORMAT_SPECIFYPARAMETER "'%s' ตัวแปรมีข้อผิดพลาด"
+    IDS_CMDLN_ERROR_SPECIFYPRIMARYSWITCH 
+                            "กรุณาระบุคำสั่งเบื้องต้นที่จะรัน เช่น: '-src' และ '-dst'"
+    IDS_TITLE_ERROR         "ผิดพลาด"
+    IDS_CMDLN_ERROR_CMDLNERROR "คอมมานไลน์ผิดพลาด:"
+    IDS_STRING_ALLFILE      "ไฟล์ทั้งหมด"
+    IDS_TOOLTIP_EXPORTFILEBUTTON 
+                            "ส่งออกการตั้งค่าปัจจุบันไปยังไฟล์งานของ ExtremeCopy ซึ่งสามารถนำกลับมาใช้ได้อีกเมื่อคลิก 'นำเข้าไฟล์...' หรือใช้ '-task_file' ในคอมมานไลน์ได้"
+    IDS_TOOLTIP_IMPORTFILE  "นำเข้าไฟล์งานของ ExtremeCopy เพิ่อตั้งค่าตามที่เคยตั้งเอาไว้"
+    IDS_TASKXMLERROR_CANTSUPPORTVERSION 
+                            "ไม่รองรับไฟล์งานเวอร์ชันปัจจุบัน ซึ่งอาจจะเป็นเพราะโปรแกรมของคุณเวอร์ชันเก่าเกินไป"
+    IDS_TASKXMLERROR_EXECUTECOMMAND "การเขียนคำสั่ง' ผิดพลาด"
+    IDS_TASKXMLERROR_SHOWMODE "'โหมดการแสดง' ผิดพลาด"
+    IDS_TASKXMLERROR_SAMEFILEREACTION "'ปฏิกิริยาของไฟล์ที่เหมือนกัน' ผิดพลาด"
+    IDS_TASKXMLERROR_ERRORREACTION "'ปฏิกิริยาผิดพลาด' ผิดพลาด"
+    IDS_TASKXMLERROR_OUTOFRETRY "'เวลาที่ใช้ออกจากการลองอีกครั้ง' ผิดพลาด"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_SWITCHDOESNTSUPPORTINCURRENTEDITION 
+                            "การเปลี่ยนเป็น '%s' เวอร์ชันปัจจุบันยังไม่รองรับในขณะนี้"
+    IDS_TITLE_WILDCARDDLG   "คัดกรอง"
+    IDS_MESSAGEBOX_INPUTLEGALWILDCARD 
+                            "กรุณากรอกตัวแทนและสัญลักษณ์ให้ถูกต้องรวมถึง '*' หรือ '?' ด้วย"
+    IDS_TITLE_REGISTER      "การลงทะเบียน"
+    IDS_RIGHTMENUITEM_EXECUTEBYXC "ดำเนินการโดย ExtremeCopy"
+    IDS_MESSAGEBOX_ERROREXITAPP "การคัดลอกจะยุติ เนื่องจากมีข้อผิดพลาด"
+    IDS_ABOUT_FREEFORHOMEUSER "ฟรีสำหรับผู้ใช้ที่บ้าน"
+    IDS_ABOUT_ALREADYREGESITER "ลงทะเบียนเรียบร้อยแล้ว!"
+    IDS_ABOUT_UNREGISTER    "ยังไม่ได้ลงทะเบียน!"
+    IDS_TASKXMLERROR_INVALIDFORMAT "ไฟล์งาน ExtremeCopy ไม่ถูกต้อง!"
+    IDS_TASKXMLERROR_NOSRCORDSTFILEORFOLDER 
+                            "ไม่มีไฟล์หรือโฟลเดอร์ตามที่ระบุไว้ในข้อมูลต้นทางหรือปลายทาง"
+    IDS_FAILFILETITLE_NO    "ไม่"
+    IDS_FAILFILETITLE_STATUS "สถานะ"
+    IDS_FAILFILETITLE_SOURCEFILE "ต้นทาง"
+    IDS_FAILFILETITLE_DESTINATION "ปลายทาง"
+    IDS_FAILFILETITLE_ERRORCODESTRING "เหตุผล"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILFILETITLE_CREATETIME "เวลา"
+    IDS_FAILFILETITLE_STATUS_FAILED "ล้มเหลว"
+    IDS_FAILFILETITLE_STATUS_WAITING "รอสักครู่"
+    IDS_FAILFILETITLE_STATUS_SUCCESS "สำเร็จ"
+    IDS_FAILFILETITLE_STATUS_RUNNING "กำลังทำงาน"
+    IDS_MESSAGEBOX_OVERMAXFAILEDFILESNUMBER 
+                            "เมื่อไฟล์ที่ล้มเหลวมากเกินไป 'ไม่ต้องสนใจ' จำนวนและข้อความแจ้งการผิดพลาด:"
+    IDS_RIGHTMENUITEM_WINDOWPASTE "วางด้วย Windows"
+    IDS_FAILFILETITLE_ERRORCODE "โค้ด"
+    IDS_ERROR_APPERROR      "ตรวจหาความผิดพลาดโดยแอพลิเคชัน"
+    IDS_ERROR_INVALIDFILENAME "ชื่อไฟล์ไม่สมบูรณ์"
+    IDS_ERROR_UNKNOWN       "การผิดพลาดที่ไม่รู้สาเหตุ"
+    IDS_ERROR_SUCCESS       "สำเร็จ!"
+    IDS_MESSAGEBOX_QUITCONFIRM 
+                            "ExtremeCopy กำลังทำงานอยู่ คุณต้องการปิด ‘ไม่ว่าจะเกิดอะไรขึ้นก็ตาม’ ใช่หรือไม่?"
+    IDS_STRING_VERIFYINGDATA "กำลังตรวจสอบข้อมูล ...."
+    IDS_MESSAGEBOX_INVALIDFILENAME "ชื่อไม่สมบูรณ์"
+    IDS_MESSAGEBOX_CANOTREADFILEDATA "ไม่สามารถอ่านไฟล์ข้อมูล"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_WRITEFILEFAILED "การเขียนข้อมูลไฟล์ล้มเหลว"
+    IDS_STRING_SOURCEFILE   "ไฟล์ต้นทาง"
+    IDS_STRING_DESTINATIONFILE "ไฟล์เป้าหมาย"
+    IDS_STRING_STATUS_COPYING "กำลังคัดลอก"
+    IDS_STRING_STATUS_PAUSE "พัก"
+    IDS_STRING_STATUS_VERFYING "กำลังตรวจสอบ"
+    IDS_STRING_STATUS_FINISHED "เสร็จสิ้น"
+    IDS_STRING_STATUS_READY "พร้อมแล้ว"
+    IDS_MESSAGEBOX_AREYOUUSRESKIP "คุณต้องการข้ามไฟล์นี้"
+    IDS_STRING_VERIFICATION_SAME "อย่างเดียวกัน"
+    IDS_STRING_VERIFICATION_DIFF "ความแตกต่าง"
+    IDS_MESSAGEBOX_RECURSIVEFOLDERERROR 
+                            "โฟลเดอร์ต่อเนื่องไม่ถูกต้อง\n ต้นทาง: %s\n ปลายทาง:%s"
+    IDS_MESSAGEBOX_RESTARTFORUPDATELANGUAGE 
+                            "ไม่สามารถเปลี่ยนภาษาได้ในขณะนี้ กรุณาทำการปิดและเปิดโปรแกรม ExtremeCopy ใหม่อีกครั้ง"
+    IDS_MESSAGEBOX_NEWVERSIONFORMAT 
+                            "มีเวอร์ชันใหม่ %s %s %s ที่พร้อมใช้งานแล้ว คุณต้องการดาวน์โหลดหรือไม่\n\nถ้าใช่ กรุณาเลือกหรือสร้างโฟลเดอร์เพื่อเก็บโปรแกรมก่อน"
+    IDS_STRING_FINALVERSION "สุดท้าย"
+    IDS_MESSAGEBOX_AREYOUSURECANCELDOWNLOAD 
+                            "คุณต้องการยกเลิกการดาวน์โหลดไฟล์หรือไม่"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING_STATUS_MOVING "กำลังย้าย"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_PLEASESPECIFYVALIDEMAIL "กรุณากรอกที่อยู่อีเมล์ให้ถูกต้อง!"
+    IDS_MESSAGEBOX_ALLOFFOLLOWTASKSWILLPAUSE 
+                            "ระบบสั่งการแบบอัตโนมัติทุกอย่างจะไม่ทำงาน จนกว่างานที่กำลังทำในปัจจุบันจะสำเร็จ คุณต้องการสั่งงานเองหรือไม่?"
+    IDS_MESSAGEBOX_AREYOUSURERUNANYWAY "คุณต้องการดำเนินการต่อหรือไม่?"
+    IDS_STRING_ASKME        "ถามก่อนทุกครั้ง"
+    IDS_STRING_REPLACE      "เขียนทับ"
+    IDS_STRING_SKIP         "ข้าม"
+    IDS_STRING_RENAME       "เปลี่ยนชื่อ"
+    IDS_STRING_BIGGER       "ใหญ่กว่า"
+    IDS_STRING_OLDER        "เก่ากว่า"
+    IDS_STRING_NEWER        "ใหม่กว่า"
+    IDS_STRING_SMALLER      "เล็กกว่า"
+    IDS_STRING_SAMETIMEANDSIZE "ขนาดและเวลาเท่ากัน"
+    IDS_RIGHTMENUITEM_EXTREME_COPY "สำเนามากที่นี่"
+    IDS_RIGHTMENUITEM_EXTREME_MOVE "ย้ายไปที่นี่มาก"
+    IDS_RIGHTMENUITEM_LAUNCH_WITH_EXTREMECOPY 
+                            "เปิดตัวพร้อมกับ ExtremeCopy Pro"
+END
+
+#endif    // Thai (Thailand) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_MENUITEM     BITMAP                  "..\\XCRes_ENU\\Res\\MenuItem.bmp"
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

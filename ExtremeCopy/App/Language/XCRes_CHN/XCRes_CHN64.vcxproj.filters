@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XCRes_CHN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XCRes_ENU\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="Res\ButtonDisable.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ButtonDown.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ButtonHover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ButtonMenuDown.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ButtonMenuHover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ButtonMenuNormal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ButtonNormal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\CloseButtonDown.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\CloseButtonHover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\CloseButtonNormal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ColumnTitleLeft.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ColumnTitleRight.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ColumnTitleSpan.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ExtremeCopy.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_background_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_background_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_background_press.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_left_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_left_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_left_press.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_right_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_right_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_right_press.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_thumb_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_thumb_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hor_thumb_press.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\MenuItem.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\MinButtonDown.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\MinButtonHover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\MinButtonNormal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ProgressBar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\SpeedButtonDown.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\SpeedButtonHover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\SpeedButtonNormal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\Status_Fail.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\Status_Running.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\Status_Success.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\Status_Waiting.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\TaskFile.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\TitleBackground.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\TrackBar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\TrackThumb.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_background_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_background_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_background_press.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_down_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_down_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_down_press.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_thumb_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_thumb_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_thumb_press.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_up_hover.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_up_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\ver_up_press.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\windows.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\windows.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\TrackBar2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\TrackThumb2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\DlgBackground.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\XCRes_ENU\Res\MenuItem.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XCRes_CHN.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

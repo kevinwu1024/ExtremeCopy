@@ -1,0 +1,866 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Traditional, Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 245, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "從：",IDC_STATIC_FROM,18,25,28,8
+    LTEXT           "--",IDC_STATIC_SOURCEFILE,49,24,180,8,SS_PATHELLIPSIS
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,49,38,181,8,SS_PATHELLIPSIS
+    LTEXT           "當前：",IDC_STATIC,16,47,28,8
+    LTEXT           "總體：",IDC_STATIC,16,54,27,8
+    LTEXT           "速度：",IDC_STATIC,22,65,24,8
+    LTEXT           "用時：",IDC_STATIC,6,73,39,8
+    LTEXT           "剩余時間：",IDC_STATIC,2,83,44,8
+    LTEXT           "完成大小：",IDC_STATIC,84,73,41,8
+    LTEXT           "剩余大小：",IDC_STATIC,84,83,42,8
+    LTEXT           "文件：",IDC_STATIC,19,12,25,8
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,50,12,180,11,SS_ENDELLIPSIS
+    CTEXT           "-",IDC_STATIC_SPEED,47,65,37,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,47,73,35,8
+    LTEXT           "計算中..",IDC_STATIC_REMAINTIME,47,83,35,8
+    LTEXT           "-",IDC_STATIC_TRANSFORMSIZE,125,73,27,8
+    LTEXT           "-",IDC_STATIC_REMAINSIZE,125,83,27,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,48,56,189,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,48,48,189,6
+    LTEXT           "總大小：",IDC_STATIC,91,65,34,8
+    LTEXT           "-",IDC_STATIC_TOTALSIZE,125,65,33,8
+    LTEXT           "完成文件數：",IDC_STATIC,153,73,48,8
+    LTEXT           "剩余文件數：",IDC_STATIC,153,83,49,8
+    LTEXT           "總文件數：",IDC_STATIC,156,65,41,8
+    LTEXT           "-",IDC_STATIC_DONEFILES,197,73,45,8
+    LTEXT           "-",IDC_STATIC_REMAINFILES,197,83,45,8
+    LTEXT           "-",IDC_STATIC_TOTALFILES,197,65,45,8
+    LTEXT           "到：",IDC_STATIC_TO,17,37,14,8
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,1,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,134,234,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,5,104,8,14
+    LTEXT           "失敗文件列表：",IDC_STATIC,5,124,53,8
+    PUSHBUTTON      "重試全部失敗文件",IDC_BUTTON_RETRYALLFAILED,5,249,80,14
+    LTEXT           "狀態： ",IDC_STATIC,5,92,26,8
+    LTEXT           "-",IDC_STATIC_STATUS,37,92,50,8
+    LTEXT           "檢查：",IDC_STATIC,88,92,39,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,133,92,51,8
+    PUSHBUTTON      "運行",IDC_BUTTON_RUNANDPAUSE,20,103,49,14
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,189,103,49,14
+    PUSHBUTTON      "跳過",IDC_BUTTON_SKIP,75,103,49,14
+    PUSHBUTTON      "檢查數據",IDC_BUTTON_VERIFYDATA,127,249,58,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "了解專業版",IDC_STATIC_GETPRO,98,2,55,8
+    PUSHBUTTON      "幫助",IDC_BUTTON_HELP,188,249,51,14
+END
+
+IDD_DIALOG_MESSAGEBOX DIALOGEX 0, 0, 248, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "是",IDC_BUTTON_MSGBOX_YES,54,43,50,14
+    PUSHBUTTON      "否",IDC_BUTTON_MSGBOX_NO,153,43,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,29,7,187,30
+    PUSHBUTTON      "確認",IDC_BUTTON_MSGBOX_OK,104,43,50,14
+END
+
+IDD_DIALOG_MAIN_SIMPLY DIALOGEX 0, 0, 242, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "當前：",IDC_STATIC,10,35,28,8
+    LTEXT           "總體：",IDC_STATIC,10,43,24,8
+    LTEXT           "速度：",IDC_STATIC,3,56,24,8
+    LTEXT           "用時：",IDC_STATIC,71,56,39,8
+    LTEXT           "剩余時間：",IDC_STATIC,150,56,44,8
+    LTEXT           "文件：",IDC_STATIC,15,11,26,8,SS_ENDELLIPSIS
+    LTEXT           "-",IDC_STATIC_CURRENTFILE,44,13,165,11
+    CTEXT           "-",IDC_STATIC_SPEED,28,56,42,8
+    LTEXT           "-",IDC_STATIC_LAPSETIME,112,56,34,8
+    LTEXT           "計算中...",IDC_STATIC_REMAINTIME,194,56,35,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER,39,44,196,6
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER,39,36,196,6
+    LTEXT           "到：",IDC_STATIC_TO,23,24,12,8
+    LTEXT           "--",IDC_STATIC_DESTINATIONFILE,42,24,189,8,SS_PATHELLIPSIS
+    PUSHBUTTON      "",IDC_BUTTON_SPEED,2,2,12,8
+    CONTROL         "",IDC_LIST_CHANGE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,111,234,110
+    PUSHBUTTON      "",IDC_BUTTON_MORELESS,4,80,8,14
+    LTEXT           "失敗文件列表：",IDC_STATIC,5,100,53,8
+    PUSHBUTTON      "重試全部失敗文件",IDC_BUTTON_RETRYALLFAILED,4,225,80,14
+    LTEXT           "狀態： ",IDC_STATIC,4,68,26,8
+    LTEXT           "-",IDC_STATIC_STATUS,36,68,34,8
+    LTEXT           "檢查：",IDC_STATIC,71,68,39,8
+    LTEXT           "-",IDC_STATIC_VERIFICATION,112,68,51,8
+    PUSHBUTTON      "檢查數據",IDC_BUTTON_VERIFYDATA,115,225,58,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "運行",IDC_BUTTON_RUNANDPAUSE,19,79,49,14
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,188,79,49,14
+    PUSHBUTTON      "跳過",IDC_BUTTON_SKIP,74,79,49,14
+    LTEXT           "了解專業版",IDC_STATIC_GETPRO,91,2,55,8
+    PUSHBUTTON      "幫助",IDC_BUTTON_HELP,187,225,51,14
+END
+
+IDD_DIALOG_SAMENAME2 DIALOGEX 0, 0, 260, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "新文件：",IDC_STATIC,20,81,30,8
+    LTEXT           "Static",IDC_STATIC_SOURCENAME,51,80,184,8,SS_PATHELLIPSIS
+    LTEXT           "Static",IDC_STATIC_SAMEFILENAME,53,16,114,9,SS_ENDELLIPSIS
+    LTEXT           "相同文件：",IDC_STATIC,16,17,34,8
+    LTEXT           "創建時間：",IDC_STATIC,9,92,42,8
+    LTEXT           "文件大小：",IDC_STATIC,34,103,16,8
+    LTEXT           "Static",IDC_STATIC_SOURCESIZE,55,103,32,8
+    LTEXT           "Static",IDC_STATIC_SOURCECREATETIME,55,92,71,8
+    LTEXT           "修改時間：",IDC_STATIC,130,92,42,8
+    LTEXT           "Static",IDC_STATIC_SOURCEMODIFYTIME,176,92,74,8
+    LTEXT           "舊文件：",IDC_STATIC,21,33,27,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONNAME,51,33,183,8,SS_PATHELLIPSIS
+    LTEXT           "創建時間：",IDC_STATIC,9,44,42,8
+    LTEXT           "文件大小：",IDC_STATIC,33,55,16,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONSIZE,55,55,31,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONCREATETIME,55,44,73,8
+    LTEXT           "修改時間：",IDC_STATIC,132,44,42,8
+    LTEXT           "Static",IDC_STATIC_DESTINATIONMODIFYTIME,180,44,80,8
+    LTEXT           "覆蓋 ：",IDC_STATIC_REPLACE,17,67,74,10
+    LTEXT           "Static",IDC_STATIC_ICON,181,6,35,25
+    PUSHBUTTON      "覆蓋",IDC_BUTTON_REPLACE,90,119,52,14
+    PUSHBUTTON      "跳過",IDC_BUTTON_SKIP,204,119,52,14
+    PUSHBUTTON      "全部覆蓋",IDC_BUTTON_REPLACEALL,148,119,52,14
+    PUSHBUTTON      "更多",IDC_BUTTON_MORELESS,7,120,25,14
+    PUSHBUTTON      "改名",IDC_BUTTON_RENAME,90,140,52,14
+    PUSHBUTTON      "全部改名",IDC_BUTTON_RNAMEALL,148,140,52,14
+    PUSHBUTTON      "全部跳過",IDC_BUTTON_SKIPALL,204,140,52,14
+    CONTROL         "相同大小",IDC_CHECK_SKIPSAMESIZE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,108,166,48,10
+    CONTROL         "相同修改時間",IDC_CHECK_SKIPSAMEMODIFYTIME,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,172,166,73,10
+    GROUPBOX        "符合下面條件才全部跳過,否則覆蓋",IDC_STATIC,90,156,166,23
+    PUSHBUTTON      "幫助",IDC_BUTTON_HELP,7,140,25,14
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,36,140,50,14
+    LTEXT           "更新的",IDC_STATIC_NEWER,95,69,82,8
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 254, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "請輸入你的序列號:",IDC_STATIC,13,7,108,8
+    EDITTEXT        IDC_EDIT_NUMBER1,19,25,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,65,27,8,8
+    EDITTEXT        IDC_EDIT_NUMBER2,79,25,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,125,27,8,8
+    EDITTEXT        IDC_EDIT_NUMBER3,137,25,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,183,27,8,8
+    EDITTEXT        IDC_EDIT_NUMBER4,198,25,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,103,52,50,14
+    PUSHBUTTON      "確認",IDC_BUTTON_REGISTER,28,52,50,14
+    LTEXT           "Static",IDC_STATIC_LICENCE,125,7,117,8
+    PUSHBUTTON      "購買",IDC_BUTTON_BUY,181,52,50,14
+END
+
+IDD_DIALOG_CONFIGURATION DIALOGEX 0, 0, 391, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",ID_BUTTON_OK,230,214,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,310,214,50,14
+    LTEXT           "程序界面 :",IDC_STATIC,16,20,38,8
+    COMBOBOX        IDC_COMBO_UITYPE,100,19,89,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "作? Windows 的默認複制器",IDC_CHECK_ASDEFAULTCOPYING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,50,113,10
+    CONTROL         "完成後播放聲音：",IDC_CHECK_PLAYFINISHEDSOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,146,80,10
+    EDITTEXT        IDC_EDIT_SOUNDFILE,29,158,160,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SELECTSOUNDFILE,191,158,16,13
+    CONTROL         "窗口在最前面",IDC_CHECK_TOPMOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,62,64,10
+    CTEXT           "Static",IDC_STATIC_VERSIONNAME,105,3,150,8
+    CONTROL         "最小化時顯示到系統托盤",IDC_CHECK_MINIMUMTOTRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,74,104,10
+    CONTROL         "寫日志文件",IDC_CHECK_WRITELOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,86,56,10
+    LTEXT           "出錯列表的最大數目：",IDC_STATIC,17,198,81,8
+    EDITTEXT        IDC_EDIT_MAXFAILEDFILE,99,195,57,14,ES_NUMBER
+    LTEXT           "語言 : ",IDC_STATIC,15,35,24,8
+    COMBOBOX        IDC_COMBO_LANGUAGE,99,35,90,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "複制完成後檢查數據",IDC_CHECK_VERIFYDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,98,88,10
+    CONTROL         "檢查完數據後關閉窗口",IDC_CHECK_CLOSEAFTERVERIFY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,110,125,10
+    LTEXT           "複制數據緩沖區大小：",IDC_STATIC,17,180,81,8
+    COMBOBOX        IDC_COMBO_FILEDATABUF,103,179,39,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MB",IDC_STATIC,149,180,10,8
+    CONTROL         "詢問我",IDC_RADIO_SAMEFILE_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,225,26,40,10
+    CONTROL         "全部改名",IDC_RADIO_SAMEFILE_RENAMEALL,"Button",BS_AUTORADIOBUTTON,283,26,48,10
+    CONTROL         "全部覆蓋",IDC_RADIO_SAMEFILE_REPLACEALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,39,48,10
+    CONTROL         "全部跳過",IDC_RADIO_SAMEFILE_SKIPALL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,283,40,50,10
+    CONTROL         "",IDC_RADIO_SAMEFILE_REPLACENEWER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,225,53,11,10
+    CONTROL         "詢問我",IDC_RADIO_ERROR_ASKME,"Button",BS_AUTORADIOBUTTON | WS_GROUP,224,125,40,10
+    CONTROL         "重試",IDC_RADIO_ERROR_RETRY,"Button",BS_AUTORADIOBUTTON,282,124,32,10
+    CONTROL         "跳過",IDC_RADIO_ERROR_IGNORE,"Button",BS_AUTORADIOBUTTON,224,138,32,10
+    CONTROL         "退出程式",IDC_RADIO1_ERROR_EXIT,"Button",BS_AUTORADIOBUTTON,282,138,48,10
+    GROUPBOX        "遇到相同文件名時",IDC_STATIC,216,16,167,94
+    GROUPBOX        "遇到錯誤時",IDC_STATIC,216,114,168,36
+    CONTROL         "自動檢測最新版本",IDC_CHECK_CHECKNEWVERSION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,134,80,10
+    PUSHBUTTON      "?動位置設置",IDC_BUTTON_POSITIONDLG,13,214,70,14
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,287,163,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "詢問我",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,228,192,40,10
+    CONTROL         "跳過",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,272,192,32,10
+    CONTROL         "退出程式",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,316,192,48,10
+    GROUPBOX        "出錯重試",IDC_STATIC,216,155,166,51
+    LTEXT           "最大次數：",IDC_STATIC,228,165,41,8
+    LTEXT           "如果超過最大小次數則：",IDC_STATIC,229,180,89,8
+    COMBOBOX        IDC_COMBO_IFCONDITION,284,51,70,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "如果源文件",IDC_STATIC,238,54,43,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,284,67,70,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "否則",IDC_STATIC,237,85,22,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,284,84,70,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "那麼",IDC_STATIC,237,70,23,8
+    CONTROL         "若關聯的硬盤正在使用，對多個任務進行自動排隊",IDC_CHECK_QUEUETASK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,122,192,10
+    PUSHBUTTON      "幫助",IDC_BUTTON_HELP,113,214,50,14
+END
+
+IDD_DIALOG_SPECIFYSRCDST DIALOGEX 0, 0, 303, 361
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+MENU IDR_MENU_TASKDLG
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "了解專業版",IDC_STATIC_GETPRO,117,2,55,8
+    PUSHBUTTON      "過濾",IDC_BUTTON_WILDCARD2,179,16,42,14,WS_DISABLED
+    PUSHBUTTON      "移除",IDC_BUTTON_DELETE,227,16,32,14
+    PUSHBUTTON      "清除",IDC_BUTTON_CLEAR,264,16,32,14
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSESRCFILE,73,18,14,11
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSEDSTFOLDER,73,102,14,11
+    PUSHBUTTON      "更多",IDC_BUTTON_MORELESS,9,151,28,14
+    PUSHBUTTON      "複制",IDC_BUTTON_RUNCOPY,53,151,50,14
+    PUSHBUTTON      "移動",IDC_BUTTON_RUNMOVE,112,151,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,227,151,52,14
+    LISTBOX         IDC_LIST_SOURCEFILE,10,32,285,66,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "導出文件",IDC_BUTTON_EXPORTTOFILE,97,336,85,15
+    PUSHBUTTON      "導入文件",IDC_BUTTON_IMPORTFROMFILE,192,336,85,15
+    EDITTEXT        IDC_EDIT_RETRYMAXTIMES,229,241,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "詢問我",IDC_RADIO_SAMEFILEASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,200,39,10
+    CONTROL         "全部改名",IDC_RADIO_SAMEFILERENAME,"Button",BS_AUTORADIOBUTTON,76,200,51,10
+    CONTROL         "全部覆蓋",IDC_RADIO_SAMEFILEREPLACE,"Button",BS_AUTORADIOBUTTON,17,213,51,10
+    CONTROL         "全部跳過",IDC_RADIO_SAMEFILESKIP,"Button",BS_AUTORADIOBUTTON,76,214,50,10
+    CONTROL         "",IDC_RADIO_SAMEFILEREPLACENEWER,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,17,226,11,14
+    CONTROL         "詢問我",IDC_RADIO_ERRORASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,169,204,39,10
+    CONTROL         "重試",IDC_RADIO_ERRORRETRY,"Button",BS_AUTORADIOBUTTON,228,203,34,10
+    CONTROL         "忽略",IDC_RADIO_ERRORIGNORE,"Button",BS_AUTORADIOBUTTON,169,217,37,10
+    CONTROL         "退出",IDC_RADIO1_ERROREXIT,"Button",BS_AUTORADIOBUTTON,228,217,28,10
+    CONTROL         "窗口",IDC_RADIO_SHOWMODEWINDOW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,33,296,41,10
+    CONTROL         "托盤",IDC_RADIO_SHOWMODETRAY,"Button",BS_AUTORADIOBUTTON,89,296,31,10
+    CONTROL         "詢問我",IDC_RADIO1_RETRYTHENASK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,169,271,39,10
+    CONTROL         "忽略",IDC_RADIO1_RETRYTHENIGNORE,"Button",BS_AUTORADIOBUTTON,213,271,37,10
+    CONTROL         "退出",IDC_RADIO1_RETRYTHENEXIT,"Button",BS_AUTORADIOBUTTON,257,271,28,10
+    LTEXT           "目標文件夾：",IDC_STATIC,10,103,62,8
+    LTEXT           "源文件或文件夾",IDC_STATIC,10,19,61,8
+    LTEXT           "( 可以拖放文件(夾)到編輯框 )",IDC_STATIC,92,104,112,8
+    GROUPBOX        "如果遇到相同文件名的話,那?",IDC_STATIC,8,190,145,92
+    GROUPBOX        "初始顯示",IDC_STATIC_SHOWMODE,9,286,143,23
+    GROUPBOX        "如果遇到錯誤,那?",IDC_STATIC,157,193,139,36
+    GROUPBOX        "錯誤重試",IDC_STATIC,157,233,139,51
+    LTEXT           "最大重試次數：",IDC_STATIC,169,244,53,8
+    LTEXT           "如果超過最大重試次數,那?：",IDC_STATIC,171,258,91,8
+    LISTBOX         IDC_LIST_DESTINATION,9,116,286,28,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "移除",IDC_BUTTON_DELETEDST,227,100,32,14
+    PUSHBUTTON      "清除",IDC_BUTTON_CLEARDST,264,100,32,14
+    CONTROL         "複制完成後檢查文件",IDC_CHECK_VERIFYDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,173,113,10
+    LTEXT           "完成後運行命令行：",IDC_STATIC,13,318,93,8
+    EDITTEXT        IDC_EDIT_FINISHEVENT,116,316,161,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_IFCONDITION,72,227,61,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "如果源文件",IDC_STATIC,29,229,40,8
+    COMBOBOX        IDC_COMBO_THENOPERATION,72,243,61,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "否則",IDC_STATIC,31,264,33,8
+    COMBOBOX        IDC_COMBO_OTHERWISEOPERATOIN,72,262,61,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "那麼",IDC_STATIC,32,246,21,8
+    LTEXT           "，",IDC_STATIC,137,247,13,8
+    LTEXT           "，",IDC_STATIC,137,231,13,8
+    PUSHBUTTON      "幫助",IDC_BUTTON_HELP,9,336,51,14
+END
+
+IDD_DIALOG_ABOUT DIALOGEX 0, 0, 183, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "關閉",IDCANCEL,67,92,50,14
+    CTEXT           "Static",IDC_STATIC_ABOUTVERSION,38,2,109,8
+    CTEXT           "Static",IDC_STATIC_ALLRIGHT,41,69,108,11
+    CTEXT           "Static",IDC_STATIC_REGIST,53,23,84,8
+END
+
+IDD_DIALOG_MESSAGEBOX_COPYERROROPER DIALOGEX 0, 0, 248, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDC_BUTTON_MSGBOX_CANCEL,170,58,50,14
+    CTEXT           "Static",IDC_STATIC_TEXT,13,4,224,33
+    PUSHBUTTON      "忽略",IDC_BUTTON_MSGBOX_IGNORE,96,58,50,14
+    PUSHBUTTON      "重試",IDC_BUTTON_MSGBOX_RETRY,22,58,50,14
+END
+
+IDD_DIALOG_SPEED DIALOGEX 0, 0, 90, 82
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_SPEED,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS,2,11,74,17
+    LTEXT           "Static",IDC_STATIC_SPEED,49,2,19,8
+    LTEXT           "速度",IDC_STATIC,3,2,21,8
+    CONTROL         "檢查數據",IDC_CHECK_VERIFYDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,44,48,10
+    LTEXT           "任務完成後：",IDC_STATIC,5,33,49,8
+    CONTROL         "關閉窗口",IDC_CHECK_CLOSEWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,55,48,10
+    CONTROL         "關機",IDC_CHECK_SHUTDOWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,67,50,10
+END
+
+IDD_DIALOG_EDITWILDCARD DIALOGEX 0, 0, 233, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確認",IDOK,44,64,50,14
+    PUSHBUTTON      "取消",IDCANCEL,140,64,50,14
+    LTEXT           "Static",IDC_STATIC_DESTINATIONWILDCARD,14,10,207,8,SS_PATHELLIPSIS
+    EDITTEXT        IDC_EDIT_WILDCARDINPUT,56,40,96,14,ES_AUTOHSCROLL
+    LTEXT           "過濾 ：",IDC_STATIC,20,42,22,8
+    PUSHBUTTON      "幫助",IDC_BUTTON_HELP,167,39,25,14
+    LTEXT           "(輸入過濾的通配符,例如: *.mp3)",IDC_STATIC_TIP,30,28,145,8
+END
+
+IDD_DIALOG_STDLAUNCH DIALOGEX 0, 0, 236, 64
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,150,47,50,14
+    LTEXT           "Static",IDC_STATIC_TEXT,29,7,187,22
+    PUSHBUTTON      "設置",IDC_BUTTON_CONFIGURATION,28,47,50,14
+    LTEXT           "了解專業版",IDC_STATIC_GETPRO,90,37,41,8
+END
+
+IDD_DIALOG_BUGREPORT DIALOGEX 0, 0, 262, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ExtremeCopy Bug Report"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "報告問題",IDOK,56,160,50,14
+    PUSHBUTTON      "取消",IDCANCEL,161,160,50,14
+    LTEXT           "我們非常抱歉地告知您軟件因?崩潰而彈出這個窗口。\r\n\r\n?了讓我們更好地改進軟件，麻煩您告訴我們剛才你所進行的操作，以便我們能跟進這個問題，謝謝！",IDC_STATIC,15,7,236,36
+    LTEXT           "郵件地址 (可選) ：",IDC_STATIC,15,54,66,8
+    EDITTEXT        IDC_EDIT_EMAIL,103,52,148,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROBLEMCONTENT,15,83,236,71,ES_AUTOHSCROLL
+    LTEXT           "問題描述 :",IDC_STATIC,16,71,38,8
+END
+
+IDD_DIALOG_TASKQUEUE DIALOGEX 0, 0, 243, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ExtremeCopy 任務隊列"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "正在複制文件中的任務剩余時間：",IDC_STATIC,14,132,121,8
+    LTEXT           "當前任務所在隊列的位置：",IDC_STATIC,16,145,97,8
+    LTEXT           "如果希望以最短的時間完成目前的所有複制任務，強烈建議現在這個任務自動排隊",IDC_STATIC,14,107,216,19
+    LTEXT           "left time",IDC_STATIC_LEFTTIME,135,132,71,8
+    LTEXT           "position",IDC_STATIC_POSITION,127,145,16,8
+    CONTROL         "",IDC_SPIN_PRIORITY,"msctls_updown32",UDS_ARROWKEYS,148,142,11,14
+    PUSHBUTTON      "退出",IDCANCEL,177,182,50,14
+    PUSHBUTTON      "強制運行",IDC_BUTTON_RUN,87,181,60,14
+    LTEXT           "相關的硬盤正在使用中……",IDC_STATIC,14,9,93,8
+    CONTROL         "Current task will run automatically once position of queue is 0 .",IDC_CHECK_PAUSE,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,12,162,216,10
+    LTEXT           "源文件：",IDC_STATIC,13,23,33,8
+    LTEXT           "目標文件夾：",IDC_STATIC,11,79,49,8
+    LISTBOX         IDC_LIST_SOURCEFILE,11,33,227,42,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_DESTINATIONFOLDER,11,90,227,15,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "幫助",IDC_BUTTON_HELP,9,181,51,14
+END
+
+IDD_DIALOG_STARTUPPOS DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ExtremeCopy ?動位置設置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確認",IDOK,184,162,50,14
+    PUSHBUTTON      "取消",IDCANCEL,255,162,50,14
+    PUSHBUTTON      "恢複默認",IDC_BUTTON_RESTOREDEFAULT,10,161,50,14
+    CONTROL         "",IDC_STATIC_SCREEN,"Static",SS_BLACKFRAME,11,8,294,146
+END
+
+IDD_DIALOG_MESSAGE DIALOGEX 0, 0, 175, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,115,58,50,14
+    LTEXT           "Static",IDC_STATIC_MESSAGE,16,10,141,35
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGEBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MAIN_SIMPLY, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SAMENAME2, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_CONFIGURATION, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPECIFYSRCDST, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGEBOX_COPYERROROPER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPEED, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_EDITWILDCARD, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STDLAUNCH, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_BUGREPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_TASKQUEUE, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_STARTUPPOS, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_MESSAGE, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_TITLE        BITMAP                  "..\\XCRes_ENU\\Res\\TitleBackground.bmp"
+
+IDB_BITMAP_PROGRESSBAR  BITMAP                  "..\\XCRes_ENU\\Res\\ProgressBar.bmp"
+
+IDB_BITMAP_SPEEDBUTTONNORMAL BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonNormal.bmp"
+
+IDB_BITMAP_SPEEDBUTTONDOWN BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonDown.bmp"
+
+IDB_BITMAP_SPEEDBUTTONHOVER BITMAP                  "..\\XCRes_ENU\\Res\\SpeedButtonHover.bmp"
+
+IDB_BITMAP_WINDOWS      BITMAP                  "..\\XCRes_ENU\\Res\\windows.bmp"
+
+IDB_BITMAP_TRACKBAR2    BITMAP                  "..\\XCRes_ENU\\Res\\TrackBar2.bmp"
+
+IDB_BITMAP_TRACKTHUMB2  BITMAP                  "..\\XCRes_ENU\\Res\\TrackThumb2.bmp"
+
+IDB_BITMAP_DLGBACKGROUND BITMAP                  "..\\XCRes_ENU\\Res\\DlgBackground.bmp"
+
+IDB_BITMAP_DOWNARROW    BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonNormal.bmp"
+
+IDB_BITMAP_UPARROW      BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonNormal.bmp"
+
+IDB_BITMAP_DOWNARROWDOWN BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonDown.bmp"
+
+IDB_BITMAP_DOWNARROWHOVER BITMAP                  "..\\XCRes_ENU\\Res\\DownArrowButtonHover.bmp"
+
+IDB_BITMAP_UPARROWDOWN  BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonDown.bmp"
+
+IDB_BITMAP_UPARROWHOVER BITMAP                  "..\\XCRes_ENU\\Res\\UpArrowButtonHover.bmp"
+
+IDB_BITMAP_EXTREMECOPYUI BITMAP                  "..\\XCRes_ENU\\Res\\ExetremeCopyUI.bmp"
+
+IDB_BITMAP_DESKTOP      BITMAP                  "..\\XCRes_ENU\\Res\\windows_desktop.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,0,0
+ PRODUCTVERSION 2,4,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "EaserSoft Inc."
+            VALUE "FileDescription", "ExtremeCopy Resource"
+            VALUE "FileVersion", "2.4.0.0"
+            VALUE "InternalName", "XCRes_CHT"
+            VALUE "LegalCopyright", "Copyright (C) 2020"
+            VALUE "OriginalFilename", "XCRes_CHT.dll"
+            VALUE "ProductName", "ExtremeCopy Resouce File"
+            VALUE "ProductVersion", "2.4.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HAND         CURSOR                  "..\\XCRes_ENU\\Res\\hand.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EXTREMECOPY         ICON                    "..\\XCRes_ENU\\Res\\ExtremeCopy.ico"
+
+IDI_ICON_STATUS_FAIL    ICON                    "..\\XCRes_ENU\\Res\\Status_Fail.ico"
+
+IDI_ICON_STATUS_RUNNING ICON                    "..\\XCRes_ENU\\Res\\Status_Running.ico"
+
+IDI_ICON_STATUS_SUCCESS ICON                    "..\\XCRes_ENU\\Res\\Status_Success.ico"
+
+IDI_ICON_STATUS_WAITING ICON                    "..\\XCRes_ENU\\Res\\Status_Waiting.ico"
+
+IDI_SMALL               ICON                    "..\\XCRes_ENU\\Res\\small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "TaskDialogMenu"
+    BEGIN
+        MENUITEM "成?複制任務",                      ID_MENU_ASCOPYTASK
+        MENUITEM "成?移動任務",                      ID_MENU_ASMOVETASK
+    END
+    POPUP "OpenSrcMenu"
+    BEGIN
+        MENUITEM "文件",                          ID_MENU_OPENSRCFILE
+        MENUITEM "文件夾",                         ID_MENU_OPENSRCFOLDER
+    END
+    POPUP "FailedFileList"
+    BEGIN
+        MENUITEM "取消",                          ID_MENU_FAILEDFILELIST_CANCEL
+        MENUITEM "重試",                          ID_MENU_FAILEDFILELIST_RETRY
+        MENUITEM SEPARATOR
+        POPUP "Location"
+        BEGIN
+            MENUITEM "源文件",                         ID_MENU_FAILEDFILELIST_LOCATION_SOURCE
+            MENUITEM "目標文件",                        ID_MENU_FAILEDFILELIST_LOCATION_DESTINATION
+        END
+        POPUP "Property"
+        BEGIN
+            MENUITEM "源文件",                         ID_MENU_FAILEDFILELIST_PROPERTY_SOURCE
+            MENUITEM "目標文件",                        ID_MENU_FAILEDFILELIST_PROPERTY_DESTINAMTION
+        END
+    END
+END
+
+IDR_MENU_TASKDLG MENU
+BEGIN
+    POPUP "工具"
+    BEGIN
+        MENUITEM "配置",                          ID_MENU_CONFIGURATION
+        MENUITEM "注冊",                          ID_MENU_REGISTER
+    END
+    POPUP "幫助"
+    BEGIN
+        MENUITEM "關于",                          ID_MENU_ABOUT
+        MENUITEM "幫助",                          ID_MENU_HELP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_EXTREMECOPY ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_SUREEXIT "是不是要取消當前複制任務 ?"
+    IDS_TITLE_SAMEFILEDLG   "相同文件名"
+    IDS_BUTTON_MORE         "更多"
+    IDS_BUTTON_LESS         "更少"
+    IDS_BUTTON_CONTINUE     "繼續"
+    IDC_EXTREMECOPY         "EXTREMECOPY"
+    IDS_BUTTON_PAUSE        "暫停"
+    IDS_TITLE_APP           "ExtremeCopy"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_ALREADREGISTED "你已經注冊了,謝謝你的購買"
+    IDS_TITLE_CONFIGURATION "配置"
+    IDS_UITYPE_SIMPLE       "簡單"
+    IDS_UITYPE_NORMAL       "普通"
+    IDS_FORMAT_COPYOF       "複件"
+    IDS_TITLE_WARNING       "警告"
+    IDS_MESSAGEBOX_INPUTSOURCEFILE "請指定源文件或文件夾 !"
+    IDS_MESSAGEBOX_INPUTDESTINATIONFOLDER "請指定目標文件夾 !"
+    IDS_TITLE_APP_PRO       "ExtremeCopy 專業版"
+    IDS_TITLE_ABOUT         "關于"
+    IDS_LANGUAGE_NAME       "繁体中文"
+    IDS_RIGHTMENUITEM_PASTE "極速粘貼"
+    IDS_MESSAGEBOX_STANDARDEDTIONNOMAINDIALOG 
+                            "標准版沒有任務編輯功能，可以在Windows的資源管理器直接使用“粘貼”或者“ExtremeCopy 粘貼”來運行ExtremeCopy"
+    IDS_TOOLTIP_MINIMIZETRAY "最小化到任務欄"
+    IDS_TOOLTIP_CONTROLCOPYSPEED "你可以通過左邊的滑塊來控制當前複制速度"
+    IDS_FORMAT_TRAYUITEXT   "文件: %s\r\n速度: %s\r\n進度: %s / %s \r\n用時: %s\r\n剩余時間: %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICAIONPARAMETER "不能識別的參數: '%s' of '%s'"
+    IDS_CMDLN_ERROR_FORMAT_NOIDENTIFICATIONSWITCH "不能識別的命令: '%s'"
+    IDS_CMDLN_ERROR_SPECIFYDESTINATIONFOLDER "請指定目標文件夾"
+    IDS_CMDLN_ERROR_FORMAT_SPECIFYPARAMETER "'%s' 參數出錯"
+    IDS_CMDLN_ERROR_SPECIFYPRIMARYSWITCH "請指定主命令才運行. 例如: '-src' 和 '-dst'"
+    IDS_TITLE_ERROR         "錯誤"
+    IDS_CMDLN_ERROR_CMDLNERROR "命令行錯誤: "
+    IDS_STRING_ALLFILE      "所有文件"
+    IDS_TOOLTIP_EXPORTFILEBUTTON 
+                            "導出當前設置到 ExtremeCopy 任務文件,該任務文件可以通過 '導入文件'按鈕,或者用 '-task_file' 命令行來使用"
+    IDS_TOOLTIP_IMPORTFILE  "導入 ExtremeCopy 任務文件到當前設置"
+    IDS_TASKXMLERROR_CANTSUPPORTVERSION 
+                            "不支持當前任務文件版本,可以你的現在正在使用著舊版的 ExtremeCopy, 升級到最新版本即可解決這問題"
+    IDS_TASKXMLERROR_EXECUTECOMMAND "'execute command' 出錯 "
+    IDS_TASKXMLERROR_SHOWMODE "'show mode' 出錯"
+    IDS_TASKXMLERROR_SAMEFILEREACTION "'same file reaction' 出錯"
+    IDS_TASKXMLERROR_ERRORREACTION "'error reaction' 出錯"
+    IDS_TASKXMLERROR_OUTOFRETRY "'out of retry times' 出錯"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMDLN_ERROR_FORMAT_SWITCHDOESNTSUPPORTINCURRENTEDITION 
+                            "命令 '%s' 不支持當前版本"
+    IDS_TITLE_WILDCARDDLG   "過濾"
+    IDS_MESSAGEBOX_INPUTLEGALWILDCARD "請輸入合法的通配符,例如 '*' or '?'"
+    IDS_TITLE_REGISTER      "注冊"
+    IDS_RIGHTMENUITEM_EXECUTEBYXC "用 ExtremeCopy 運行"
+    IDS_MESSAGEBOX_ERROREXITAPP "因?出錯,而要退出當前複制任務"
+    IDS_ABOUT_FREEFORHOMEUSER "對家庭用戶免費"
+    IDS_ABOUT_ALREADYREGESITER "已注冊 !"
+    IDS_ABOUT_UNREGISTER    "未注冊 !"
+    IDS_TASKXMLERROR_INVALIDFORMAT "無效的 ExtremeCopy 任務 !"
+    IDS_TASKXMLERROR_NOSRCORDSTFILEORFOLDER "沒有指定文件或文件夾到源文件或目標文件夾"
+    IDS_FAILFILETITLE_NO    "編號."
+    IDS_FAILFILETITLE_STATUS "狀態"
+    IDS_FAILFILETITLE_SOURCEFILE "源文件"
+    IDS_FAILFILETITLE_DESTINATION "目標文件(夾)"
+    IDS_FAILFILETITLE_ERRORCODESTRING "失敗原因"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILFILETITLE_CREATETIME "時間"
+    IDS_FAILFILETITLE_STATUS_FAILED "失敗"
+    IDS_FAILFILETITLE_STATUS_WAITING "等待"
+    IDS_FAILFILETITLE_STATUS_SUCCESS "成功"
+    IDS_FAILFILETITLE_STATUS_RUNNING "運行"
+    IDS_MESSAGEBOX_OVERMAXFAILEDFILESNUMBER "太多的失敗文件,以致超過最多失敗文件數,當前的錯誤是: "
+    IDS_RIGHTMENUITEM_WINDOWPASTE "Windows 粘貼"
+    IDS_FAILFILETITLE_ERRORCODE "錯誤碼"
+    IDS_ERROR_APPERROR      "程序檢測到錯誤"
+    IDS_ERROR_INVALIDFILENAME "無效的文件名"
+    IDS_ERROR_UNKNOWN       "未知錯誤"
+    IDS_ERROR_SUCCESS       "成功！"
+    IDS_MESSAGEBOX_QUITCONFIRM "ExtremeCopy 正在運行中，你確認無論如何都要退出嗎？"
+    IDS_STRING_VERIFYINGDATA "檢查數據中 ...."
+    IDS_MESSAGEBOX_INVALIDFILENAME "無效文件名"
+    IDS_MESSAGEBOX_CANOTREADFILEDATA "不能讀取文件名"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_WRITEFILEFAILED "寫文件數據失敗"
+    IDS_STRING_SOURCEFILE   "源文件"
+    IDS_STRING_DESTINATIONFILE "目標文件"
+    IDS_STRING_STATUS_COPYING "複制中"
+    IDS_STRING_STATUS_PAUSE "暫停"
+    IDS_STRING_STATUS_VERFYING "檢查中"
+    IDS_STRING_STATUS_FINISHED "已完成"
+    IDS_STRING_STATUS_READY "准備"
+    IDS_MESSAGEBOX_AREYOUUSRESKIP "你確認要跳過嗎？"
+    IDS_STRING_VERIFICATION_SAME "相同"
+    IDS_STRING_VERIFICATION_DIFF "不同"
+    IDS_MESSAGEBOX_RECURSIVEFOLDERERROR "不正確的遞歸文件夾\r\n 源文件夾: %s\r\n 目標文件夾:%s"
+    IDS_MESSAGEBOX_RESTARTFORUPDATELANGUAGE "你需要重?ExtremeCopy以便更新程序界面語言"
+    IDS_MESSAGEBOX_NEWVERSIONFORMAT 
+                            "已有最新版 %s %s %s 可供下載，要下載嗎？\r\n\r\n如果選“是”，將需要你指定下載文件所存放的文件夾"
+    IDS_STRING_FINALVERSION "最終版本"
+    IDS_MESSAGEBOX_AREYOUSURECANCELDOWNLOAD "你確定要取消正在下載的文件嗎？"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING_STATUS_MOVING "移動中"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX_PLEASESPECIFYVALIDEMAIL "請指定有效的郵件地址！"
+    IDS_MESSAGEBOX_ALLOFFOLLOWTASKSWILLPAUSE 
+                            "一旦前面的任務完成後，所有在隊列中的任務將能自動開始，你確定要馬上手動開始這任務嗎？"
+    IDS_MESSAGEBOX_AREYOUSURERUNANYWAY "你確定要開始當前這任務嗎？"
+    IDS_STRING_ASKME        "詢問我"
+    IDS_STRING_REPLACE      "覆蓋"
+    IDS_STRING_SKIP         "跳過"
+    IDS_STRING_RENAME       "改名"
+    IDS_STRING_BIGGER       "大小更大"
+    IDS_STRING_OLDER        "時間更舊"
+    IDS_STRING_NEWER        "時間更新"
+    IDS_STRING_SMALLER      "大小更小"
+    IDS_STRING_SAMETIMEANDSIZE "相同時間和大小"
+    IDS_RIGHTMENUITEM_EXTREME_COPY "“極速” 複製到"
+    IDS_RIGHTMENUITEM_EXTREME_MOVE "“極速” 移動到"
+    IDS_RIGHTMENUITEM_LAUNCH_WITH_EXTREMECOPY "啟動 ExtremeCopy Pro"
+END
+
+#endif    // Chinese (Traditional, Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_MENUITEM     BITMAP                  "..\\XCRes_ENU\\Res\\MenuItem.bmp"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

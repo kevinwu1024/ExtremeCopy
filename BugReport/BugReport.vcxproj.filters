@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{93d6a8a4-7e6b-4616-9cc3-e54c6f08e92b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{f1f2e74b-aca6-4824-a90f-5512e8474d2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ExtremeCopy">
+      <UniqueIdentifier>{f30a5e23-65c6-4850-820f-e26954f957c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExtremeCopy">
+      <UniqueIdentifier>{98d16ed5-90dd-4a2b-93f7-5b960950bd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CommonControl">
+      <UniqueIdentifier>{2e423cd2-6710-4816-8ceb-3d5e1b32b178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CommonControl">
+      <UniqueIdentifier>{9a445e7c-1705-462c-93c7-bc9cd5e39ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenSSL">
+      <UniqueIdentifier>{1acc139f-f21f-4a07-8642-15281bd754b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="BugReport.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BugReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\CptCharCode.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\CptDiskManager.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\CptPerformanceCalcator.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptCmdLineParser.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptFolderSize.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptGlobal.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptMsgQue.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptNamePipe.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptRegistry.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptShellTray.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptString.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptThread.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptThreadLock.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptTime.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptTypeDef.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinHandleMang.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinMessage.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinPath.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\sgi_stl_alloc.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\stl_config.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\stl_threads.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\WndShadow.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\Common\ptWinGraphic.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\ptMultipleLanguage.h">
+      <Filter>Header Files\ExtremeCopy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\XCConfiguration.h">
+      <Filter>Header Files\ExtremeCopy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptComboBox.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptEditBox.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptFileDialog.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptImageList.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptListBox.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptProgressBar.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptPropertySheet.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\CptTabCtrl.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\Hyperlink.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\ptCommCtrl.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\UI\ptDialog.h">
+      <Filter>Header Files\CommonControl</Filter>
+    </ClInclude>
+    <ClInclude Include="XCBugReportDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExtremeCopy\App\XCGlobal.h">
+      <Filter>Header Files\ExtremeCopy</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSmtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XZip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\aes.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\asn1.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\asn1_mac.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\asn1t.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\bio.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\blowfish.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\bn.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\buffer.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\cast.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\comp.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\conf.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\conf_api.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\crypto.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\des.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\des_old.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\dh.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\dsa.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\dso.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\dtls1.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\e_os2.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ebcdic.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ec.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ecdh.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ecdsa.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\engine.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\err.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\evp.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\hmac.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\idea.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\krb5_asn.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\kssl.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\lhash.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\md2.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\md4.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\md5.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\obj_mac.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\objects.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ocsp.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\opensslconf.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\opensslv.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ossl_typ.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\pem.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\pem2.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\pkcs7.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\pkcs12.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\pq_compat.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\pqueue.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\rand.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\rc2.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\rc4.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ripemd.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\rsa.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\safestack.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\sha.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ssl.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ssl2.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ssl3.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ssl23.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\stack.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\store.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\symhacks.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\tls1.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\tmdiff.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\txt_db.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ui.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\ui_compat.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\x509.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\x509_vfy.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\x509v3.h">
+      <Filter>Header Files\OpenSSL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BugReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptTime.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptWinHandleMang.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptWinPath.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptThread.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptString.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptShellTray.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptRegistry.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptNamePipe.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptMsgQue.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptCmdLineParser.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\Common\ptFolderSize.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\XCConfiguration.cpp">
+      <Filter>Source Files\ExtremeCopy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\ptMultipleLanguage.cpp">
+      <Filter>Source Files\ExtremeCopy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptComboBox.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptEditBox.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptFileDialog.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptImageList.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptListBox.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptProgressBar.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptPropertySheet.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\CptTabCtrl.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\Hyperlink.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\ptCommCtrl.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\ptDialog.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\UI\ptWinToolTip.cpp">
+      <Filter>Source Files\CommonControl</Filter>
+    </ClCompile>
+    <ClCompile Include="XCBugReportDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExtremeCopy\App\XCGlobal.cpp">
+      <Filter>Source Files\ExtremeCopy</Filter>
+    </ClCompile>
+    <ClCompile Include="CSmtp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XZip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BugReport.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

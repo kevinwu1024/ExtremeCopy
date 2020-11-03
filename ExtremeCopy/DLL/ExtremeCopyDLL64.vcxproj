@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Dev)|Win32">
+      <Configuration>Release(Dev)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15437868-D5C4-414F-ACFD-C74F095C595A}</ProjectGuid>
+    <RootNamespace>ExtremeCopyDLL</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.21006.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\build\obj\ExtremeCopyDLL64\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Build\x64\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">$(SolutionDir)\Build\x64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\x64\obj\ExtremeCopyDll\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">..\..\Build\x64\obj\ExtremeCopyDll\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ExtremeCopy</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ExtremeCopy</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">ExtremeCopy</TargetName>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)\bin\x86_amd64;$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">$(VCInstallDir)\bin\x86_amd64;$(ExecutablePath)</ExecutablePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)lib\amd64;$(WindowsSdkDir)\lib\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">$(VCInstallDir)lib\amd64;$(WindowsSdkDir)\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <ExecutablePath>$(VCInstallDir)\bin\x86_amd64;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;EXTREMECOPYDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/DEF:".\ExtremeCopyDLL.def"  %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(OutDir)CopyDLLToDemo.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;EXTREMECOPYDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/DEF:".\ExtremeCopyDLL.def"  %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WIN64;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;EXTREMECOPYDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/DEF:".\ExtremeCopyDLL.def"  %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WIN64;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ExtremeCopyDLL.def" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ExtremeCopyDLL.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\App\RegisterCode.cpp" />
+    <ClCompile Include="..\Common\CptDiskManager.cpp" />
+    <ClCompile Include="..\Common\CptPerformanceCalcator.cpp" />
+    <ClCompile Include="..\Common\ptCmdLineParser.cpp" />
+    <ClCompile Include="..\Common\ptFolderSize.cpp" />
+    <ClCompile Include="..\Common\ptMsgQue.cpp" />
+    <ClCompile Include="..\Common\ptNamePipe.cpp" />
+    <ClCompile Include="..\Common\ptRegistry.cpp" />
+    <ClCompile Include="..\Common\ptShellTray.cpp" />
+    <ClCompile Include="..\Common\ptString.cpp" />
+    <ClCompile Include="..\Common\ptThread.cpp" />
+    <ClCompile Include="..\Common\ptTime.cpp" />
+    <ClCompile Include="..\Common\ptWinPath.cpp" />
+    <ClCompile Include="..\Common\TinyXML\tinystr.cpp" />
+    <ClCompile Include="..\Common\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="..\Common\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="..\Common\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="..\Common\WndShadow.cpp" />
+    <ClCompile Include="..\Core\XCAsyncFileDataTransFilter.cpp" />
+    <ClCompile Include="..\Core\XCCopyCondition.cpp" />
+    <ClCompile Include="..\Core\XCCopyingEvent.cpp" />
+    <ClCompile Include="..\Core\XCCore.cpp" />
+    <ClCompile Include="..\Core\XCCoreDefine.cpp" />
+    <ClCompile Include="..\Core\XCDestinationFilter.cpp" />
+    <ClCompile Include="..\Core\XCDuplicateOutputTransFilter.cpp" />
+    <ClCompile Include="..\Core\XCFileChangingBuffer.cpp" />
+    <ClCompile Include="..\Core\XCFileDataBuffer.cpp" />
+    <ClCompile Include="..\Core\XCFileDataCacheTransFilter.cpp" />
+    <ClCompile Include="..\Core\XCLocalFileAsynDestnationFilter2.cpp" />
+    <ClCompile Include="..\Core\XCLocalFileAsynSourceFilter.cpp" />
+    <ClCompile Include="..\Core\XCLocalFileSyncDestnationFilter.cpp" />
+    <ClCompile Include="..\Core\XCLocalFileSyncSourceFilter.cpp" />
+    <ClCompile Include="..\Core\XCNetworkSourceFilter.cpp" />
+    <ClCompile Include="..\Core\XCPin.cpp" />
+    <ClCompile Include="..\Core\XCSameDriveMoveFile.cpp" />
+    <ClCompile Include="..\Core\XCSourceFilter.cpp" />
+    <ClCompile Include="..\Core\XCSyncFileDataTransFilter.cpp" />
+    <ClCompile Include="..\Core\XCTransCore.cpp" />
+    <ClCompile Include="..\Core\XCTransformFilter.cpp" />
+    <ClCompile Include="..\Core\XCWinStorageRelative.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="ExtremeCopyApp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Dev)|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CptCharCode.h" />
+    <ClInclude Include="..\Common\CptDiskManager.h" />
+    <ClInclude Include="..\Common\CptPerformanceCalcator.h" />
+    <ClInclude Include="..\Common\ptCmdLineParser.h" />
+    <ClInclude Include="..\Common\ptFolderSize.h" />
+    <ClInclude Include="..\Common\ptGlobal.h" />
+    <ClInclude Include="..\Common\ptMsgQue.h" />
+    <ClInclude Include="..\Common\ptNamePipe.h" />
+    <ClInclude Include="..\Common\ptRegistry.h" />
+    <ClInclude Include="..\Common\ptShellTray.h" />
+    <ClInclude Include="..\Common\ptString.h" />
+    <ClInclude Include="..\Common\ptThread.h" />
+    <ClInclude Include="..\Common\ptThreadLock.h" />
+    <ClInclude Include="..\Common\ptTime.h" />
+    <ClInclude Include="..\Common\ptTypeDef.h" />
+    <ClInclude Include="..\Common\ptWinGraphic.h" />
+    <ClInclude Include="..\Common\ptWinMessage.h" />
+    <ClInclude Include="..\Common\ptWinPath.h" />
+    <ClInclude Include="..\Common\sgi_stl_alloc.h" />
+    <ClInclude Include="..\Common\stl_config.h" />
+    <ClInclude Include="..\Common\stl_threads.h" />
+    <ClInclude Include="..\Common\TinyXML\tinystr.h" />
+    <ClInclude Include="..\Common\TinyXML\tinyxml.h" />
+    <ClInclude Include="..\Common\WndShadow.h" />
+    <ClInclude Include="..\Core\XCAsyncFileDataTransFilter.h" />
+    <ClInclude Include="..\Core\XCCopyCondition.h" />
+    <ClInclude Include="..\Core\XCCopyingEvent.h" />
+    <ClInclude Include="..\Core\XCCore.h" />
+    <ClInclude Include="..\Core\XCCoreDefine.h" />
+    <ClInclude Include="..\Core\XCDestinationFilter.h" />
+    <ClInclude Include="..\Core\XCDuplicateOutputTransFilter.h" />
+    <ClInclude Include="..\Core\XCFileChangingBuffer.h" />
+    <ClInclude Include="..\Core\XCFileDataBuffer.h" />
+    <ClInclude Include="..\Core\XCFileDataCacheTransFilter.h" />
+    <ClInclude Include="..\Core\XCFilterProtocol.h" />
+    <ClInclude Include="..\Core\XCLocalFileAsynDestnationFilter2.h" />
+    <ClInclude Include="..\Core\XCLocalFileAsynSourceFilter.h" />
+    <ClInclude Include="..\Core\XCLocalFileSyncDestnationFilter.h" />
+    <ClInclude Include="..\Core\XCLocalFileSyncSourceFilter.h" />
+    <ClInclude Include="..\Core\XCNetworkSourceFilter.h" />
+    <ClInclude Include="..\Core\XCPin.h" />
+    <ClInclude Include="..\Core\XCSameDriveMoveFile.h" />
+    <ClInclude Include="..\Core\XCSourceFilter.h" />
+    <ClInclude Include="..\Core\XCSyncFileDataTransFilter.h" />
+    <ClInclude Include="..\Core\XCTransCore.h" />
+    <ClInclude Include="..\Core\XCTransformFilter.h" />
+    <ClInclude Include="..\Core\XCWinStorageRelative.h" />
+    <ClInclude Include="ExportExtremeCopyAPI.h" />
+    <ClInclude Include="ExtremeCopyApp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
