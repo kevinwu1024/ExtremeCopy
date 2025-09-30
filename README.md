@@ -1,3 +1,35 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=id">Bahasa Indonesia</a>
+        | <a href="https://openaitx.github.io/view.html?user=kevinwu1024&project=ExtremeCopy&lang=as">অসমীয়া</
+      </div>
+    </div>
+  </details>
+</div>
+
 **NOTE: ~~[http://www.easersoft.com]~~ The Domain Lost, This Is No Longer Offical Site.**
 
 # ExtremeCopy
